@@ -4,6 +4,7 @@ import android.content.Context
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
@@ -15,6 +16,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.chaquo.python.Python
@@ -26,6 +28,20 @@ private val Panel = Color(0xFF1B2942)
 private val Blue = Color(0xFF3987F6)
 private val Muted = Color(0xFF9EADC4)
 private val Green = Color(0xFF36C994)
+private val Orange = Color(0xFFFFA34D)
+private val Red = Color(0xFFFF6B72)
+private val Purple = Color(0xFF9B7CF6)
+
+@Composable
+private fun ClubBadge(team: String) {
+    val resource = ClubBadgeResources.byTeam[team] ?: return
+
+    Image(
+        painter = painterResource(id = resource),
+        contentDescription = "$team badge",
+        modifier = Modifier.size(30.dp)
+    )
+}
 
 data class Fixture(
     val date: String,
@@ -58,7 +74,8 @@ class MainActivity : ComponentActivity() {
 private fun StatCard(
     label: String,
     value: String,
-    symbol: String
+    symbol: String,
+    accent: Color = Blue
 ) {
     Card(
         modifier = Modifier.fillMaxWidth(),
@@ -69,7 +86,7 @@ private fun StatCard(
             modifier = Modifier.padding(16.dp),
             verticalArrangement = Arrangement.spacedBy(8.dp)
         ) {
-            Text(symbol, color = Blue, style = MaterialTheme.typography.titleLarge)
+            Text(symbol, color = accent, style = MaterialTheme.typography.titleLarge)
             Text(value, style = MaterialTheme.typography.headlineMedium, fontWeight = FontWeight.Bold)
             Text(label, color = Muted, style = MaterialTheme.typography.bodySmall)
         }
@@ -222,6 +239,8 @@ fun FPS1Screen(activity: ComponentActivity) {
         mutableStateOf(loadPredictionHistory(activity))
     }
     var error by remember { mutableStateOf("") }
+    var activePage by remember { mutableStateOf("Dashboard") }
+    var menuExpanded by remember { mutableStateOf(false) }
 
     LaunchedEffect(league, refreshKey) {
         val leagueChanged = loadedLeague != league
@@ -312,6 +331,30 @@ fun FPS1Screen(activity: ComponentActivity) {
                 style = MaterialTheme.typography.labelSmall,
                 fontWeight = FontWeight.Bold
             )
+            Box {
+                IconButton(onClick = { menuExpanded = true }) {
+                    Text(
+                        "⋮",
+                        color = Blue,
+                        style = MaterialTheme.typography.headlineMedium
+                    )
+                }
+
+                DropdownMenu(
+                    expanded = menuExpanded,
+                    onDismissRequest = { menuExpanded = false }
+                ) {
+                    listOf("Dashboard", "Match Centre", "About").forEach { page ->
+                        DropdownMenuItem(
+                            text = { Text(page) },
+                            onClick = {
+                                activePage = page
+                                menuExpanded = false
+                            }
+                        )
+                    }
+                }
+            }
         }
 
         // Welcome banner
@@ -338,6 +381,7 @@ fun FPS1Screen(activity: ComponentActivity) {
             }
         }
 
+        if (activePage == "Dashboard") {
         // Dashboard
         SectionTitle("Dashboard", "Your current prediction environment")
 
@@ -346,10 +390,10 @@ fun FPS1Screen(activity: ComponentActivity) {
             horizontalArrangement = Arrangement.spacedBy(12.dp)
         ) {
             Box(modifier = Modifier.weight(1f)) {
-                StatCard("Upcoming fixtures", if (loadingFixtures) "..." else fixtures.size.toString(), "◷")
+                StatCard("Upcoming fixtures", if (loadingFixtures) "..." else fixtures.size.toString(), "◷", Blue)
             }
             Box(modifier = Modifier.weight(1f)) {
-                StatCard("Supported leagues", "5", "⚽")
+                StatCard("Supported leagues", "5", "⚽", Purple)
             }
         }
 
@@ -379,10 +423,10 @@ fun FPS1Screen(activity: ComponentActivity) {
             horizontalArrangement = Arrangement.spacedBy(10.dp)
         ) {
             Box(modifier = Modifier.weight(1f)) {
-                StatCard("Saved forecasts", savedPredictions.length().toString(), "▤")
+                StatCard("Saved forecasts", savedPredictions.length().toString(), "▤", Blue)
             }
             Box(modifier = Modifier.weight(1f)) {
-                StatCard("Pending results", pendingCount.toString(), "◷")
+                StatCard("Pending results", pendingCount.toString(), "◷", Orange)
             }
         }
 
@@ -391,10 +435,10 @@ fun FPS1Screen(activity: ComponentActivity) {
             horizontalArrangement = Arrangement.spacedBy(10.dp)
         ) {
             Box(modifier = Modifier.weight(1f)) {
-                StatCard("Correct", correctCount.toString(), "✓")
+                StatCard("Correct", correctCount.toString(), "✓", Green)
             }
             Box(modifier = Modifier.weight(1f)) {
-                StatCard("Incorrect", incorrectCount.toString(), "×")
+                StatCard("Incorrect", incorrectCount.toString(), "×", Red)
             }
         }
 
@@ -452,6 +496,9 @@ fun FPS1Screen(activity: ComponentActivity) {
             }
         }
 
+        }
+
+        if (activePage == "Match Centre") {
         // Match centre
         Row(
             modifier = Modifier.fillMaxWidth(),
@@ -560,9 +607,21 @@ fun FPS1Screen(activity: ComponentActivity) {
                                     color = Muted,
                                     style = MaterialTheme.typography.labelSmall
                                 )
-                                Text(fixture.home, fontWeight = FontWeight.SemiBold)
+                                Row(
+                            verticalAlignment = Alignment.CenterVertically,
+                            horizontalArrangement = Arrangement.spacedBy(8.dp)
+                        ) {
+                            ClubBadge(fixture.home)
+                            Text(fixture.home, fontWeight = FontWeight.SemiBold)
+                        }
                                 Text("vs", color = Blue, style = MaterialTheme.typography.labelSmall)
-                                Text(fixture.away, fontWeight = FontWeight.SemiBold)
+                                Row(
+                            verticalAlignment = Alignment.CenterVertically,
+                            horizontalArrangement = Arrangement.spacedBy(8.dp)
+                        ) {
+                            ClubBadge(fixture.away)
+                            Text(fixture.away, fontWeight = FontWeight.SemiBold)
+                        }
                             }
 
                             if (selected) {
@@ -598,11 +657,39 @@ fun FPS1Screen(activity: ComponentActivity) {
                     Text("Choose a fixture from the Match Centre above.")
                 } else {
                     Text("SELECTED FIXTURE", color = Green, style = MaterialTheme.typography.labelSmall)
-                    Text(
-                        "${selectedFixture!!.home} vs ${selectedFixture!!.away}",
-                        style = MaterialTheme.typography.titleMedium,
-                        fontWeight = FontWeight.Bold
-                    )
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        verticalAlignment = Alignment.CenterVertically,
+                        horizontalArrangement = Arrangement.spacedBy(8.dp)
+                    ) {
+                        Column(
+                            modifier = Modifier.weight(1f),
+                            horizontalAlignment = Alignment.CenterHorizontally,
+                            verticalArrangement = Arrangement.spacedBy(6.dp)
+                        ) {
+                            ClubBadge(selectedFixture!!.home)
+                            Text(
+                                selectedFixture!!.home,
+                                style = MaterialTheme.typography.titleSmall,
+                                fontWeight = FontWeight.Bold
+                            )
+                        }
+
+                        Text("VS", color = Blue, fontWeight = FontWeight.Bold)
+
+                        Column(
+                            modifier = Modifier.weight(1f),
+                            horizontalAlignment = Alignment.CenterHorizontally,
+                            verticalArrangement = Arrangement.spacedBy(6.dp)
+                        ) {
+                            ClubBadge(selectedFixture!!.away)
+                            Text(
+                                selectedFixture!!.away,
+                                style = MaterialTheme.typography.titleSmall,
+                                fontWeight = FontWeight.Bold
+                            )
+                        }
+                    }
                     Text("${selectedFixture!!.date}  •  $league", color = Muted, style = MaterialTheme.typography.bodySmall)
                 }
 
@@ -682,19 +769,47 @@ fun FPS1Screen(activity: ComponentActivity) {
                     modifier = Modifier.padding(18.dp),
                     verticalArrangement = Arrangement.spacedBy(13.dp)
                 ) {
-                    Text(
-                        "${data.getString("home")} vs ${data.getString("away")}",
-                        fontWeight = FontWeight.Bold,
-                        style = MaterialTheme.typography.titleMedium
-                    )
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        verticalAlignment = Alignment.CenterVertically,
+                        horizontalArrangement = Arrangement.spacedBy(8.dp)
+                    ) {
+                        Column(
+                            modifier = Modifier.weight(1f),
+                            horizontalAlignment = Alignment.CenterHorizontally,
+                            verticalArrangement = Arrangement.spacedBy(6.dp)
+                        ) {
+                            ClubBadge(data.getString("home"))
+                            Text(
+                                data.getString("home"),
+                                fontWeight = FontWeight.Bold,
+                                style = MaterialTheme.typography.titleSmall
+                            )
+                        }
+
+                        Text("VS", color = Blue, fontWeight = FontWeight.Bold)
+
+                        Column(
+                            modifier = Modifier.weight(1f),
+                            horizontalAlignment = Alignment.CenterHorizontally,
+                            verticalArrangement = Arrangement.spacedBy(6.dp)
+                        ) {
+                            ClubBadge(data.getString("away"))
+                            Text(
+                                data.getString("away"),
+                                fontWeight = FontWeight.Bold,
+                                style = MaterialTheme.typography.titleSmall
+                            )
+                        }
+                    }
 
                     HorizontalDivider(color = Muted.copy(alpha = 0.25f))
 
                     Text("1X2 PROBABILITIES", color = Blue, style = MaterialTheme.typography.labelMedium)
 
-                    ProbabilityRow("Home win", probabilities.getDouble("home"))
-                    ProbabilityRow("Draw", probabilities.getDouble("draw"))
-                    ProbabilityRow("Away win", probabilities.getDouble("away"))
+                    ProbabilityRow("Home win", probabilities.getDouble("home"), Blue)
+                    ProbabilityRow("Draw", probabilities.getDouble("draw"), Orange)
+                    ProbabilityRow("Away win", probabilities.getDouble("away"), Green)
 
                     HorizontalDivider(color = Muted.copy(alpha = 0.25f))
 
@@ -731,6 +846,41 @@ fun FPS1Screen(activity: ComponentActivity) {
 
         HorizontalDivider(color = Muted.copy(alpha = 0.25f))
 
+        }
+
+        if (activePage == "About") {
+            SectionTitle("About FPS-1", "Football Prediction System")
+            Card(
+                modifier = Modifier.fillMaxWidth(),
+                shape = RoundedCornerShape(18.dp),
+                colors = CardDefaults.cardColors(containerColor = Panel)
+            ) {
+                Column(
+                    modifier = Modifier.padding(20.dp),
+                    verticalArrangement = Arrangement.spacedBy(12.dp)
+                ) {
+                    Text(
+                        "WELCOME TO FPS-1",
+                        color = Blue,
+                        fontWeight = FontWeight.Bold
+                    )
+                    Text(
+                        "Understand the game. Analyse the possibilities.",
+                        style = MaterialTheme.typography.titleLarge,
+                        fontWeight = FontWeight.Bold
+                    )
+                    Text(
+                        "FPS-1 analyses football fixtures and estimates Home, Draw and Away probabilities, expected goals and possible scorelines.",
+                        color = Muted
+                    )
+                    Text(
+                        "Predictions are statistical estimates, not guarantees or betting advice.",
+                        color = Green
+                    )
+                }
+            }
+        }
+
         Text(
             "FPS-1  •  FOOTBALL ANALYTICS",
             modifier = Modifier.fillMaxWidth(),
@@ -741,7 +891,7 @@ fun FPS1Screen(activity: ComponentActivity) {
 }
 
 @Composable
-private fun ProbabilityRow(label: String, probability: Double) {
+private fun ProbabilityRow(label: String, probability: Double, accent: Color) {
     Column(verticalArrangement = Arrangement.spacedBy(5.dp)) {
         Row(
             modifier = Modifier.fillMaxWidth(),
@@ -757,7 +907,7 @@ private fun ProbabilityRow(label: String, probability: Double) {
         LinearProgressIndicator(
             progress = { probability.toFloat().coerceIn(0f, 1f) },
             modifier = Modifier.fillMaxWidth().height(7.dp),
-            color = Blue,
+            color = accent,
             trackColor = Navy
         )
     }
