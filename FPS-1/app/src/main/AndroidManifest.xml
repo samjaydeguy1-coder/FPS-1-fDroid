@@ -2,7 +2,9 @@
     <application
         android:name="com.chaquo.python.android.PyApplication"
         android:allowBackup="true"
-        android:label="FPS-1"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="FPS-1 Football Predictor"
         android:supportsRtl="true"
         android:theme="@android:style/Theme.Material.Light.NoActionBar">
 
