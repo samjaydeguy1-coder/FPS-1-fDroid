@@ -1,6 +1,7 @@
 services:
   - type: web
     name: fps-1
+    plan: free
     runtime: python
     rootDir: FPS-1
     buildCommand: pip install -r requirements.txt
