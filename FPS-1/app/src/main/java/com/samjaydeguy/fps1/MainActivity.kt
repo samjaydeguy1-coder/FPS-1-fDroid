@@ -266,7 +266,7 @@ fun FPS1Screen(activity: ComponentActivity) {
 
         if (loadingFixtures) {
             Box(
-                modifier = Modifier.fillMaxWidth().padding(25.dp),
+                modifier = Modifier.fillMaxWidth().height(180.dp),
                 contentAlignment = Alignment.Center
             ) {
                 CircularProgressIndicator(color = Blue)
@@ -274,7 +274,13 @@ fun FPS1Screen(activity: ComponentActivity) {
         } else if (filteredFixtures.isEmpty()) {
             Text("No matching fixtures found.", color = Muted)
         } else {
-            Column(verticalArrangement = Arrangement.spacedBy(9.dp)) {
+            Column(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .heightIn(max = 350.dp)
+                    .verticalScroll(rememberScrollState()),
+                verticalArrangement = Arrangement.spacedBy(9.dp)
+            ) {
                 filteredFixtures.forEach { fixture ->
                     val selected = selectedFixture == fixture
 
@@ -295,14 +301,27 @@ fun FPS1Screen(activity: ComponentActivity) {
                             modifier = Modifier.padding(14.dp),
                             verticalAlignment = Alignment.CenterVertically
                         ) {
-                            Column(modifier = Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(5.dp)) {
-                                Text(fixture.date, color = Muted, style = MaterialTheme.typography.labelSmall)
+                            Column(
+                                modifier = Modifier.weight(1f),
+                                verticalArrangement = Arrangement.spacedBy(5.dp)
+                            ) {
+                                Text(
+                                    fixture.date,
+                                    color = Muted,
+                                    style = MaterialTheme.typography.labelSmall
+                                )
                                 Text(fixture.home, fontWeight = FontWeight.SemiBold)
                                 Text("vs", color = Blue, style = MaterialTheme.typography.labelSmall)
                                 Text(fixture.away, fontWeight = FontWeight.SemiBold)
                             }
+
                             if (selected) {
-                                Text("SELECTED", color = Green, style = MaterialTheme.typography.labelSmall, fontWeight = FontWeight.Bold)
+                                Text(
+                                    "SELECTED",
+                                    color = Green,
+                                    style = MaterialTheme.typography.labelSmall,
+                                    fontWeight = FontWeight.Bold
+                                )
                             } else {
                                 Text("›", color = Blue, style = MaterialTheme.typography.headlineMedium)
                             }
