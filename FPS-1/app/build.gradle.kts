@@ -41,6 +41,7 @@ chaquopy {
         pip {
             install("numpy==1.26.2")
             install("pandas==2.1.3")
+            install("requests")
         }
     }
 }
