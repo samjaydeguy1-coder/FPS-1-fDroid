@@ -1,0 +1,30 @@
+FPS-1 Football Prediction System
+
+Project Overview
+
+FPS-1 is a Python-based football match prediction system designed to estimate the probabilities of three possible match outcomes:
+
+- Home Win (1)
+- Draw (X)
+- Away Win (2)
+
+Core Components
+
+- Poisson statistical modelling
+- Historical football match analysis
+- Multi-league prediction
+- Probability calibration
+- Model performance evaluation
+- Ablation testing
+
+Project Objective
+
+To develop, evaluate, and improve a statistically driven football prediction model using historical match data.
+
+Source Files
+
+The complete project source archive is available in "FPS-1-source.zip".
+
+Disclaimer
+
+Predictions are probabilistic estimates, not guaranteed match outcomes.
