@@ -13,6 +13,12 @@ import androidx.compose.ui.unit.dp
 import com.chaquo.python.Python
 import org.json.JSONObject
 
+data class Fixture(
+    val date: String,
+    val home: String,
+    val away: String
+)
+
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,12 +38,69 @@ fun FPS1Screen(activity: ComponentActivity) {
     )
 
     var league by remember { mutableStateOf("EPL") }
-    var home by remember { mutableStateOf("") }
-    var away by remember { mutableStateOf("") }
     var expanded by remember { mutableStateOf(false) }
-    var loading by remember { mutableStateOf(false) }
+
+    var fixtures by remember { mutableStateOf(listOf<Fixture>()) }
+    var selectedFixture by remember { mutableStateOf<Fixture?>(null) }
+    var search by remember { mutableStateOf("") }
+
+    var loadingFixtures by remember { mutableStateOf(false) }
+    var loadingPrediction by remember { mutableStateOf(false) }
+
     var result by remember { mutableStateOf("") }
     var error by remember { mutableStateOf("") }
+
+    LaunchedEffect(league) {
+        fixtures = emptyList()
+        selectedFixture = null
+        search = ""
+        result = ""
+        error = ""
+        loadingFixtures = true
+
+        val selectedLeague = league
+
+        Thread {
+            try {
+                val module = Python.getInstance().getModule("bridge")
+                val json = module.callAttr(
+                    "get_fixtures",
+                    selectedLeague
+                ).toString()
+
+                val data = JSONObject(json)
+                val array = data.getJSONArray("fixtures")
+                val loaded = mutableListOf<Fixture>()
+
+                for (i in 0 until array.length()) {
+                    val item = array.getJSONObject(i)
+                    loaded.add(
+                        Fixture(
+                            date = item.getString("date"),
+                            home = item.getString("home"),
+                            away = item.getString("away")
+                        )
+                    )
+                }
+
+                activity.runOnUiThread {
+                    fixtures = loaded
+                    loadingFixtures = false
+                }
+            } catch (e: Exception) {
+                activity.runOnUiThread {
+                    error = e.message ?: "Could not load fixtures."
+                    loadingFixtures = false
+                }
+            }
+        }.start()
+    }
+
+    val filteredFixtures = fixtures.filter {
+        it.home.contains(search, ignoreCase = true) ||
+        it.away.contains(search, ignoreCase = true) ||
+        it.date.contains(search, ignoreCase = true)
+    }
 
     Column(
         modifier = Modifier
@@ -50,8 +113,14 @@ fun FPS1Screen(activity: ComponentActivity) {
             "FPS-1",
             style = MaterialTheme.typography.headlineLarge
         )
+
         Text("Football Prediction System")
         Text("1X2 Match Probability")
+
+        Text(
+            "SELECT LEAGUE",
+            style = MaterialTheme.typography.titleMedium
+        )
 
         Box {
             OutlinedButton(
@@ -71,39 +140,111 @@ fun FPS1Screen(activity: ComponentActivity) {
                         onClick = {
                             league = item
                             expanded = false
-                            result = ""
-                            error = ""
                         }
                     )
                 }
             }
         }
 
-        OutlinedTextField(
-            value = home,
-            onValueChange = { home = it },
-            label = { Text("Home team") },
-            modifier = Modifier.fillMaxWidth(),
-            singleLine = true
+        HorizontalDivider()
+
+        Text(
+            "AVAILABLE UPCOMING MATCHES",
+            style = MaterialTheme.typography.titleMedium
         )
 
-        OutlinedTextField(
-            value = away,
-            onValueChange = { away = it },
-            label = { Text("Away team") },
-            modifier = Modifier.fillMaxWidth(),
-            singleLine = true
+        if (loadingFixtures) {
+            Row(
+                horizontalArrangement = Arrangement.spacedBy(10.dp)
+            ) {
+                CircularProgressIndicator(
+                    modifier = Modifier.size(22.dp)
+                )
+                Text("Loading $league fixtures...")
+            }
+        } else {
+            Text("${fixtures.size} upcoming fixtures available")
+
+            OutlinedTextField(
+                value = search,
+                onValueChange = { search = it },
+                label = { Text("Search team or date") },
+                modifier = Modifier.fillMaxWidth(),
+                singleLine = true
+            )
+
+            if (filteredFixtures.isEmpty()) {
+                Text("No matching fixtures found.")
+            } else {
+                Column(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .heightIn(max = 360.dp)
+                        .verticalScroll(rememberScrollState()),
+                    verticalArrangement = Arrangement.spacedBy(6.dp)
+                ) {
+                    filteredFixtures.forEach { fixture ->
+                        OutlinedButton(
+                            onClick = {
+                                selectedFixture = fixture
+                                result = ""
+                                error = ""
+                            },
+                            modifier = Modifier.fillMaxWidth(),
+                            colors = ButtonDefaults.outlinedButtonColors(
+                                containerColor = if (selectedFixture == fixture)
+                                    MaterialTheme.colorScheme.secondaryContainer
+                                else
+                                    MaterialTheme.colorScheme.surface
+                            )
+                        ) {
+                            Column(
+                                modifier = Modifier.fillMaxWidth()
+                            ) {
+                                Text(
+                                    fixture.date,
+                                    style = MaterialTheme.typography.labelSmall
+                                )
+                                Text(
+                                    "${fixture.home} vs ${fixture.away}",
+                                    style = MaterialTheme.typography.bodyMedium
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        HorizontalDivider()
+
+        Text(
+            "SELECTED MATCH",
+            style = MaterialTheme.typography.titleMedium
         )
+
+        if (selectedFixture == null) {
+            Text("Tap a fixture above to select a match.")
+        } else {
+            Text(
+                "${selectedFixture!!.home} vs ${selectedFixture!!.away}",
+                style = MaterialTheme.typography.titleMedium
+            )
+            Text("Date: ${selectedFixture!!.date}")
+            Text("League: $league")
+        }
 
         Button(
             onClick = {
-                loading = true
+                val fixture = selectedFixture ?: return@Button
+
+                loadingPrediction = true
                 result = ""
                 error = ""
 
                 val selectedLeague = league
-                val homeTeam = home.trim()
-                val awayTeam = away.trim()
+                val homeTeam = fixture.home
+                val awayTeam = fixture.away
 
                 Thread {
                     try {
@@ -119,27 +260,30 @@ fun FPS1Screen(activity: ComponentActivity) {
 
                         activity.runOnUiThread {
                             result = json
-                            loading = false
+                            loadingPrediction = false
                         }
                     } catch (e: Exception) {
                         activity.runOnUiThread {
                             error = e.message ?: "Prediction failed."
-                            loading = false
+                            loadingPrediction = false
                         }
                     }
                 }.start()
             },
-            enabled = !loading &&
-                home.isNotBlank() &&
-                away.isNotBlank(),
+            enabled = selectedFixture != null &&
+                !loadingPrediction &&
+                !loadingFixtures,
             modifier = Modifier.fillMaxWidth()
         ) {
             Text(
-                if (loading) "Calculating..." else "PREDICT MATCH"
+                if (loadingPrediction)
+                    "Calculating..."
+                else
+                    "PREDICT SELECTED MATCH"
             )
         }
 
-        if (loading) {
+        if (loadingPrediction) {
             CircularProgressIndicator()
         }
 
