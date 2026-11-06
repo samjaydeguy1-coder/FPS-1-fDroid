@@ -223,16 +223,12 @@ def get_fixtures(league):
     })
 
 
-def get_fixtures(league):
-    """Return upcoming scheduled fixtures for one supported league."""
+def get_match_result(league, date, home, away):
+    """Return a verified final result for an exact fixture, if available."""
     league = league.strip()
-
-    config = json.loads(
-        (ROOT / "config.json").read_text(encoding="utf-8")
-    )
-
-    if league not in config["leagues"]:
-        raise ValueError("Invalid league selected.")
+    date = date.strip()
+    home = home.strip()
+    away = away.strip()
 
     df = load_data(ROOT / "data" / "matches.csv")
 
@@ -240,66 +236,39 @@ def get_fixtures(league):
         df["date"], utc=True, errors="coerce"
     )
 
-    now = pd.Timestamp.now(tz="UTC")
-
-    upcoming = df[
+    matches = df[
         (df["league"] == league) &
-        (df["status"] == "scheduled") &
-        (df["date"] >= now)
-    ].sort_values("date")
+        (df["date"].dt.strftime("%Y-%m-%d") == date) &
+        (df["home_team"].astype(str) == home) &
+        (df["away_team"].astype(str) == away) &
+        (df["status"] == "finished")
+    ]
 
-    fixtures = []
+    if matches.empty:
+        return json.dumps({"found": False})
 
-    for _, row in upcoming.iterrows():
-        fixtures.append({
-            "date": row["date"].strftime("%Y-%m-%d"),
-            "home": str(row["home_team"]),
-            "away": str(row["away_team"]),
-        })
+    row = matches.iloc[-1]
+
+    if pd.isna(row["home_goals"]) or pd.isna(row["away_goals"]):
+        return json.dumps({"found": False})
+
+    home_goals = int(row["home_goals"])
+    away_goals = int(row["away_goals"])
+
+    if home_goals > away_goals:
+        outcome = "HOME"
+    elif home_goals < away_goals:
+        outcome = "AWAY"
+    else:
+        outcome = "DRAW"
 
     return json.dumps({
+        "found": True,
         "league": league,
-        "count": len(fixtures),
-        "fixtures": fixtures,
-    })
-
-
-def get_fixtures(league):
-    """Return upcoming scheduled fixtures for one supported league."""
-    league = league.strip()
-
-    config = json.loads(
-        (ROOT / "config.json").read_text(encoding="utf-8")
-    )
-
-    if league not in config["leagues"]:
-        raise ValueError("Invalid league selected.")
-
-    df = load_data(ROOT / "data" / "matches.csv")
-
-    df["date"] = pd.to_datetime(
-        df["date"], utc=True, errors="coerce"
-    )
-
-    now = pd.Timestamp.now(tz="UTC")
-
-    upcoming = df[
-        (df["league"] == league) &
-        (df["status"] == "scheduled") &
-        (df["date"] >= now)
-    ].sort_values("date")
-
-    fixtures = []
-
-    for _, row in upcoming.iterrows():
-        fixtures.append({
-            "date": row["date"].strftime("%Y-%m-%d"),
-            "home": str(row["home_team"]),
-            "away": str(row["away_team"]),
-        })
-
-    return json.dumps({
-        "league": league,
-        "count": len(fixtures),
-        "fixtures": fixtures,
+        "date": date,
+        "home": home,
+        "away": away,
+        "home_goals": home_goals,
+        "away_goals": away_goals,
+        "outcome": outcome
     })

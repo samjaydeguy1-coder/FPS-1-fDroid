@@ -1,5 +1,6 @@
 package com.samjaydeguy.fps1
 
+import android.content.Context
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -17,6 +18,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.chaquo.python.Python
+import org.json.JSONArray
 import org.json.JSONObject
 
 private val Navy = Color(0xFF101B32)
@@ -84,6 +86,124 @@ private fun SectionTitle(title: String, subtitle: String = "") {
     }
 }
 
+
+private const val HISTORY_PREFS = "fps1_prediction_history"
+private const val HISTORY_KEY = "predictions"
+
+private fun loadPredictionHistory(activity: ComponentActivity): JSONArray {
+    val stored = activity.getSharedPreferences(
+        HISTORY_PREFS, Context.MODE_PRIVATE
+    ).getString(HISTORY_KEY, "[]") ?: "[]"
+
+    return try {
+        JSONArray(stored)
+    } catch (_: Exception) {
+        JSONArray()
+    }
+}
+
+private fun savePrediction(
+    activity: ComponentActivity,
+    league: String,
+    fixture: Fixture,
+    prediction: JSONObject
+): JSONArray {
+    val history = loadPredictionHistory(activity)
+    val record = JSONObject().apply {
+        put("league", league)
+        put("date", fixture.date)
+        put("home", fixture.home)
+        put("away", fixture.away)
+        put("predicted_at", System.currentTimeMillis())
+        put("most_likely_result", prediction.getString("most_likely_result"))
+        put("probabilities", prediction.getJSONObject("probabilities"))
+        put("status", "pending")
+    }
+
+    var existingIndex = -1
+
+    for (i in 0 until history.length()) {
+        val existing = history.getJSONObject(i)
+
+        if (
+            existing.optString("league") == league &&
+            existing.optString("date") == fixture.date &&
+            existing.optString("home") == fixture.home &&
+            existing.optString("away") == fixture.away
+        ) {
+            existingIndex = i
+
+            if (existing.has("actual_outcome")) {
+                record.put("actual_outcome", existing.getString("actual_outcome"))
+                record.put("home_goals", existing.optInt("home_goals"))
+                record.put("away_goals", existing.optInt("away_goals"))
+                record.put("status", existing.optString("status", "verified"))
+            }
+            break
+        }
+    }
+
+    if (existingIndex >= 0) {
+        history.put(existingIndex, record)
+    } else {
+        history.put(record)
+    }
+
+    activity.getSharedPreferences(
+        HISTORY_PREFS, Context.MODE_PRIVATE
+    ).edit().putString(HISTORY_KEY, history.toString()).apply()
+
+    return JSONArray(history.toString())
+}
+
+private fun verifyPendingPredictions(
+    activity: ComponentActivity
+): JSONArray {
+    val history = loadPredictionHistory(activity)
+    val module = Python.getInstance().getModule("bridge")
+    var changed = false
+
+    for (i in 0 until history.length()) {
+        val record = history.getJSONObject(i)
+        if (record.optString("status") != "pending") continue
+
+        val response = module.callAttr(
+            "get_match_result",
+            record.getString("league"),
+            record.getString("date"),
+            record.getString("home"),
+            record.getString("away")
+        ).toString()
+
+        val actual = JSONObject(response)
+        if (!actual.optBoolean("found")) continue
+
+        record.put("actual_outcome", actual.getString("outcome"))
+        record.put("home_goals", actual.getInt("home_goals"))
+        record.put("away_goals", actual.getInt("away_goals"))
+        record.put("status", "verified")
+        changed = true
+    }
+
+    if (changed) {
+        activity.getSharedPreferences(
+            HISTORY_PREFS, Context.MODE_PRIVATE
+        ).edit().putString(HISTORY_KEY, history.toString()).apply()
+    }
+
+    return history
+}
+
+private fun normalizedOutcome(value: String): String {
+    val text = value.trim().uppercase()
+    return when {
+        text.contains("HOME") -> "HOME"
+        text.contains("DRAW") -> "DRAW"
+        text.contains("AWAY") -> "AWAY"
+        else -> text
+    }
+}
+
 @Composable
 fun FPS1Screen(activity: ComponentActivity) {
     val leagues = listOf("EPL", "LaLiga", "SerieA", "Bundesliga", "Ligue1")
@@ -95,14 +215,25 @@ fun FPS1Screen(activity: ComponentActivity) {
     var search by remember { mutableStateOf("") }
     var loadingFixtures by remember { mutableStateOf(false) }
     var loadingPrediction by remember { mutableStateOf(false) }
+    var refreshKey by remember { mutableStateOf(0) }
+    var loadedLeague by remember { mutableStateOf("") }
     var result by remember { mutableStateOf("") }
+    var savedPredictions by remember {
+        mutableStateOf(loadPredictionHistory(activity))
+    }
     var error by remember { mutableStateOf("") }
 
-    LaunchedEffect(league) {
-        fixtures = emptyList()
-        selectedFixture = null
-        search = ""
-        result = ""
+    LaunchedEffect(league, refreshKey) {
+        val leagueChanged = loadedLeague != league
+
+        if (leagueChanged) {
+            fixtures = emptyList()
+            selectedFixture = null
+            search = ""
+            result = ""
+        }
+
+        loadedLeague = league
         error = ""
         loadingFixtures = true
         val selectedLeague = league
@@ -125,8 +256,11 @@ fun FPS1Screen(activity: ComponentActivity) {
                     )
                 }
 
+                val verifiedHistory = verifyPendingPredictions(activity)
+
                 activity.runOnUiThread {
                     fixtures = loaded
+                    savedPredictions = verifiedHistory
                     loadingFixtures = false
                 }
             } catch (e: Exception) {
@@ -219,8 +353,124 @@ fun FPS1Screen(activity: ComponentActivity) {
             }
         }
 
+        // Prediction performance
+        val verifiedRecords = (0 until savedPredictions.length())
+            .map { savedPredictions.getJSONObject(it) }
+            .filter { it.optString("status") == "verified" }
+            .sortedByDescending { it.optLong("predicted_at") }
+
+        val pendingCount = (0 until savedPredictions.length()).count {
+            savedPredictions.getJSONObject(it).optString("status") == "pending"
+        }
+
+        val correctCount = verifiedRecords.count {
+            normalizedOutcome(it.optString("most_likely_result")) ==
+                normalizedOutcome(it.optString("actual_outcome"))
+        }
+        val incorrectCount = verifiedRecords.size - correctCount
+
+        SectionTitle(
+            "Prediction Performance",
+            "Based on verified match results only"
+        )
+
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.spacedBy(10.dp)
+        ) {
+            Box(modifier = Modifier.weight(1f)) {
+                StatCard("Saved forecasts", savedPredictions.length().toString(), "▤")
+            }
+            Box(modifier = Modifier.weight(1f)) {
+                StatCard("Pending results", pendingCount.toString(), "◷")
+            }
+        }
+
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.spacedBy(10.dp)
+        ) {
+            Box(modifier = Modifier.weight(1f)) {
+                StatCard("Correct", correctCount.toString(), "✓")
+            }
+            Box(modifier = Modifier.weight(1f)) {
+                StatCard("Incorrect", incorrectCount.toString(), "×")
+            }
+        }
+
+        Card(
+            modifier = Modifier.fillMaxWidth(),
+            shape = RoundedCornerShape(16.dp),
+            colors = CardDefaults.cardColors(containerColor = Panel)
+        ) {
+            Column(
+                modifier = Modifier.padding(16.dp),
+                verticalArrangement = Arrangement.spacedBy(12.dp)
+            ) {
+                Text(
+                    "RECENT VERIFIED ACCURACY",
+                    color = Blue,
+                    fontWeight = FontWeight.Bold,
+                    style = MaterialTheme.typography.labelMedium
+                )
+
+                listOf(5, 10, 20).forEach { limit ->
+                    val recent = verifiedRecords.take(limit)
+                    val correct = recent.count {
+                        normalizedOutcome(it.optString("most_likely_result")) ==
+                            normalizedOutcome(it.optString("actual_outcome"))
+                    }
+                    val accuracy = if (recent.isEmpty()) 0.0
+                        else correct * 100.0 / recent.size
+
+                    Column(verticalArrangement = Arrangement.spacedBy(5.dp)) {
+                        Row(
+                            modifier = Modifier.fillMaxWidth(),
+                            horizontalArrangement = Arrangement.SpaceBetween
+                        ) {
+                            Text("Last $limit verified matches", color = Muted)
+                            Text(
+                                if (recent.isEmpty()) "—"
+                                else "${"%.1f".format(java.util.Locale.US, accuracy)}%",
+                                fontWeight = FontWeight.Bold
+                            )
+                        }
+                        LinearProgressIndicator(
+                            progress = { (accuracy / 100.0).toFloat() },
+                            modifier = Modifier.fillMaxWidth(),
+                            color = Green,
+                            trackColor = Navy
+                        )
+                        Text(
+                            if (recent.isEmpty()) "No verified predictions yet"
+                            else "$correct correct out of ${recent.size}",
+                            color = Muted,
+                            style = MaterialTheme.typography.labelSmall
+                        )
+                    }
+                }
+            }
+        }
+
         // Match centre
-        SectionTitle("Match Centre", "Choose a league and select an upcoming fixture")
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.SpaceBetween,
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            SectionTitle("Match Centre", "Choose a league and select an upcoming fixture")
+
+            IconButton(
+                onClick = { refreshKey++ },
+                enabled = !loadingFixtures
+            ) {
+                Text(
+                    "↻",
+                    color = if (loadingFixtures) Muted else Blue,
+                    style = MaterialTheme.typography.headlineMedium
+                )
+            }
+        }
 
         Box {
             OutlinedButton(
@@ -377,7 +627,16 @@ fun FPS1Screen(activity: ComponentActivity) {
                                     awayTeam
                                 ).toString()
 
+                                val prediction = JSONObject(json)
+                                val updatedHistory = savePrediction(
+                                    activity,
+                                    selectedLeague,
+                                    fixture,
+                                    prediction
+                                )
+
                                 activity.runOnUiThread {
+                                    savedPredictions = updatedHistory
                                     result = json
                                     loadingPrediction = false
                                 }
