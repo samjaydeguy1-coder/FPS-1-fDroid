@@ -43,6 +43,34 @@ def predict(league, home, away):
             "No completed matches available for this league."
         )
 
+    # Validate and resolve team names against actual league history.
+    available_teams = set(history["home_team"].dropna()) | set(
+        history["away_team"].dropna()
+    )
+
+    team_lookup = {
+        str(team).strip().casefold(): team
+        for team in available_teams
+    }
+
+    home_key = home.strip().casefold()
+    away_key = away.strip().casefold()
+
+    if home_key not in team_lookup:
+        raise ValueError(
+            f"Home team '{home}' was not found in {league}. "
+            "Use the exact team name from the dataset."
+        )
+
+    if away_key not in team_lookup:
+        raise ValueError(
+            f"Away team '{away}' was not found in {league}. "
+            "Use the exact team name from the dataset."
+        )
+
+    home = team_lookup[home_key]
+    away = team_lookup[away_key]
+
     components = predict_components(
         history,
         home,
