@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: fps-1
+    runtime: python
+    rootDir: FPS-1
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn --workers 1 --threads 4 --timeout 120 website.app:app
+    healthCheckPath: /api/health

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#07111f">
+  <title>FPS-1 | Football Prediction System</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="background"></div>
+  <header class="topbar">
+    <a class="brand" href="/">
+      <span class="brand-mark">F1</span>
+      <span><strong>FPS-1</strong><small>FOOTBALL PREDICTION SYSTEM</small></span>
+    </a>
+    <span class="live-label"><i></i> ANALYSIS ENGINE</span>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">DATA-DRIVEN FOOTBALL INTELLIGENCE</p>
+      <h1>See the game<br><span>before it happens.</span></h1>
+      <p class="hero-copy">Statistical match analysis powered by the FPS-1 prediction engine.</p>
+    </section>
+
+    <section class="panel">
+      <div class="section-heading">
+        <div><span class="step">01</span><h2>Match selection</h2></div>
+        <span class="muted">SELECT FIXTURE</span>
+      </div>
+
+      <label for="league">League</label>
+      <select id="league"><option value="">Loading leagues...</option></select>
+
+      <div class="versus">
+        <div class="team-field">
+          <label for="home">HOME TEAM</label>
+          <div class="team-select">
+            <img id="homeBadge" src="" alt="" hidden>
+            <select id="home"><option value="">Select home team</option></select>
+          </div>
+        </div>
+        <div class="versus-label">VS</div>
+        <div class="team-field">
+          <label for="away">AWAY TEAM</label>
+          <div class="team-select">
+            <img id="awayBadge" src="" alt="" hidden>
+            <select id="away"><option value="">Select away team</option></select>
+          </div>
+        </div>
+      </div>
+
+      <button id="predict" class="predict-button">ANALYSE MATCH <span>→</span></button>
+      <p id="status" class="status" aria-live="polite">Preparing prediction engine...</p>
+    </section>
+
+    <section id="results" class="panel results" hidden>
+      <div class="section-heading">
+        <div><span class="step">02</span><h2>Prediction analysis</h2></div>
+        <span class="muted">MODEL OUTPUT</span>
+      </div>
+
+      <div class="match-heading">
+        <div class="result-team">
+          <img id="resultHomeBadge" src="" alt="">
+          <strong id="resultHome">Home</strong>
+        </div>
+        <span class="match-vs">VS</span>
+        <div class="result-team">
+          <img id="resultAwayBadge" src="" alt="">
+          <strong id="resultAway">Away</strong>
+        </div>
+      </div>
+
+      <div class="probability-title">1X2 PROBABILITIES</div>
+      <div class="probabilities">
+        <div class="prob-card"><span>HOME WIN</span><strong id="homeProb">—</strong><div class="bar"><i id="homeBar"></i></div></div>
+        <div class="prob-card"><span>DRAW</span><strong id="drawProb">—</strong><div class="bar"><i id="drawBar"></i></div></div>
+        <div class="prob-card"><span>AWAY WIN</span><strong id="awayProb">—</strong><div class="bar"><i id="awayBar"></i></div></div>
+      </div>
+
+      <div class="expected">
+        <div><span>EXPECTED GOALS</span><strong id="expectedHome">—</strong><small>HOME</small></div>
+        <div class="expected-divider"></div>
+        <div><span>EXPECTED GOALS</span><strong id="expectedAway">—</strong><small>AWAY</small></div>
+      </div>
+
+      <div class="score-section">
+        <h3>Most likely scorelines</h3>
+        <div id="scores" class="scores"></div>
+      </div>
+      <div class="verdict"><span>MODEL'S MOST LIKELY RESULT</span><strong id="verdict">—</strong></div>
+      <p class="disclaimer">Predictions are statistical estimates, not guaranteed outcomes. Use responsibly.</p>
+    </section>
+
+    <footer>
+      <strong>FPS-1</strong> · Football Prediction System
+      <span>Powered by statistical modelling</span>
+    </footer>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
