@@ -1,4 +1,7 @@
 import json
+import re
+import difflib
+import unicodedata
 from pathlib import Path
 
 import pandas as pd
@@ -9,6 +12,89 @@ from fps1.model import (
     blend_components,
     market_probabilities,
 )
+
+
+
+def normalize_team_name(name):
+    name = unicodedata.normalize("NFKD", str(name))
+    name = "".join(
+        c for c in name if not unicodedata.combining(c)
+    )
+    name = name.casefold().replace("&", " and ")
+    name = re.sub(r"\b(fc|afc|cf|sc)\b", " ", name)
+    name = re.sub(r"[^a-z0-9]+", " ", name)
+    return " ".join(name.split())
+
+
+TEAM_ALIASES = {
+    "man utd": "manchester united",
+    "man united": "manchester united",
+    "man u": "manchester united",
+    "man city": "manchester city",
+    "spurs": "tottenham hotspur",
+    "wolves": "wolverhampton wanderers",
+    "brighton": "brighton and hove albion",
+    "newcastle": "newcastle united",
+    "west ham": "west ham united",
+    "leicester": "leicester city",
+    "ipswich": "ipswich town",
+    "forest": "nottingham forest",
+    "palace": "crystal palace",
+}
+
+
+def resolve_team_name(name, available_teams, label, league):
+    exact_lookup = {
+        str(team).strip().casefold(): team
+        for team in available_teams
+    }
+
+    # Preserve exact official names, including names that normalize
+    # to the same value as another club.
+    exact_key = name.strip().casefold()
+    if exact_key in exact_lookup:
+        return exact_lookup[exact_key]
+
+    normalized_lookup = {}
+    for team in available_teams:
+        key = normalize_team_name(team)
+        normalized_lookup.setdefault(key, []).append(team)
+
+    key = normalize_team_name(name)
+    target = TEAM_ALIASES.get(key, key)
+    matches = normalized_lookup.get(target, [])
+
+    if len(matches) == 1:
+        return matches[0]
+
+    if len(matches) > 1:
+        raise ValueError(
+            f"{label} team name '{name}' is ambiguous in {league}: "
+            + ", ".join(sorted(matches))
+        )
+
+    suggestions = difflib.get_close_matches(
+        target,
+        list(normalized_lookup.keys()),
+        n=3,
+        cutoff=0.55
+    )
+
+    if suggestions:
+        possible = sorted({
+            team
+            for suggestion in suggestions
+            for team in normalized_lookup[suggestion]
+        })
+        message = " Possible matches: " + ", ".join(possible)
+    else:
+        message = ""
+
+    raise ValueError(
+        f"{label} team '{name}' was not recognized in {league}."
+        + message
+    )
+
 
 ROOT = Path(__file__).resolve().parent
 
@@ -43,33 +129,23 @@ def predict(league, home, away):
             "No completed matches available for this league."
         )
 
-    # Validate and resolve team names against actual league history.
-    available_teams = set(history["home_team"].dropna()) | set(
-        history["away_team"].dropna()
+    # Resolve user-entered names against actual league history.
+    available_teams = (
+        set(history["home_team"].dropna()) |
+        set(history["away_team"].dropna())
     )
 
-    team_lookup = {
-        str(team).strip().casefold(): team
-        for team in available_teams
-    }
+    home = resolve_team_name(
+        home, available_teams, "Home", league
+    )
+    away = resolve_team_name(
+        away, available_teams, "Away", league
+    )
 
-    home_key = home.strip().casefold()
-    away_key = away.strip().casefold()
-
-    if home_key not in team_lookup:
+    if home == away:
         raise ValueError(
-            f"Home team '{home}' was not found in {league}. "
-            "Use the exact team name from the dataset."
+            "Home and away teams resolve to the same club."
         )
-
-    if away_key not in team_lookup:
-        raise ValueError(
-            f"Away team '{away}' was not found in {league}. "
-            "Use the exact team name from the dataset."
-        )
-
-    home = team_lookup[home_key]
-    away = team_lookup[away_key]
 
     components = predict_components(
         history,
