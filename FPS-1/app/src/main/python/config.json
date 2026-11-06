@@ -1,0 +1,45 @@
+{
+  "leagues": {
+    "EPL": {
+      "data_file": "en.1.json",
+      "name": "Premier League"
+    },
+    "LaLiga": {
+      "data_file": "es.1.json",
+      "name": "La Liga"
+    },
+    "SerieA": {
+      "data_file": "it.1.json",
+      "name": "Serie A"
+    },
+    "Bundesliga": {
+      "data_file": "de.1.json",
+      "name": "Bundesliga"
+    },
+    "Ligue1": {
+      "data_file": "fr.1.json",
+      "name": "Ligue 1"
+    }
+  },
+  "seasons": [
+    "2021-22",
+    "2022-23",
+    "2023-24",
+    "2024-25",
+    "2025-26",
+    "2026-27"
+  ],
+  "min_train_matches": 80,
+  "max_goals": 10,
+  "recent_form_matches": 8,
+  "time_decay_days": 730,
+  "elo_home_advantage": 60,
+  "elo_k": 20,
+  "ensemble_weights": {
+    "poisson": 0.25,
+    "dixon_coles": 0.35,
+    "elo": 0.2,
+    "form": 0.2
+  },
+  "data_source": "openfootball/football.json (CC0 public-domain data)"
+}
