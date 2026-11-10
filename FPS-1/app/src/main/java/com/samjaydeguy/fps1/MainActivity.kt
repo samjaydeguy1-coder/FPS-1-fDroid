@@ -508,6 +508,157 @@ fun FPS1Screen(activity: ComponentActivity) {
             }
         }
 
+        // Individual saved prediction history
+        val historyRecords = (0 until savedPredictions.length())
+            .map { savedPredictions.getJSONObject(it) }
+            .sortedByDescending { it.optLong("predicted_at") }
+
+        SectionTitle(
+            "MY PREDICTIONS",
+            "Your saved forecasts, newest first"
+        )
+
+        if (historyRecords.isEmpty()) {
+            Text(
+                "No saved predictions yet. Select a fixture and press PREDICT MATCH.",
+                color = Muted,
+                style = MaterialTheme.typography.bodyMedium
+            )
+        } else {
+            historyRecords.forEach { record ->
+                val status = record.optString("status", "pending")
+                val predicted = normalizedOutcome(
+                    record.optString("most_likely_result")
+                )
+                val actual = normalizedOutcome(
+                    record.optString("actual_outcome")
+                )
+                val isCorrect = status == "verified" && predicted == actual
+
+                val statusLabel = when {
+                    status != "verified" -> "PENDING"
+                    isCorrect -> "CORRECT"
+                    else -> "INCORRECT"
+                }
+
+                val statusColor = when {
+                    status != "verified" -> Orange
+                    isCorrect -> Green
+                    else -> Red
+                }
+
+                val probabilities = record.optJSONObject("probabilities")
+
+                Card(
+                    modifier = Modifier.fillMaxWidth(),
+                    shape = RoundedCornerShape(14.dp),
+                    colors = CardDefaults.cardColors(
+                        containerColor = Panel
+                    )
+                ) {
+                    Column(
+                        modifier = Modifier.padding(14.dp),
+                        verticalArrangement = Arrangement.spacedBy(9.dp)
+                    ) {
+                        Row(
+                            modifier = Modifier.fillMaxWidth(),
+                            horizontalArrangement = Arrangement.SpaceBetween,
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
+                            Text(
+                                record.optString("league"),
+                                color = Blue,
+                                style = MaterialTheme.typography.labelMedium,
+                                fontWeight = FontWeight.Bold
+                            )
+                            Text(
+                                statusLabel,
+                                color = statusColor,
+                                style = MaterialTheme.typography.labelSmall,
+                                fontWeight = FontWeight.Bold
+                            )
+                        }
+
+                        Text(
+                            record.optString("home") + " vs " +
+                                record.optString("away"),
+                            style = MaterialTheme.typography.titleMedium,
+                            fontWeight = FontWeight.Bold
+                        )
+
+                        Text(
+                            record.optString("date"),
+                            color = Muted,
+                            style = MaterialTheme.typography.bodySmall
+                        )
+
+                        Row(
+                            modifier = Modifier.fillMaxWidth(),
+                            horizontalArrangement = Arrangement.SpaceBetween
+                        ) {
+                            Text("Prediction", color = Muted)
+                            Text(
+                                record.optString("most_likely_result"),
+                                color = Blue,
+                                fontWeight = FontWeight.Bold
+                            )
+                        }
+
+                        if (probabilities != null) {
+                            HorizontalDivider(
+                                color = Muted.copy(alpha = 0.25f)
+                            )
+
+                            Text(
+                                "1X2 PROBABILITIES",
+                                color = Muted,
+                                style = MaterialTheme.typography.labelSmall
+                            )
+
+                            Row(
+                                modifier = Modifier.fillMaxWidth(),
+                                horizontalArrangement = Arrangement.SpaceBetween
+                            ) {
+                                Text(
+                                    "H %.1f%%".format(
+                                        java.util.Locale.US,
+                                        probabilities.optDouble("home") * 100.0
+                                    ),
+                                    color = Blue
+                                )
+                                Text(
+                                    "D %.1f%%".format(
+                                        java.util.Locale.US,
+                                        probabilities.optDouble("draw") * 100.0
+                                    ),
+                                    color = Orange
+                                )
+                                Text(
+                                    "A %.1f%%".format(
+                                        java.util.Locale.US,
+                                        probabilities.optDouble("away") * 100.0
+                                    ),
+                                    color = Green
+                                )
+                            }
+                        }
+
+                        if (status == "verified") {
+                            HorizontalDivider(
+                                color = Muted.copy(alpha = 0.25f)
+                            )
+                            Text(
+                                "FINAL SCORE: ${record.optInt("home_goals")} - " +
+                                    "${record.optInt("away_goals")}",
+                                color = Color.White,
+                                fontWeight = FontWeight.Bold
+                            )
+                        }
+                    }
+                }
+            }
+        }
+
         }
 
         if (activePage == "Match Centre") {
