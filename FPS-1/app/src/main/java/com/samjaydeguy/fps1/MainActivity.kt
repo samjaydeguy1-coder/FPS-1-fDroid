@@ -24,8 +24,8 @@ import com.chaquo.python.Python
 import org.json.JSONArray
 import org.json.JSONObject
 
-private val Navy = Color(0xFF101B32)
-private val Panel = Color(0xFF1B2942)
+private val Navy = Color(0xFF171923)
+private val Panel = Color(0xFF252B38).copy(alpha = 0.60f)
 private val Blue = Color(0xFF3987F6)
 private val Muted = Color(0xFF9EADC4)
 private val Green = Color(0xFF36C994)
@@ -754,7 +754,7 @@ fun FPS1Screen(activity: ComponentActivity) {
                             },
                         shape = RoundedCornerShape(14.dp),
                         colors = CardDefaults.cardColors(
-                            containerColor = if (selected) Color(0xFF243F65) else Panel
+                            containerColor = if (selected) Color(0xFF343D50).copy(alpha = 0.60f) else Panel
                         )
                     ) {
                         Row(
