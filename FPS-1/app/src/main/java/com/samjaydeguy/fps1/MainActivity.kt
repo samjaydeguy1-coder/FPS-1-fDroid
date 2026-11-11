@@ -579,12 +579,30 @@ fun FPS1Screen(activity: ComponentActivity) {
                             )
                         }
 
-                        Text(
-                            record.optString("home") + " vs " +
+                        Row(
+                            verticalAlignment = Alignment.CenterVertically,
+                            horizontalArrangement = Arrangement.spacedBy(6.dp)
+                        ) {
+                            CountryFlag(
+                                record.optString("home"),
+                                record.optString("league")
+                            )
+                            Text(
+                                record.optString("home"),
+                                style = MaterialTheme.typography.titleMedium,
+                                fontWeight = FontWeight.Bold
+                            )
+                            Text("vs", color = Blue)
+                            CountryFlag(
                                 record.optString("away"),
-                            style = MaterialTheme.typography.titleMedium,
-                            fontWeight = FontWeight.Bold
-                        )
+                                record.optString("league")
+                            )
+                            Text(
+                                record.optString("away"),
+                                style = MaterialTheme.typography.titleMedium,
+                                fontWeight = FontWeight.Bold
+                            )
+                        }
 
                         Text(
                             record.optString("date"),
@@ -774,6 +792,7 @@ fun FPS1Screen(activity: ComponentActivity) {
                             verticalAlignment = Alignment.CenterVertically,
                             horizontalArrangement = Arrangement.spacedBy(8.dp)
                         ) {
+                            CountryFlag(fixture.home, league)
                             ClubBadge(fixture.home)
                             Text(fixture.home, fontWeight = FontWeight.SemiBold)
                         }
@@ -782,6 +801,7 @@ fun FPS1Screen(activity: ComponentActivity) {
                             verticalAlignment = Alignment.CenterVertically,
                             horizontalArrangement = Arrangement.spacedBy(8.dp)
                         ) {
+                            CountryFlag(fixture.away, league)
                             ClubBadge(fixture.away)
                             Text(fixture.away, fontWeight = FontWeight.SemiBold)
                         }
@@ -830,6 +850,7 @@ fun FPS1Screen(activity: ComponentActivity) {
                             horizontalAlignment = Alignment.CenterHorizontally,
                             verticalArrangement = Arrangement.spacedBy(6.dp)
                         ) {
+                            CountryFlag(selectedFixture!!.home, league)
                             ClubBadge(selectedFixture!!.home)
                             Text(
                                 selectedFixture!!.home,
@@ -845,6 +866,7 @@ fun FPS1Screen(activity: ComponentActivity) {
                             horizontalAlignment = Alignment.CenterHorizontally,
                             verticalArrangement = Arrangement.spacedBy(6.dp)
                         ) {
+                            CountryFlag(selectedFixture!!.away, league)
                             ClubBadge(selectedFixture!!.away)
                             Text(
                                 selectedFixture!!.away,
@@ -942,6 +964,7 @@ fun FPS1Screen(activity: ComponentActivity) {
                             horizontalAlignment = Alignment.CenterHorizontally,
                             verticalArrangement = Arrangement.spacedBy(6.dp)
                         ) {
+                            CountryFlag(data.getString("home"), league)
                             ClubBadge(data.getString("home"))
                             Text(
                                 data.getString("home"),
@@ -957,6 +980,7 @@ fun FPS1Screen(activity: ComponentActivity) {
                             horizontalAlignment = Alignment.CenterHorizontally,
                             verticalArrangement = Arrangement.spacedBy(6.dp)
                         ) {
+                            CountryFlag(data.getString("away"), league)
                             ClubBadge(data.getString("away"))
                             Text(
                                 data.getString("away"),
