@@ -114,7 +114,7 @@ def predict(league, home, away):
         (ROOT / "config.json").read_text(encoding="utf-8")
     )
 
-    if league not in config["leagues"]:
+    if league not in config["leagues"] and league not in config.get("international_competitions", {}):
         raise ValueError("Invalid league selected.")
 
     df = load_data(ROOT / "data" / "matches.csv")
@@ -190,7 +190,7 @@ def get_fixtures(league):
         (ROOT / "config.json").read_text(encoding="utf-8")
     )
 
-    if league not in config["leagues"]:
+    if league not in config["leagues"] and league not in config.get("international_competitions", {}):
         raise ValueError("Invalid league selected.")
 
     df = load_data(ROOT / "data" / "matches.csv")

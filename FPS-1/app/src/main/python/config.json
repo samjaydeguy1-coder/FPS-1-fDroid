@@ -21,6 +21,12 @@
       "name": "Ligue 1"
     }
   },
+  "international_competitions": {
+    "NationsLeague": {
+      "name": "UEFA Nations League",
+      "source": "openfootball/internationals"
+    }
+  },
   "seasons": [
     "2021-22",
     "2022-23",
@@ -36,10 +42,10 @@
   "elo_home_advantage": 60,
   "elo_k": 20,
   "ensemble_weights": {
-    "poisson": 0.25,
-    "dixon_coles": 0.35,
-    "elo": 0.2,
-    "form": 0.2
+    "poisson": 0.7,
+    "dixon_coles": 0.1,
+    "elo": 0.1,
+    "form": 0.1
   },
   "data_source": "openfootball/football.json (CC0 public-domain data)"
 }

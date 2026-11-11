@@ -224,7 +224,7 @@ private fun normalizedOutcome(value: String): String {
 
 @Composable
 fun FPS1Screen(activity: ComponentActivity) {
-    val leagues = listOf("EPL", "LaLiga", "SerieA", "Bundesliga", "Ligue1")
+    val leagues = listOf("EPL", "LaLiga", "SerieA", "Bundesliga", "Ligue1", "NationsLeague")
 
     var league by remember { mutableStateOf("EPL") }
     var expanded by remember { mutableStateOf(false) }
@@ -405,7 +405,7 @@ fun FPS1Screen(activity: ComponentActivity) {
                 StatCard("Upcoming fixtures", if (loadingFixtures) "..." else fixtures.size.toString(), "◷", Blue)
             }
             Box(modifier = Modifier.weight(1f)) {
-                StatCard("Supported leagues", "5", "⚽", Purple)
+                StatCard("Supported competitions", "6", "⚽", Purple)
             }
         }
 

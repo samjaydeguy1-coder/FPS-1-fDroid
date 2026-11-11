@@ -113,11 +113,40 @@ class MatchModel:
     elo_home: float
     elo_away: float
 
+def _eligible_history(history: pd.DataFrame, as_of: pd.Timestamp):
+    """Return completed, valid results strictly before the prediction cutoff."""
+    h = history.copy()
+
+    dates = pd.to_datetime(h["date"], utc=True, errors="coerce")
+    home_goals = pd.to_numeric(h["home_goals"], errors="coerce")
+    away_goals = pd.to_numeric(h["away_goals"], errors="coerce")
+
+    valid = (
+        dates.notna()
+        & np.isfinite(home_goals)
+        & np.isfinite(away_goals)
+        & (home_goals >= 0)
+        & (away_goals >= 0)
+        & (dates < as_of)
+    )
+
+    if "status" in h.columns:
+        valid &= h["status"].astype(str).str.casefold().eq("finished")
+
+    h = h.loc[valid].copy()
+    h["date"] = dates.loc[valid]
+    h["home_goals"] = home_goals.loc[valid]
+    h["away_goals"] = away_goals.loc[valid]
+
+    return h.sort_values("date").copy()
+
+
 def predict_components(history: pd.DataFrame, home: str, away: str, as_of=None,
                        max_goals=10, decay_days=730, recent_n=8, elo_k=20, elo_home_adv=60):
-    h = history.dropna(subset=["home_goals","away_goals"]).sort_values("date").copy()
-    if as_of is None: as_of = pd.Timestamp.now(tz="UTC")
+    if as_of is None:
+        as_of = pd.Timestamp.now(tz="UTC")
     as_of = pd.to_datetime(as_of, utc=True)
+    h = _eligible_history(history, as_of)
     fit = _team_strengths(h, as_of, decay_days)
     if fit is None: raise ValueError("Not enough completed history to fit model.")
     lh, la = _predict_rates(fit, home, away)
@@ -185,11 +214,8 @@ def prepare_prediction_history(
     Prepare historical calculations once for multiple fixtures
     sharing the same training history.
     """
-    h = history.dropna(
-        subset=["home_goals", "away_goals"]
-    ).sort_values("date").copy()
-
     as_of = pd.to_datetime(as_of, utc=True)
+    h = _eligible_history(history, as_of)
 
     fit = _team_strengths(h, as_of, decay_days)
 

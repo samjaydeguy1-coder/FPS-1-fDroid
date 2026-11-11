@@ -1565,51 +1565,51 @@ date,league,season,home_team,away_team,home_goals,away_goals,status,source
 2026-09-20 00:00:00+00:00,Bundesliga,2026-27,Bayer 04 Leverkusen,RB Leipzig,2.0,0.0,finished,openfootball
 2026-09-20 00:00:00+00:00,Bundesliga,2026-27,FC Schalke 04,SV 07 Elversberg,0.0,0.0,finished,openfootball
 2026-09-20 00:00:00+00:00,Bundesliga,2026-27,SC Paderborn 07,TSG 1899 Hoffenheim,3.0,1.0,finished,openfootball
-2026-10-09 00:00:00+00:00,Bundesliga,2026-27,Borussia Dortmund,SV Werder Bremen,,,scheduled,openfootball
-2026-10-10 00:00:00+00:00,Bundesliga,2026-27,1. FSV Mainz 05,Bayer 04 Leverkusen,,,scheduled,openfootball
-2026-10-10 00:00:00+00:00,Bundesliga,2026-27,SC Paderborn 07,VfB Stuttgart,,,scheduled,openfootball
-2026-10-10 00:00:00+00:00,Bundesliga,2026-27,1. FC Union Berlin,SV 07 Elversberg,,,scheduled,openfootball
-2026-10-10 00:00:00+00:00,Bundesliga,2026-27,TSG 1899 Hoffenheim,Hamburger SV,,,scheduled,openfootball
-2026-10-10 00:00:00+00:00,Bundesliga,2026-27,FC Augsburg,FC Bayern München,,,scheduled,openfootball
-2026-10-10 00:00:00+00:00,Bundesliga,2026-27,RB Leipzig,Eintracht Frankfurt,,,scheduled,openfootball
-2026-10-11 00:00:00+00:00,Bundesliga,2026-27,1. FC Köln,Borussia Mönchengladbach,,,scheduled,openfootball
-2026-10-11 00:00:00+00:00,Bundesliga,2026-27,SC Freiburg,FC Schalke 04,,,scheduled,openfootball
-2026-10-16 00:00:00+00:00,Bundesliga,2026-27,Eintracht Frankfurt,1. FC Köln,,,scheduled,openfootball
-2026-10-17 00:00:00+00:00,Bundesliga,2026-27,1. FC Union Berlin,Borussia Dortmund,,,scheduled,openfootball
-2026-10-17 00:00:00+00:00,Bundesliga,2026-27,Hamburger SV,VfB Stuttgart,,,scheduled,openfootball
-2026-10-17 00:00:00+00:00,Bundesliga,2026-27,SV Werder Bremen,SC Paderborn 07,,,scheduled,openfootball
-2026-10-17 00:00:00+00:00,Bundesliga,2026-27,SV 07 Elversberg,FC Augsburg,,,scheduled,openfootball
-2026-10-17 00:00:00+00:00,Bundesliga,2026-27,FC Schalke 04,1. FSV Mainz 05,,,scheduled,openfootball
-2026-10-17 00:00:00+00:00,Bundesliga,2026-27,FC Bayern München,RB Leipzig,,,scheduled,openfootball
-2026-10-18 00:00:00+00:00,Bundesliga,2026-27,Bayer 04 Leverkusen,SC Freiburg,,,scheduled,openfootball
-2026-10-18 00:00:00+00:00,Bundesliga,2026-27,Borussia Mönchengladbach,TSG 1899 Hoffenheim,,,scheduled,openfootball
-2026-10-23 00:00:00+00:00,Bundesliga,2026-27,VfB Stuttgart,Borussia Mönchengladbach,,,scheduled,openfootball
-2026-10-24 00:00:00+00:00,Bundesliga,2026-27,1. FSV Mainz 05,SV Werder Bremen,,,scheduled,openfootball
-2026-10-24 00:00:00+00:00,Bundesliga,2026-27,1. FC Köln,FC Schalke 04,,,scheduled,openfootball
-2026-10-24 00:00:00+00:00,Bundesliga,2026-27,RB Leipzig,SV 07 Elversberg,,,scheduled,openfootball
-2026-10-24 00:00:00+00:00,Bundesliga,2026-27,SC Paderborn 07,Hamburger SV,,,scheduled,openfootball
-2026-10-24 00:00:00+00:00,Bundesliga,2026-27,FC Augsburg,1. FC Union Berlin,,,scheduled,openfootball
-2026-10-24 00:00:00+00:00,Bundesliga,2026-27,Borussia Dortmund,Eintracht Frankfurt,,,scheduled,openfootball
-2026-10-25 00:00:00+00:00,Bundesliga,2026-27,TSG 1899 Hoffenheim,Bayer 04 Leverkusen,,,scheduled,openfootball
-2026-10-25 00:00:00+00:00,Bundesliga,2026-27,SC Freiburg,FC Bayern München,,,scheduled,openfootball
-2026-10-30 00:00:00+00:00,Bundesliga,2026-27,SV 07 Elversberg,1. FSV Mainz 05,,,scheduled,openfootball
-2026-10-31 00:00:00+00:00,Bundesliga,2026-27,Borussia Mönchengladbach,SC Paderborn 07,,,scheduled,openfootball
-2026-10-31 00:00:00+00:00,Bundesliga,2026-27,FC Schalke 04,RB Leipzig,,,scheduled,openfootball
-2026-10-31 00:00:00+00:00,Bundesliga,2026-27,FC Augsburg,SC Freiburg,,,scheduled,openfootball
-2026-10-31 00:00:00+00:00,Bundesliga,2026-27,SV Werder Bremen,TSG 1899 Hoffenheim,,,scheduled,openfootball
-2026-10-31 00:00:00+00:00,Bundesliga,2026-27,Bayer 04 Leverkusen,VfB Stuttgart,,,scheduled,openfootball
-2026-10-31 00:00:00+00:00,Bundesliga,2026-27,FC Bayern München,Borussia Dortmund,,,scheduled,openfootball
-2026-11-01 00:00:00+00:00,Bundesliga,2026-27,1. FC Union Berlin,1. FC Köln,,,scheduled,openfootball
-2026-11-01 00:00:00+00:00,Bundesliga,2026-27,Eintracht Frankfurt,Hamburger SV,,,scheduled,openfootball
-2026-11-06 00:00:00+00:00,Bundesliga,2026-27,Hamburger SV,Borussia Mönchengladbach,,,scheduled,openfootball
-2026-11-07 00:00:00+00:00,Bundesliga,2026-27,RB Leipzig,FC Augsburg,,,scheduled,openfootball
-2026-11-07 00:00:00+00:00,Bundesliga,2026-27,Borussia Dortmund,SV 07 Elversberg,,,scheduled,openfootball
-2026-11-07 00:00:00+00:00,Bundesliga,2026-27,1. FSV Mainz 05,FC Bayern München,,,scheduled,openfootball
-2026-11-07 00:00:00+00:00,Bundesliga,2026-27,SC Paderborn 07,Eintracht Frankfurt,,,scheduled,openfootball
-2026-11-07 00:00:00+00:00,Bundesliga,2026-27,VfB Stuttgart,SV Werder Bremen,,,scheduled,openfootball
-2026-11-08 00:00:00+00:00,Bundesliga,2026-27,1. FC Köln,Bayer 04 Leverkusen,,,scheduled,openfootball
-2026-11-08 00:00:00+00:00,Bundesliga,2026-27,SC Freiburg,1. FC Union Berlin,,,scheduled,openfootball
-2026-11-08 00:00:00+00:00,Bundesliga,2026-27,TSG 1899 Hoffenheim,FC Schalke 04,,,scheduled,openfootball
+2026-10-09 00:00:00+00:00,Bundesliga,2026-27,Borussia Dortmund,SV Werder Bremen,2.0,2.0,finished,open-matchday:openligadb
+2026-10-10 00:00:00+00:00,Bundesliga,2026-27,1. FSV Mainz 05,Bayer 04 Leverkusen,3.0,4.0,finished,open-matchday:openligadb
+2026-10-10 00:00:00+00:00,Bundesliga,2026-27,SC Paderborn 07,VfB Stuttgart,0.0,2.0,finished,open-matchday:openligadb
+2026-10-10 00:00:00+00:00,Bundesliga,2026-27,1. FC Union Berlin,SV 07 Elversberg,1.0,0.0,finished,open-matchday:openligadb
+2026-10-10 00:00:00+00:00,Bundesliga,2026-27,TSG 1899 Hoffenheim,Hamburger SV,2.0,3.0,finished,open-matchday:openligadb
+2026-10-10 00:00:00+00:00,Bundesliga,2026-27,FC Augsburg,FC Bayern München,2.0,2.0,finished,open-matchday:openligadb
+2026-10-10 00:00:00+00:00,Bundesliga,2026-27,RB Leipzig,Eintracht Frankfurt,6.0,0.0,finished,open-matchday:openligadb
+2026-10-11 00:00:00+00:00,Bundesliga,2026-27,1. FC Köln,Borussia Mönchengladbach,2.0,1.0,finished,open-matchday:openligadb
+2026-10-11 00:00:00+00:00,Bundesliga,2026-27,SC Freiburg,FC Schalke 04,2.0,1.0,finished,open-matchday:openligadb
+2026-10-16 00:00:00+00:00,Bundesliga,2026-27,Eintracht Frankfurt,1. FC Köln,1.0,0.0,finished,open-matchday:openligadb
+2026-10-17 00:00:00+00:00,Bundesliga,2026-27,1. FC Union Berlin,Borussia Dortmund,0.0,0.0,finished,open-matchday:openligadb
+2026-10-17 00:00:00+00:00,Bundesliga,2026-27,Hamburger SV,VfB Stuttgart,1.0,0.0,finished,open-matchday:openligadb
+2026-10-17 00:00:00+00:00,Bundesliga,2026-27,SV Werder Bremen,SC Paderborn 07,2.0,2.0,finished,open-matchday:openligadb
+2026-10-17 00:00:00+00:00,Bundesliga,2026-27,SV 07 Elversberg,FC Augsburg,4.0,3.0,finished,open-matchday:openligadb
+2026-10-17 00:00:00+00:00,Bundesliga,2026-27,FC Schalke 04,1. FSV Mainz 05,0.0,1.0,finished,open-matchday:openligadb
+2026-10-17 00:00:00+00:00,Bundesliga,2026-27,FC Bayern München,RB Leipzig,6.0,1.0,finished,open-matchday:openligadb
+2026-10-18 00:00:00+00:00,Bundesliga,2026-27,Bayer 04 Leverkusen,SC Freiburg,2.0,1.0,finished,open-matchday:openligadb
+2026-10-18 00:00:00+00:00,Bundesliga,2026-27,Borussia Mönchengladbach,TSG 1899 Hoffenheim,1.0,2.0,finished,open-matchday:openligadb
+2026-10-23 00:00:00+00:00,Bundesliga,2026-27,VfB Stuttgart,Borussia Mönchengladbach,2.0,3.0,finished,open-matchday:openligadb
+2026-10-24 00:00:00+00:00,Bundesliga,2026-27,1. FSV Mainz 05,SV Werder Bremen,2.0,3.0,finished,open-matchday:openligadb
+2026-10-24 00:00:00+00:00,Bundesliga,2026-27,1. FC Köln,FC Schalke 04,0.0,0.0,finished,open-matchday:openligadb
+2026-10-24 00:00:00+00:00,Bundesliga,2026-27,RB Leipzig,SV 07 Elversberg,4.0,0.0,finished,open-matchday:openligadb
+2026-10-24 00:00:00+00:00,Bundesliga,2026-27,SC Paderborn 07,Hamburger SV,1.0,0.0,finished,open-matchday:openligadb
+2026-10-24 00:00:00+00:00,Bundesliga,2026-27,FC Augsburg,1. FC Union Berlin,1.0,1.0,finished,open-matchday:openligadb
+2026-10-24 00:00:00+00:00,Bundesliga,2026-27,Borussia Dortmund,Eintracht Frankfurt,1.0,0.0,finished,open-matchday:openligadb
+2026-10-25 00:00:00+00:00,Bundesliga,2026-27,TSG 1899 Hoffenheim,Bayer 04 Leverkusen,3.0,0.0,finished,open-matchday:openligadb
+2026-10-25 00:00:00+00:00,Bundesliga,2026-27,SC Freiburg,FC Bayern München,1.0,3.0,finished,open-matchday:openligadb
+2026-10-30 00:00:00+00:00,Bundesliga,2026-27,SV 07 Elversberg,1. FSV Mainz 05,4.0,1.0,finished,open-matchday:openligadb
+2026-10-31 00:00:00+00:00,Bundesliga,2026-27,Borussia Mönchengladbach,SC Paderborn 07,0.0,0.0,finished,open-matchday:openligadb
+2026-10-31 00:00:00+00:00,Bundesliga,2026-27,FC Schalke 04,RB Leipzig,0.0,2.0,finished,open-matchday:openligadb
+2026-10-31 00:00:00+00:00,Bundesliga,2026-27,FC Augsburg,SC Freiburg,1.0,2.0,finished,open-matchday:openligadb
+2026-10-31 00:00:00+00:00,Bundesliga,2026-27,SV Werder Bremen,TSG 1899 Hoffenheim,2.0,0.0,finished,open-matchday:openligadb
+2026-10-31 00:00:00+00:00,Bundesliga,2026-27,Bayer 04 Leverkusen,VfB Stuttgart,2.0,4.0,finished,open-matchday:openligadb
+2026-10-31 00:00:00+00:00,Bundesliga,2026-27,FC Bayern München,Borussia Dortmund,2.0,2.0,finished,open-matchday:openligadb
+2026-11-01 00:00:00+00:00,Bundesliga,2026-27,1. FC Union Berlin,1. FC Köln,1.0,1.0,finished,open-matchday:openligadb
+2026-11-01 00:00:00+00:00,Bundesliga,2026-27,Eintracht Frankfurt,Hamburger SV,3.0,1.0,finished,open-matchday:openligadb
+2026-11-06 00:00:00+00:00,Bundesliga,2026-27,Hamburger SV,Borussia Mönchengladbach,3.0,1.0,finished,open-matchday:openligadb
+2026-11-07 00:00:00+00:00,Bundesliga,2026-27,RB Leipzig,FC Augsburg,5.0,2.0,finished,open-matchday:openligadb
+2026-11-07 00:00:00+00:00,Bundesliga,2026-27,Borussia Dortmund,SV 07 Elversberg,2.0,1.0,finished,open-matchday:openligadb
+2026-11-07 00:00:00+00:00,Bundesliga,2026-27,1. FSV Mainz 05,FC Bayern München,1.0,2.0,finished,open-matchday:openligadb
+2026-11-07 00:00:00+00:00,Bundesliga,2026-27,SC Paderborn 07,Eintracht Frankfurt,2.0,2.0,finished,open-matchday:openligadb
+2026-11-07 00:00:00+00:00,Bundesliga,2026-27,VfB Stuttgart,SV Werder Bremen,1.0,0.0,finished,open-matchday:openligadb
+2026-11-08 00:00:00+00:00,Bundesliga,2026-27,1. FC Köln,Bayer 04 Leverkusen,1.0,2.0,finished,open-matchday:openligadb
+2026-11-08 00:00:00+00:00,Bundesliga,2026-27,SC Freiburg,1. FC Union Berlin,2.0,0.0,finished,open-matchday:openligadb
+2026-11-08 00:00:00+00:00,Bundesliga,2026-27,TSG 1899 Hoffenheim,FC Schalke 04,2.0,1.0,finished,open-matchday:openligadb
 2026-11-20 00:00:00+00:00,Bundesliga,2026-27,FC Bayern München,1. FC Köln,,,scheduled,openfootball
 2026-11-21 00:00:00+00:00,Bundesliga,2026-27,Bayer 04 Leverkusen,SC Paderborn 07,,,scheduled,openfootball
 2026-11-21 00:00:00+00:00,Bundesliga,2026-27,1. FC Union Berlin,RB Leipzig,,,scheduled,openfootball
@@ -3785,56 +3785,56 @@ date,league,season,home_team,away_team,home_goals,away_goals,status,source
 2026-09-20 00:00:00+00:00,EPL,2026-27,Leeds United FC,Crystal Palace FC,0.0,0.0,finished,openfootball
 2026-09-20 00:00:00+00:00,EPL,2026-27,Manchester City FC,Sunderland AFC,5.0,3.0,finished,openfootball
 2026-09-20 00:00:00+00:00,EPL,2026-27,Fulham FC,Manchester United FC,1.0,1.0,finished,openfootball
-2026-10-10 00:00:00+00:00,EPL,2026-27,Arsenal FC,Leeds United FC,,,scheduled,openfootball
-2026-10-10 00:00:00+00:00,EPL,2026-27,Sunderland AFC,Brighton & Hove Albion FC,,,scheduled,openfootball
-2026-10-10 00:00:00+00:00,EPL,2026-27,Chelsea FC,AFC Bournemouth,,,scheduled,openfootball
-2026-10-10 00:00:00+00:00,EPL,2026-27,Ipswich Town FC,Fulham FC,,,scheduled,openfootball
-2026-10-10 00:00:00+00:00,EPL,2026-27,Aston Villa FC,Brentford FC,,,scheduled,openfootball
-2026-10-10 00:00:00+00:00,EPL,2026-27,Manchester United FC,Tottenham Hotspur FC,,,scheduled,openfootball
-2026-10-11 00:00:00+00:00,EPL,2026-27,Hull City AFC,Everton FC,,,scheduled,openfootball
-2026-10-11 00:00:00+00:00,EPL,2026-27,Crystal Palace FC,Nottingham Forest FC,,,scheduled,openfootball
-2026-10-11 00:00:00+00:00,EPL,2026-27,Liverpool FC,Manchester City FC,,,scheduled,openfootball
-2026-10-12 00:00:00+00:00,EPL,2026-27,Coventry City FC,Newcastle United FC,,,scheduled,openfootball
-2026-10-17 00:00:00+00:00,EPL,2026-27,Everton FC,Chelsea FC,,,scheduled,openfootball
-2026-10-17 00:00:00+00:00,EPL,2026-27,Fulham FC,Hull City AFC,,,scheduled,openfootball
-2026-10-17 00:00:00+00:00,EPL,2026-27,Manchester City FC,Ipswich Town FC,,,scheduled,openfootball
-2026-10-17 00:00:00+00:00,EPL,2026-27,Brentford FC,Liverpool FC,,,scheduled,openfootball
-2026-10-17 00:00:00+00:00,EPL,2026-27,Newcastle United FC,Aston Villa FC,,,scheduled,openfootball
-2026-10-18 00:00:00+00:00,EPL,2026-27,AFC Bournemouth,Sunderland AFC,,,scheduled,openfootball
-2026-10-18 00:00:00+00:00,EPL,2026-27,Leeds United FC,Manchester United FC,,,scheduled,openfootball
-2026-10-18 00:00:00+00:00,EPL,2026-27,Brighton & Hove Albion FC,Crystal Palace FC,,,scheduled,openfootball
-2026-10-18 00:00:00+00:00,EPL,2026-27,Nottingham Forest FC,Arsenal FC,,,scheduled,openfootball
-2026-10-19 00:00:00+00:00,EPL,2026-27,Tottenham Hotspur FC,Coventry City FC,,,scheduled,openfootball
-2026-10-23 00:00:00+00:00,EPL,2026-27,Ipswich Town FC,Nottingham Forest FC,,,scheduled,openfootball
-2026-10-24 00:00:00+00:00,EPL,2026-27,Aston Villa FC,Manchester City FC,,,scheduled,openfootball
-2026-10-24 00:00:00+00:00,EPL,2026-27,Arsenal FC,Everton FC,,,scheduled,openfootball
-2026-10-24 00:00:00+00:00,EPL,2026-27,Coventry City FC,Fulham FC,,,scheduled,openfootball
-2026-10-24 00:00:00+00:00,EPL,2026-27,Chelsea FC,Tottenham Hotspur FC,,,scheduled,openfootball
-2026-10-25 00:00:00+00:00,EPL,2026-27,Liverpool FC,Brighton & Hove Albion FC,,,scheduled,openfootball
-2026-10-25 00:00:00+00:00,EPL,2026-27,Crystal Palace FC,Newcastle United FC,,,scheduled,openfootball
-2026-10-25 00:00:00+00:00,EPL,2026-27,Manchester United FC,AFC Bournemouth,,,scheduled,openfootball
-2026-10-25 00:00:00+00:00,EPL,2026-27,Hull City AFC,Brentford FC,,,scheduled,openfootball
-2026-10-25 00:00:00+00:00,EPL,2026-27,Sunderland AFC,Leeds United FC,,,scheduled,openfootball
-2026-10-31 00:00:00+00:00,EPL,2026-27,Chelsea FC,Manchester United FC,,,scheduled,openfootball
-2026-10-31 00:00:00+00:00,EPL,2026-27,Manchester City FC,Brighton & Hove Albion FC,,,scheduled,openfootball
-2026-10-31 00:00:00+00:00,EPL,2026-27,AFC Bournemouth,Leeds United FC,,,scheduled,openfootball
-2026-10-31 00:00:00+00:00,EPL,2026-27,Coventry City FC,Sunderland AFC,,,scheduled,openfootball
-2026-10-31 00:00:00+00:00,EPL,2026-27,Hull City AFC,Ipswich Town FC,,,scheduled,openfootball
-2026-10-31 00:00:00+00:00,EPL,2026-27,Brentford FC,Nottingham Forest FC,,,scheduled,openfootball
-2026-10-31 00:00:00+00:00,EPL,2026-27,Tottenham Hotspur FC,Crystal Palace FC,,,scheduled,openfootball
-2026-10-31 00:00:00+00:00,EPL,2026-27,Aston Villa FC,Fulham FC,,,scheduled,openfootball
-2026-11-01 00:00:00+00:00,EPL,2026-27,Liverpool FC,Arsenal FC,,,scheduled,openfootball
-2026-11-02 00:00:00+00:00,EPL,2026-27,Newcastle United FC,Everton FC,,,scheduled,openfootball
-2026-11-07 00:00:00+00:00,EPL,2026-27,Arsenal FC,Hull City AFC,,,scheduled,openfootball
-2026-11-07 00:00:00+00:00,EPL,2026-27,Nottingham Forest FC,Manchester City FC,,,scheduled,openfootball
-2026-11-07 00:00:00+00:00,EPL,2026-27,Leeds United FC,Tottenham Hotspur FC,,,scheduled,openfootball
-2026-11-07 00:00:00+00:00,EPL,2026-27,Fulham FC,Newcastle United FC,,,scheduled,openfootball
-2026-11-07 00:00:00+00:00,EPL,2026-27,Everton FC,Coventry City FC,,,scheduled,openfootball
-2026-11-07 00:00:00+00:00,EPL,2026-27,Crystal Palace FC,Liverpool FC,,,scheduled,openfootball
-2026-11-07 00:00:00+00:00,EPL,2026-27,Sunderland AFC,Chelsea FC,,,scheduled,openfootball
-2026-11-07 00:00:00+00:00,EPL,2026-27,Ipswich Town FC,AFC Bournemouth,,,scheduled,openfootball
-2026-11-07 00:00:00+00:00,EPL,2026-27,Brighton & Hove Albion FC,Brentford FC,,,scheduled,openfootball
-2026-11-07 00:00:00+00:00,EPL,2026-27,Manchester United FC,Aston Villa FC,,,scheduled,openfootball
+2026-10-10 00:00:00+00:00,EPL,2026-27,Arsenal FC,Leeds United FC,2.0,1.0,finished,open-matchday:fixturedl;verified:premierleague.com
+2026-10-10 00:00:00+00:00,EPL,2026-27,Sunderland AFC,Brighton & Hove Albion FC,0.0,2.0,finished,open-matchday:fixturedl;verified:premierleague.com
+2026-10-10 00:00:00+00:00,EPL,2026-27,Chelsea FC,AFC Bournemouth,5.0,1.0,finished,open-matchday:fixturedl;verified:premierleague.com
+2026-10-10 00:00:00+00:00,EPL,2026-27,Ipswich Town FC,Fulham FC,2.0,1.0,finished,open-matchday:fixturedl;verified:premierleague.com
+2026-10-10 00:00:00+00:00,EPL,2026-27,Aston Villa FC,Brentford FC,2.0,2.0,finished,open-matchday:fixturedl;verified:premierleague.com
+2026-10-10 00:00:00+00:00,EPL,2026-27,Manchester United FC,Tottenham Hotspur FC,1.0,1.0,finished,open-matchday:fixturedl;verified:premierleague.com
+2026-10-11 00:00:00+00:00,EPL,2026-27,Hull City AFC,Everton FC,2.0,2.0,finished,open-matchday:fixturedl;verified:premierleague.com
+2026-10-11 00:00:00+00:00,EPL,2026-27,Crystal Palace FC,Nottingham Forest FC,3.0,1.0,finished,open-matchday:fixturedl;verified:premierleague.com
+2026-10-11 00:00:00+00:00,EPL,2026-27,Liverpool FC,Manchester City FC,0.0,3.0,finished,open-matchday:fixturedl;verified:premierleague.com
+2026-10-12 00:00:00+00:00,EPL,2026-27,Coventry City FC,Newcastle United FC,4.0,1.0,finished,open-matchday:fixturedl;verified:premierleague.com
+2026-10-17 00:00:00+00:00,EPL,2026-27,Everton FC,Chelsea FC,0.0,2.0,finished,open-matchday:fixturedl;verified:premierleague.com
+2026-10-17 00:00:00+00:00,EPL,2026-27,Fulham FC,Hull City AFC,1.0,0.0,finished,open-matchday:fixturedl;verified:premierleague.com
+2026-10-17 00:00:00+00:00,EPL,2026-27,Manchester City FC,Ipswich Town FC,3.0,2.0,finished,open-matchday:fixturedl;verified:premierleague.com
+2026-10-17 00:00:00+00:00,EPL,2026-27,Brentford FC,Liverpool FC,1.0,2.0,finished,open-matchday:fixturedl;verified:premierleague.com
+2026-10-17 00:00:00+00:00,EPL,2026-27,Newcastle United FC,Aston Villa FC,0.0,1.0,finished,open-matchday:fixturedl;verified:premierleague.com
+2026-10-18 00:00:00+00:00,EPL,2026-27,AFC Bournemouth,Sunderland AFC,2.0,0.0,finished,open-matchday:fixturedl;verified:premierleague.com
+2026-10-18 00:00:00+00:00,EPL,2026-27,Leeds United FC,Manchester United FC,1.0,1.0,finished,open-matchday:fixturedl;verified:premierleague.com
+2026-10-18 00:00:00+00:00,EPL,2026-27,Brighton & Hove Albion FC,Crystal Palace FC,5.0,0.0,finished,open-matchday:fixturedl;verified:premierleague.com
+2026-10-18 00:00:00+00:00,EPL,2026-27,Nottingham Forest FC,Arsenal FC,0.0,1.0,finished,open-matchday:fixturedl;verified:premierleague.com
+2026-10-19 00:00:00+00:00,EPL,2026-27,Tottenham Hotspur FC,Coventry City FC,3.0,1.0,finished,open-matchday:fixturedl;verified:premierleague.com
+2026-10-23 00:00:00+00:00,EPL,2026-27,Ipswich Town FC,Nottingham Forest FC,1.0,1.0,finished,open-matchday:fixturedl;verified:premierleague.com
+2026-10-24 00:00:00+00:00,EPL,2026-27,Aston Villa FC,Manchester City FC,2.0,1.0,finished,open-matchday:fixturedl;verified:premierleague.com
+2026-10-24 00:00:00+00:00,EPL,2026-27,Arsenal FC,Everton FC,2.0,0.0,finished,open-matchday:fixturedl;verified:premierleague.com
+2026-10-24 00:00:00+00:00,EPL,2026-27,Coventry City FC,Fulham FC,0.0,1.0,finished,open-matchday:fixturedl;verified:premierleague.com
+2026-10-24 00:00:00+00:00,EPL,2026-27,Chelsea FC,Tottenham Hotspur FC,0.0,2.0,finished,open-matchday:fixturedl;verified:premierleague.com
+2026-10-25 00:00:00+00:00,EPL,2026-27,Liverpool FC,Brighton & Hove Albion FC,2.0,0.0,finished,open-matchday:fixturedl;verified:premierleague.com
+2026-10-25 00:00:00+00:00,EPL,2026-27,Crystal Palace FC,Newcastle United FC,0.0,2.0,finished,open-matchday:fixturedl;verified:premierleague.com
+2026-10-25 00:00:00+00:00,EPL,2026-27,Manchester United FC,AFC Bournemouth,0.0,3.0,finished,open-matchday:fixturedl;verified:premierleague.com
+2026-10-25 00:00:00+00:00,EPL,2026-27,Hull City AFC,Brentford FC,1.0,1.0,finished,open-matchday:fixturedl;verified:premierleague.com
+2026-10-25 00:00:00+00:00,EPL,2026-27,Sunderland AFC,Leeds United FC,0.0,0.0,finished,open-matchday:fixturedl;verified:premierleague.com
+2026-10-31 00:00:00+00:00,EPL,2026-27,Chelsea FC,Manchester United FC,2.0,0.0,finished,open-matchday:fixturedl;verified:premierleague.com
+2026-10-31 00:00:00+00:00,EPL,2026-27,Manchester City FC,Brighton & Hove Albion FC,0.0,1.0,finished,open-matchday:fixturedl;verified:premierleague.com
+2026-10-31 00:00:00+00:00,EPL,2026-27,AFC Bournemouth,Leeds United FC,2.0,0.0,finished,open-matchday:fixturedl;verified:premierleague.com
+2026-10-31 00:00:00+00:00,EPL,2026-27,Coventry City FC,Sunderland AFC,3.0,1.0,finished,open-matchday:fixturedl;verified:premierleague.com
+2026-10-31 00:00:00+00:00,EPL,2026-27,Hull City AFC,Ipswich Town FC,2.0,2.0,finished,open-matchday:fixturedl;verified:premierleague.com
+2026-10-31 00:00:00+00:00,EPL,2026-27,Brentford FC,Nottingham Forest FC,2.0,0.0,finished,open-matchday:fixturedl;verified:premierleague.com
+2026-10-31 00:00:00+00:00,EPL,2026-27,Tottenham Hotspur FC,Crystal Palace FC,2.0,0.0,finished,open-matchday:fixturedl;verified:premierleague.com
+2026-10-31 00:00:00+00:00,EPL,2026-27,Aston Villa FC,Fulham FC,1.0,1.0,finished,open-matchday:fixturedl;verified:premierleague.com
+2026-11-01 00:00:00+00:00,EPL,2026-27,Liverpool FC,Arsenal FC,0.0,1.0,finished,open-matchday:fixturedl;verified:premierleague.com
+2026-11-02 00:00:00+00:00,EPL,2026-27,Newcastle United FC,Everton FC,0.0,1.0,finished,open-matchday:fixturedl;verified:premierleague.com
+2026-11-06 00:00:00+00:00,EPL,2026-27,Everton FC,Coventry City FC,3.0,1.0,finished,open-matchday:fixturedl;verified:premierleague.com
+2026-11-07 00:00:00+00:00,EPL,2026-27,Arsenal FC,Hull City AFC,1.0,0.0,finished,open-matchday:fixturedl;verified:premierleague.com
+2026-11-07 00:00:00+00:00,EPL,2026-27,Nottingham Forest FC,Manchester City FC,3.0,1.0,finished,open-matchday:fixturedl;verified:premierleague.com
+2026-11-07 00:00:00+00:00,EPL,2026-27,Leeds United FC,Tottenham Hotspur FC,1.0,0.0,finished,open-matchday:fixturedl;verified:premierleague.com
+2026-11-07 00:00:00+00:00,EPL,2026-27,Fulham FC,Newcastle United FC,1.0,1.0,finished,open-matchday:fixturedl;verified:premierleague.com
+2026-11-08 00:00:00+00:00,EPL,2026-27,Crystal Palace FC,Liverpool FC,1.0,3.0,finished,open-matchday:fixturedl;verified:premierleague.com
+2026-11-08 00:00:00+00:00,EPL,2026-27,Sunderland AFC,Chelsea FC,1.0,0.0,finished,open-matchday:fixturedl;verified:premierleague.com
+2026-11-08 00:00:00+00:00,EPL,2026-27,Ipswich Town FC,AFC Bournemouth,1.0,2.0,finished,open-matchday:fixturedl;verified:premierleague.com
+2026-11-08 00:00:00+00:00,EPL,2026-27,Brighton & Hove Albion FC,Brentford FC,2.0,0.0,finished,open-matchday:fixturedl;verified:premierleague.com
+2026-11-08 00:00:00+00:00,EPL,2026-27,Manchester United FC,Aston Villa FC,4.0,4.0,finished,open-matchday:fixturedl;verified:premierleague.com
 2026-11-21 00:00:00+00:00,EPL,2026-27,Chelsea FC,Leeds United FC,,,scheduled,openfootball
 2026-11-21 00:00:00+00:00,EPL,2026-27,Manchester City FC,Fulham FC,,,scheduled,openfootball
 2026-11-21 00:00:00+00:00,EPL,2026-27,Aston Villa FC,Sunderland AFC,,,scheduled,openfootball
@@ -6084,57 +6084,57 @@ date,league,season,home_team,away_team,home_goals,away_goals,status,source
 2026-09-20 00:00:00+00:00,LaLiga,2026-27,RC Deportivo La Coruña,Real Betis Balompié,1.0,1.0,finished,openfootball
 2026-09-20 00:00:00+00:00,LaLiga,2026-27,Villarreal CF,Levante UD,3.0,1.0,finished,openfootball
 2026-09-20 00:00:00+00:00,LaLiga,2026-27,Valencia CF,Real Sociedad de Fútbol,2.0,3.0,finished,openfootball
-2026-10-09 00:00:00+00:00,LaLiga,2026-27,Málaga CF,RCD Espanyol de Barcelona,,,scheduled,openfootball
+2026-10-09 00:00:00+00:00,LaLiga,2026-27,Málaga CF,RCD Espanyol de Barcelona,1.0,1.0,finished,open-matchday:fixturedl
 2026-10-10 00:00:00+00:00,LaLiga,2026-27,Rayo Vallecano de Madrid,Athletic Club,,,scheduled,openfootball
-2026-10-10 00:00:00+00:00,LaLiga,2026-27,Deportivo Alavés,Club Atlético de Madrid,,,scheduled,openfootball
-2026-10-10 00:00:00+00:00,LaLiga,2026-27,FC Barcelona,Getafe CF,,,scheduled,openfootball
-2026-10-10 00:00:00+00:00,LaLiga,2026-27,Real Madrid CF,Villarreal CF,,,scheduled,openfootball
-2026-10-11 00:00:00+00:00,LaLiga,2026-27,Elche CF,RC Celta de Vigo,,,scheduled,openfootball
-2026-10-11 00:00:00+00:00,LaLiga,2026-27,Real Sociedad de Fútbol,RC Deportivo La Coruña,,,scheduled,openfootball
-2026-10-11 00:00:00+00:00,LaLiga,2026-27,Real Betis Balompié,CA Osasuna,,,scheduled,openfootball
-2026-10-11 00:00:00+00:00,LaLiga,2026-27,Real Racing Club de Santander,Valencia CF,,,scheduled,openfootball
-2026-10-12 00:00:00+00:00,LaLiga,2026-27,Levante UD,Sevilla FC,,,scheduled,openfootball
-2026-10-16 00:00:00+00:00,LaLiga,2026-27,RC Deportivo La Coruña,Levante UD,,,scheduled,openfootball
-2026-10-17 00:00:00+00:00,LaLiga,2026-27,RCD Espanyol de Barcelona,Club Atlético de Madrid,,,scheduled,openfootball
-2026-10-17 00:00:00+00:00,LaLiga,2026-27,Villarreal CF,Elche CF,,,scheduled,openfootball
-2026-10-17 00:00:00+00:00,LaLiga,2026-27,Real Betis Balompié,FC Barcelona,,,scheduled,openfootball
-2026-10-17 00:00:00+00:00,LaLiga,2026-27,Valencia CF,Athletic Club,,,scheduled,openfootball
-2026-10-18 00:00:00+00:00,LaLiga,2026-27,CA Osasuna,Real Racing Club de Santander,,,scheduled,openfootball
-2026-10-18 00:00:00+00:00,LaLiga,2026-27,RC Celta de Vigo,Deportivo Alavés,,,scheduled,openfootball
-2026-10-18 00:00:00+00:00,LaLiga,2026-27,Málaga CF,Real Sociedad de Fútbol,,,scheduled,openfootball
-2026-10-18 00:00:00+00:00,LaLiga,2026-27,Real Madrid CF,Sevilla FC,,,scheduled,openfootball
-2026-10-19 00:00:00+00:00,LaLiga,2026-27,Getafe CF,Rayo Vallecano de Madrid,,,scheduled,openfootball
-2026-10-21 00:00:00+00:00,LaLiga,2026-27,Levante UD,Athletic Club,,,scheduled,openfootball
-2026-10-25 00:00:00+00:00,LaLiga,2026-27,Rayo Vallecano de Madrid,Elche CF,,,scheduled,openfootball
-2026-10-25 00:00:00+00:00,LaLiga,2026-27,Deportivo Alavés,Málaga CF,,,scheduled,openfootball
-2026-10-25 00:00:00+00:00,LaLiga,2026-27,Athletic Club,Getafe CF,,,scheduled,openfootball
-2026-10-25 00:00:00+00:00,LaLiga,2026-27,Sevilla FC,CA Osasuna,,,scheduled,openfootball
-2026-10-25 00:00:00+00:00,LaLiga,2026-27,Valencia CF,Villarreal CF,,,scheduled,openfootball
-2026-10-25 00:00:00+00:00,LaLiga,2026-27,FC Barcelona,Real Madrid CF,,,scheduled,openfootball
-2026-10-25 00:00:00+00:00,LaLiga,2026-27,Club Atlético de Madrid,RC Deportivo La Coruña,,,scheduled,openfootball
-2026-10-25 00:00:00+00:00,LaLiga,2026-27,RC Celta de Vigo,Real Betis Balompié,,,scheduled,openfootball
-2026-10-25 00:00:00+00:00,LaLiga,2026-27,Real Sociedad de Fútbol,Levante UD,,,scheduled,openfootball
-2026-10-25 00:00:00+00:00,LaLiga,2026-27,Real Racing Club de Santander,RCD Espanyol de Barcelona,,,scheduled,openfootball
-2026-11-01 00:00:00+00:00,LaLiga,2026-27,Real Betis Balompié,Málaga CF,,,scheduled,openfootball
-2026-11-01 00:00:00+00:00,LaLiga,2026-27,Villarreal CF,RCD Espanyol de Barcelona,,,scheduled,openfootball
-2026-11-01 00:00:00+00:00,LaLiga,2026-27,Elche CF,Valencia CF,,,scheduled,openfootball
-2026-11-01 00:00:00+00:00,LaLiga,2026-27,Athletic Club,Real Sociedad de Fútbol,,,scheduled,openfootball
-2026-11-01 00:00:00+00:00,LaLiga,2026-27,Levante UD,Club Atlético de Madrid,,,scheduled,openfootball
-2026-11-01 00:00:00+00:00,LaLiga,2026-27,RC Deportivo La Coruña,CA Osasuna,,,scheduled,openfootball
-2026-11-01 00:00:00+00:00,LaLiga,2026-27,FC Barcelona,Deportivo Alavés,,,scheduled,openfootball
-2026-11-01 00:00:00+00:00,LaLiga,2026-27,Getafe CF,Sevilla FC,,,scheduled,openfootball
-2026-11-01 00:00:00+00:00,LaLiga,2026-27,Real Racing Club de Santander,Real Madrid CF,,,scheduled,openfootball
-2026-11-01 00:00:00+00:00,LaLiga,2026-27,Rayo Vallecano de Madrid,RC Celta de Vigo,,,scheduled,openfootball
-2026-11-08 00:00:00+00:00,LaLiga,2026-27,Elche CF,Real Betis Balompié,,,scheduled,openfootball
-2026-11-08 00:00:00+00:00,LaLiga,2026-27,CA Osasuna,Athletic Club,,,scheduled,openfootball
-2026-11-08 00:00:00+00:00,LaLiga,2026-27,Sevilla FC,Deportivo Alavés,,,scheduled,openfootball
-2026-11-08 00:00:00+00:00,LaLiga,2026-27,Valencia CF,Real Madrid CF,,,scheduled,openfootball
-2026-11-08 00:00:00+00:00,LaLiga,2026-27,RC Celta de Vigo,Levante UD,,,scheduled,openfootball
-2026-11-08 00:00:00+00:00,LaLiga,2026-27,Real Sociedad de Fútbol,Rayo Vallecano de Madrid,,,scheduled,openfootball
-2026-11-08 00:00:00+00:00,LaLiga,2026-27,Málaga CF,Real Racing Club de Santander,,,scheduled,openfootball
-2026-11-08 00:00:00+00:00,LaLiga,2026-27,RCD Espanyol de Barcelona,RC Deportivo La Coruña,,,scheduled,openfootball
-2026-11-08 00:00:00+00:00,LaLiga,2026-27,Club Atlético de Madrid,FC Barcelona,,,scheduled,openfootball
-2026-11-08 00:00:00+00:00,LaLiga,2026-27,Villarreal CF,Getafe CF,,,scheduled,openfootball
+2026-10-10 00:00:00+00:00,LaLiga,2026-27,Deportivo Alavés,Club Atlético de Madrid,1.0,2.0,finished,open-matchday:fixturedl
+2026-10-10 00:00:00+00:00,LaLiga,2026-27,FC Barcelona,Getafe CF,3.0,0.0,finished,open-matchday:fixturedl
+2026-10-10 00:00:00+00:00,LaLiga,2026-27,Real Madrid CF,Villarreal CF,1.0,0.0,finished,open-matchday:fixturedl
+2026-10-11 00:00:00+00:00,LaLiga,2026-27,Elche CF,RC Celta de Vigo,0.0,0.0,finished,open-matchday:fixturedl
+2026-10-11 00:00:00+00:00,LaLiga,2026-27,Real Sociedad de Fútbol,RC Deportivo La Coruña,3.0,2.0,finished,open-matchday:fixturedl
+2026-10-11 00:00:00+00:00,LaLiga,2026-27,Real Betis Balompié,CA Osasuna,5.0,2.0,finished,open-matchday:fixturedl
+2026-10-11 00:00:00+00:00,LaLiga,2026-27,Real Racing Club de Santander,Valencia CF,2.0,2.0,finished,open-matchday:fixturedl
+2026-10-12 00:00:00+00:00,LaLiga,2026-27,Levante UD,Sevilla FC,3.0,3.0,finished,open-matchday:fixturedl
+2026-10-16 00:00:00+00:00,LaLiga,2026-27,RC Deportivo La Coruña,Levante UD,1.0,1.0,finished,open-matchday:fixturedl
+2026-10-17 00:00:00+00:00,LaLiga,2026-27,RCD Espanyol de Barcelona,Club Atlético de Madrid,0.0,1.0,finished,open-matchday:fixturedl
+2026-10-17 00:00:00+00:00,LaLiga,2026-27,Villarreal CF,Elche CF,0.0,0.0,finished,open-matchday:fixturedl
+2026-10-17 00:00:00+00:00,LaLiga,2026-27,Real Betis Balompié,FC Barcelona,2.0,5.0,finished,open-matchday:fixturedl
+2026-10-17 00:00:00+00:00,LaLiga,2026-27,Valencia CF,Athletic Club,0.0,0.0,finished,open-matchday:fixturedl
+2026-10-18 00:00:00+00:00,LaLiga,2026-27,CA Osasuna,Real Racing Club de Santander,2.0,0.0,finished,open-matchday:fixturedl
+2026-10-18 00:00:00+00:00,LaLiga,2026-27,RC Celta de Vigo,Deportivo Alavés,2.0,1.0,finished,open-matchday:fixturedl
+2026-10-18 00:00:00+00:00,LaLiga,2026-27,Málaga CF,Real Sociedad de Fútbol,2.0,5.0,finished,open-matchday:fixturedl
+2026-10-18 00:00:00+00:00,LaLiga,2026-27,Real Madrid CF,Sevilla FC,4.0,1.0,finished,open-matchday:fixturedl
+2026-10-19 00:00:00+00:00,LaLiga,2026-27,Getafe CF,Rayo Vallecano de Madrid,1.0,1.0,finished,open-matchday:fixturedl
+2026-10-21 00:00:00+00:00,LaLiga,2026-27,Levante UD,Athletic Club,3.0,1.0,finished,open-matchday:fixturedl
+2026-10-25 00:00:00+00:00,LaLiga,2026-27,Rayo Vallecano de Madrid,Elche CF,0.0,3.0,finished,open-matchday:fixturedl
+2026-10-25 00:00:00+00:00,LaLiga,2026-27,Deportivo Alavés,Málaga CF,1.0,1.0,finished,open-matchday:fixturedl
+2026-10-25 00:00:00+00:00,LaLiga,2026-27,Athletic Club,Getafe CF,4.0,0.0,finished,open-matchday:fixturedl
+2026-10-25 00:00:00+00:00,LaLiga,2026-27,Sevilla FC,CA Osasuna,2.0,0.0,finished,open-matchday:fixturedl
+2026-10-25 00:00:00+00:00,LaLiga,2026-27,Valencia CF,Villarreal CF,1.0,2.0,finished,open-matchday:fixturedl
+2026-10-25 00:00:00+00:00,LaLiga,2026-27,FC Barcelona,Real Madrid CF,1.0,2.0,finished,open-matchday:fixturedl
+2026-10-25 00:00:00+00:00,LaLiga,2026-27,Club Atlético de Madrid,RC Deportivo La Coruña,1.0,0.0,finished,open-matchday:fixturedl
+2026-10-25 00:00:00+00:00,LaLiga,2026-27,RC Celta de Vigo,Real Betis Balompié,0.0,0.0,finished,open-matchday:fixturedl
+2026-10-25 00:00:00+00:00,LaLiga,2026-27,Real Sociedad de Fútbol,Levante UD,2.0,1.0,finished,open-matchday:fixturedl
+2026-10-25 00:00:00+00:00,LaLiga,2026-27,Real Racing Club de Santander,RCD Espanyol de Barcelona,2.0,1.0,finished,open-matchday:fixturedl
+2026-11-01 00:00:00+00:00,LaLiga,2026-27,Real Betis Balompié,Málaga CF,2.0,1.0,finished,open-matchday:fixturedl
+2026-11-01 00:00:00+00:00,LaLiga,2026-27,Villarreal CF,RCD Espanyol de Barcelona,0.0,1.0,finished,open-matchday:fixturedl
+2026-11-01 00:00:00+00:00,LaLiga,2026-27,Elche CF,Valencia CF,0.0,1.0,finished,open-matchday:fixturedl
+2026-11-01 00:00:00+00:00,LaLiga,2026-27,Athletic Club,Real Sociedad de Fútbol,2.0,1.0,finished,open-matchday:fixturedl
+2026-11-01 00:00:00+00:00,LaLiga,2026-27,Levante UD,Club Atlético de Madrid,0.0,2.0,finished,open-matchday:fixturedl
+2026-11-01 00:00:00+00:00,LaLiga,2026-27,RC Deportivo La Coruña,CA Osasuna,2.0,1.0,finished,open-matchday:fixturedl
+2026-11-01 00:00:00+00:00,LaLiga,2026-27,FC Barcelona,Deportivo Alavés,6.0,1.0,finished,open-matchday:fixturedl
+2026-11-01 00:00:00+00:00,LaLiga,2026-27,Getafe CF,Sevilla FC,3.0,1.0,finished,open-matchday:fixturedl
+2026-11-01 00:00:00+00:00,LaLiga,2026-27,Real Racing Club de Santander,Real Madrid CF,0.0,3.0,finished,open-matchday:fixturedl
+2026-11-01 00:00:00+00:00,LaLiga,2026-27,Rayo Vallecano de Madrid,RC Celta de Vigo,3.0,0.0,finished,open-matchday:fixturedl
+2026-11-08 00:00:00+00:00,LaLiga,2026-27,Elche CF,Real Betis Balompié,0.0,2.0,finished,open-matchday:fixturedl
+2026-11-08 00:00:00+00:00,LaLiga,2026-27,CA Osasuna,Athletic Club,1.0,1.0,finished,open-matchday:fixturedl
+2026-11-08 00:00:00+00:00,LaLiga,2026-27,Sevilla FC,Deportivo Alavés,0.0,0.0,finished,open-matchday:fixturedl
+2026-11-08 00:00:00+00:00,LaLiga,2026-27,Valencia CF,Real Madrid CF,0.0,3.0,finished,open-matchday:fixturedl
+2026-11-08 00:00:00+00:00,LaLiga,2026-27,RC Celta de Vigo,Levante UD,0.0,0.0,finished,open-matchday:fixturedl
+2026-11-08 00:00:00+00:00,LaLiga,2026-27,Real Sociedad de Fútbol,Rayo Vallecano de Madrid,1.0,0.0,finished,open-matchday:fixturedl
+2026-11-08 00:00:00+00:00,LaLiga,2026-27,Málaga CF,Real Racing Club de Santander,1.0,2.0,finished,open-matchday:fixturedl
+2026-11-08 00:00:00+00:00,LaLiga,2026-27,RCD Espanyol de Barcelona,RC Deportivo La Coruña,0.0,0.0,finished,open-matchday:fixturedl
+2026-11-08 00:00:00+00:00,LaLiga,2026-27,Club Atlético de Madrid,FC Barcelona,1.0,2.0,finished,open-matchday:fixturedl
+2026-11-08 00:00:00+00:00,LaLiga,2026-27,Villarreal CF,Getafe CF,2.0,0.0,finished,open-matchday:fixturedl
 2026-11-22 00:00:00+00:00,LaLiga,2026-27,Athletic Club,RCD Espanyol de Barcelona,,,scheduled,openfootball
 2026-11-22 00:00:00+00:00,LaLiga,2026-27,FC Barcelona,Villarreal CF,,,scheduled,openfootball
 2026-11-22 00:00:00+00:00,LaLiga,2026-27,Real Racing Club de Santander,Real Sociedad de Fútbol,,,scheduled,openfootball
@@ -8118,51 +8118,51 @@ date,league,season,home_team,away_team,home_goals,away_goals,status,source
 2026-09-20 00:00:00+00:00,Ligue1,2026-27,AJ Auxerre,Stade Brestois 29,2.0,1.0,finished,openfootball
 2026-09-20 00:00:00+00:00,Ligue1,2026-27,OGC Nice,Lille OSC,2.0,1.0,finished,openfootball
 2026-09-20 00:00:00+00:00,Ligue1,2026-27,Olympique de Marseille,Paris Saint-Germain FC,1.0,2.0,finished,openfootball
-2026-10-09 00:00:00+00:00,Ligue1,2026-27,Racing Club de Lens,Olympique Lyonnais,,,scheduled,openfootball
-2026-10-10 00:00:00+00:00,Ligue1,2026-27,Lille OSC,Le Havre AC,,,scheduled,openfootball
-2026-10-10 00:00:00+00:00,Ligue1,2026-27,Stade Brestois 29,Angers SCO,,,scheduled,openfootball
-2026-10-10 00:00:00+00:00,Ligue1,2026-27,FC Lorient,Paris FC,,,scheduled,openfootball
-2026-10-10 00:00:00+00:00,Ligue1,2026-27,Paris Saint-Germain FC,Le Mans FC,,,scheduled,openfootball
-2026-10-10 00:00:00+00:00,Ligue1,2026-27,AS Monaco FC,Toulouse FC,,,scheduled,openfootball
-2026-10-11 00:00:00+00:00,Ligue1,2026-27,OGC Nice,RC Strasbourg Alsace,,,scheduled,openfootball
-2026-10-11 00:00:00+00:00,Ligue1,2026-27,Stade Rennais FC 1901,AJ Auxerre,,,scheduled,openfootball
-2026-10-11 00:00:00+00:00,Ligue1,2026-27,ES Troyes AC,Olympique de Marseille,,,scheduled,openfootball
-2026-10-16 00:00:00+00:00,Ligue1,2026-27,Le Mans FC,Toulouse FC,,,scheduled,openfootball
-2026-10-17 00:00:00+00:00,Ligue1,2026-27,RC Strasbourg Alsace,Paris Saint-Germain FC,,,scheduled,openfootball
-2026-10-17 00:00:00+00:00,Ligue1,2026-27,ES Troyes AC,Racing Club de Lens,,,scheduled,openfootball
-2026-10-17 00:00:00+00:00,Ligue1,2026-27,Lille OSC,Stade Brestois 29,,,scheduled,openfootball
-2026-10-18 00:00:00+00:00,Ligue1,2026-27,Angers SCO,Olympique de Marseille,,,scheduled,openfootball
-2026-10-18 00:00:00+00:00,Ligue1,2026-27,FC Lorient,AS Monaco FC,,,scheduled,openfootball
-2026-10-18 00:00:00+00:00,Ligue1,2026-27,Paris FC,Stade Rennais FC 1901,,,scheduled,openfootball
-2026-10-18 00:00:00+00:00,Ligue1,2026-27,Le Havre AC,AJ Auxerre,,,scheduled,openfootball
-2026-10-18 00:00:00+00:00,Ligue1,2026-27,Olympique Lyonnais,OGC Nice,,,scheduled,openfootball
-2026-10-23 00:00:00+00:00,Ligue1,2026-27,Stade Brestois 29,OGC Nice,,,scheduled,openfootball
-2026-10-24 00:00:00+00:00,Ligue1,2026-27,Toulouse FC,ES Troyes AC,,,scheduled,openfootball
-2026-10-24 00:00:00+00:00,Ligue1,2026-27,Racing Club de Lens,Paris FC,,,scheduled,openfootball
-2026-10-25 00:00:00+00:00,Ligue1,2026-27,AS Monaco FC,Lille OSC,,,scheduled,openfootball
-2026-10-25 00:00:00+00:00,Ligue1,2026-27,Olympique de Marseille,Le Havre AC,,,scheduled,openfootball
-2026-10-25 00:00:00+00:00,Ligue1,2026-27,Stade Rennais FC 1901,RC Strasbourg Alsace,,,scheduled,openfootball
-2026-10-25 00:00:00+00:00,Ligue1,2026-27,Angers SCO,FC Lorient,,,scheduled,openfootball
-2026-10-25 00:00:00+00:00,Ligue1,2026-27,AJ Auxerre,Le Mans FC,,,scheduled,openfootball
-2026-10-25 00:00:00+00:00,Ligue1,2026-27,Paris Saint-Germain FC,Olympique Lyonnais,,,scheduled,openfootball
-2026-10-30 00:00:00+00:00,Ligue1,2026-27,Le Havre AC,Paris Saint-Germain FC,,,scheduled,openfootball
-2026-10-30 00:00:00+00:00,Ligue1,2026-27,Lille OSC,Racing Club de Lens,,,scheduled,openfootball
-2026-10-31 00:00:00+00:00,Ligue1,2026-27,OGC Nice,Stade Rennais FC 1901,,,scheduled,openfootball
-2026-10-31 00:00:00+00:00,Ligue1,2026-27,Olympique Lyonnais,Angers SCO,,,scheduled,openfootball
-2026-10-31 00:00:00+00:00,Ligue1,2026-27,FC Lorient,Stade Brestois 29,,,scheduled,openfootball
-2026-10-31 00:00:00+00:00,Ligue1,2026-27,ES Troyes AC,Le Mans FC,,,scheduled,openfootball
-2026-11-01 00:00:00+00:00,Ligue1,2026-27,RC Strasbourg Alsace,AJ Auxerre,,,scheduled,openfootball
-2026-11-01 00:00:00+00:00,Ligue1,2026-27,Paris FC,AS Monaco FC,,,scheduled,openfootball
-2026-11-01 00:00:00+00:00,Ligue1,2026-27,Olympique de Marseille,Toulouse FC,,,scheduled,openfootball
-2026-11-06 00:00:00+00:00,Ligue1,2026-27,Toulouse FC,RC Strasbourg Alsace,,,scheduled,openfootball
-2026-11-07 00:00:00+00:00,Ligue1,2026-27,AJ Auxerre,Paris FC,,,scheduled,openfootball
-2026-11-07 00:00:00+00:00,Ligue1,2026-27,Paris Saint-Germain FC,ES Troyes AC,,,scheduled,openfootball
-2026-11-08 00:00:00+00:00,Ligue1,2026-27,Stade Rennais FC 1901,Lille OSC,,,scheduled,openfootball
-2026-11-08 00:00:00+00:00,Ligue1,2026-27,Le Mans FC,AS Monaco FC,,,scheduled,openfootball
-2026-11-08 00:00:00+00:00,Ligue1,2026-27,Stade Brestois 29,Olympique Lyonnais,,,scheduled,openfootball
-2026-11-08 00:00:00+00:00,Ligue1,2026-27,Le Havre AC,FC Lorient,,,scheduled,openfootball
-2026-11-08 00:00:00+00:00,Ligue1,2026-27,Angers SCO,OGC Nice,,,scheduled,openfootball
-2026-11-08 00:00:00+00:00,Ligue1,2026-27,Racing Club de Lens,Olympique de Marseille,,,scheduled,openfootball
+2026-10-09 00:00:00+00:00,Ligue1,2026-27,Racing Club de Lens,Olympique Lyonnais,2.0,1.0,finished,open-matchday:fixturedl
+2026-10-10 00:00:00+00:00,Ligue1,2026-27,Lille OSC,Le Havre AC,1.0,0.0,finished,open-matchday:fixturedl
+2026-10-10 00:00:00+00:00,Ligue1,2026-27,Stade Brestois 29,Angers SCO,5.0,1.0,finished,open-matchday:fixturedl
+2026-10-10 00:00:00+00:00,Ligue1,2026-27,FC Lorient,Paris FC,1.0,0.0,finished,open-matchday:fixturedl
+2026-10-10 00:00:00+00:00,Ligue1,2026-27,Paris Saint-Germain FC,Le Mans FC,3.0,1.0,finished,open-matchday:fixturedl
+2026-10-10 00:00:00+00:00,Ligue1,2026-27,AS Monaco FC,Toulouse FC,2.0,2.0,finished,open-matchday:fixturedl
+2026-10-11 00:00:00+00:00,Ligue1,2026-27,OGC Nice,RC Strasbourg Alsace,2.0,1.0,finished,open-matchday:fixturedl
+2026-10-11 00:00:00+00:00,Ligue1,2026-27,Stade Rennais FC 1901,AJ Auxerre,4.0,1.0,finished,open-matchday:fixturedl
+2026-10-11 00:00:00+00:00,Ligue1,2026-27,ES Troyes AC,Olympique de Marseille,0.0,2.0,finished,open-matchday:fixturedl
+2026-10-16 00:00:00+00:00,Ligue1,2026-27,Le Mans FC,Toulouse FC,0.0,3.0,finished,open-matchday:fixturedl
+2026-10-17 00:00:00+00:00,Ligue1,2026-27,RC Strasbourg Alsace,Paris Saint-Germain FC,1.0,3.0,finished,open-matchday:fixturedl
+2026-10-17 00:00:00+00:00,Ligue1,2026-27,ES Troyes AC,Racing Club de Lens,1.0,3.0,finished,open-matchday:fixturedl
+2026-10-17 00:00:00+00:00,Ligue1,2026-27,Lille OSC,Stade Brestois 29,1.0,1.0,finished,open-matchday:fixturedl
+2026-10-18 00:00:00+00:00,Ligue1,2026-27,Angers SCO,Olympique de Marseille,2.0,5.0,finished,open-matchday:fixturedl
+2026-10-18 00:00:00+00:00,Ligue1,2026-27,FC Lorient,AS Monaco FC,1.0,0.0,finished,open-matchday:fixturedl
+2026-10-18 00:00:00+00:00,Ligue1,2026-27,Paris FC,Stade Rennais FC 1901,4.0,3.0,finished,open-matchday:fixturedl
+2026-10-18 00:00:00+00:00,Ligue1,2026-27,Le Havre AC,AJ Auxerre,1.0,3.0,finished,open-matchday:fixturedl
+2026-10-18 00:00:00+00:00,Ligue1,2026-27,Olympique Lyonnais,OGC Nice,2.0,1.0,finished,open-matchday:fixturedl
+2026-10-23 00:00:00+00:00,Ligue1,2026-27,Stade Brestois 29,OGC Nice,1.0,2.0,finished,open-matchday:fixturedl
+2026-10-24 00:00:00+00:00,Ligue1,2026-27,Toulouse FC,ES Troyes AC,0.0,0.0,finished,open-matchday:fixturedl
+2026-10-24 00:00:00+00:00,Ligue1,2026-27,Racing Club de Lens,Paris FC,2.0,1.0,finished,open-matchday:fixturedl
+2026-10-25 00:00:00+00:00,Ligue1,2026-27,AS Monaco FC,Lille OSC,1.0,1.0,finished,open-matchday:fixturedl
+2026-10-25 00:00:00+00:00,Ligue1,2026-27,Olympique de Marseille,Le Havre AC,4.0,3.0,finished,open-matchday:fixturedl
+2026-10-25 00:00:00+00:00,Ligue1,2026-27,Stade Rennais FC 1901,RC Strasbourg Alsace,3.0,0.0,finished,open-matchday:fixturedl
+2026-10-25 00:00:00+00:00,Ligue1,2026-27,Angers SCO,FC Lorient,0.0,0.0,finished,open-matchday:fixturedl
+2026-10-25 00:00:00+00:00,Ligue1,2026-27,AJ Auxerre,Le Mans FC,1.0,1.0,finished,open-matchday:fixturedl
+2026-10-25 00:00:00+00:00,Ligue1,2026-27,Paris Saint-Germain FC,Olympique Lyonnais,2.0,0.0,finished,open-matchday:fixturedl
+2026-10-30 00:00:00+00:00,Ligue1,2026-27,Le Havre AC,Paris Saint-Germain FC,1.0,5.0,finished,open-matchday:fixturedl
+2026-10-30 00:00:00+00:00,Ligue1,2026-27,Lille OSC,Racing Club de Lens,1.0,0.0,finished,open-matchday:fixturedl
+2026-10-31 00:00:00+00:00,Ligue1,2026-27,OGC Nice,Stade Rennais FC 1901,5.0,2.0,finished,open-matchday:fixturedl
+2026-10-31 00:00:00+00:00,Ligue1,2026-27,Olympique Lyonnais,Angers SCO,2.0,0.0,finished,open-matchday:fixturedl
+2026-10-31 00:00:00+00:00,Ligue1,2026-27,FC Lorient,Stade Brestois 29,0.0,2.0,finished,open-matchday:fixturedl
+2026-10-31 00:00:00+00:00,Ligue1,2026-27,ES Troyes AC,Le Mans FC,2.0,0.0,finished,open-matchday:fixturedl
+2026-11-01 00:00:00+00:00,Ligue1,2026-27,RC Strasbourg Alsace,AJ Auxerre,5.0,1.0,finished,open-matchday:fixturedl
+2026-11-01 00:00:00+00:00,Ligue1,2026-27,Paris FC,AS Monaco FC,3.0,1.0,finished,open-matchday:fixturedl
+2026-11-01 00:00:00+00:00,Ligue1,2026-27,Olympique de Marseille,Toulouse FC,2.0,0.0,finished,open-matchday:fixturedl
+2026-11-06 00:00:00+00:00,Ligue1,2026-27,Toulouse FC,RC Strasbourg Alsace,3.0,1.0,finished,open-matchday:fixturedl
+2026-11-07 00:00:00+00:00,Ligue1,2026-27,AJ Auxerre,Paris FC,0.0,1.0,finished,open-matchday:fixturedl
+2026-11-07 00:00:00+00:00,Ligue1,2026-27,Paris Saint-Germain FC,ES Troyes AC,1.0,0.0,finished,open-matchday:fixturedl
+2026-11-08 00:00:00+00:00,Ligue1,2026-27,Stade Rennais FC 1901,Lille OSC,1.0,2.0,finished,open-matchday:fixturedl
+2026-11-08 00:00:00+00:00,Ligue1,2026-27,Le Mans FC,AS Monaco FC,1.0,1.0,finished,open-matchday:fixturedl
+2026-11-08 00:00:00+00:00,Ligue1,2026-27,Stade Brestois 29,Olympique Lyonnais,2.0,0.0,finished,open-matchday:fixturedl
+2026-11-08 00:00:00+00:00,Ligue1,2026-27,Le Havre AC,FC Lorient,0.0,2.0,finished,open-matchday:fixturedl
+2026-11-08 00:00:00+00:00,Ligue1,2026-27,Angers SCO,OGC Nice,0.0,2.0,finished,open-matchday:fixturedl
+2026-11-08 00:00:00+00:00,Ligue1,2026-27,Racing Club de Lens,Olympique de Marseille,1.0,2.0,finished,open-matchday:fixturedl
 2026-11-20 00:00:00+00:00,Ligue1,2026-27,ES Troyes AC,Le Havre AC,,,scheduled,openfootball
 2026-11-21 00:00:00+00:00,Ligue1,2026-27,OGC Nice,Paris Saint-Germain FC,,,scheduled,openfootball
 2026-11-21 00:00:00+00:00,Ligue1,2026-27,AS Monaco FC,AJ Auxerre,,,scheduled,openfootball
@@ -8379,6 +8379,664 @@ date,league,season,home_team,away_team,home_goals,away_goals,status,source
 2027-05-29 00:00:00+00:00,Ligue1,2026-27,Olympique Lyonnais,Paris FC,,,scheduled,openfootball
 2027-05-29 00:00:00+00:00,Ligue1,2026-27,AJ Auxerre,Le Havre AC,,,scheduled,openfootball
 2027-05-29 00:00:00+00:00,Ligue1,2026-27,RC Strasbourg Alsace,OGC Nice,,,scheduled,openfootball
+2018-09-06 00:00:00+00:00,NationsLeague,2018-19,Germany,France,0.0,0.0,finished,openfootball-internationals
+2018-09-06 00:00:00+00:00,NationsLeague,2018-19,Czech Republic,Ukraine,1.0,2.0,finished,openfootball-internationals
+2018-09-06 00:00:00+00:00,NationsLeague,2018-19,Wales,Republic of Ireland,4.0,1.0,finished,openfootball-internationals
+2018-09-06 00:00:00+00:00,NationsLeague,2018-19,Norway,Cyprus,2.0,0.0,finished,openfootball-internationals
+2018-09-06 00:00:00+00:00,NationsLeague,2018-19,Slovenia,Bulgaria,1.0,2.0,finished,openfootball-internationals
+2018-09-06 00:00:00+00:00,NationsLeague,2018-19,Kazakhstan,Georgia,0.0,2.0,finished,openfootball-internationals
+2018-09-06 00:00:00+00:00,NationsLeague,2018-19,Latvia,Andorra,0.0,0.0,finished,openfootball-internationals
+2018-09-06 00:00:00+00:00,NationsLeague,2018-19,Armenia,Liechtenstein,2.0,1.0,finished,openfootball-internationals
+2018-09-06 00:00:00+00:00,NationsLeague,2018-19,Gibraltar,Macedonia,0.0,2.0,finished,openfootball-internationals
+2018-09-07 00:00:00+00:00,NationsLeague,2018-19,Azerbaijan,Kosovo,0.0,0.0,finished,openfootball-internationals
+2018-09-07 00:00:00+00:00,NationsLeague,2018-19,Faroe Islands,Malta,3.0,1.0,finished,openfootball-internationals
+2018-09-07 00:00:00+00:00,NationsLeague,2018-19,Romania,Montenegro,0.0,0.0,finished,openfootball-internationals
+2018-09-07 00:00:00+00:00,NationsLeague,2018-19,Italy,Poland,1.0,1.0,finished,openfootball-internationals
+2018-09-07 00:00:00+00:00,NationsLeague,2018-19,Albania,Israel,1.0,0.0,finished,openfootball-internationals
+2018-09-07 00:00:00+00:00,NationsLeague,2018-19,Turkey,Russia,1.0,2.0,finished,openfootball-internationals
+2018-09-07 00:00:00+00:00,NationsLeague,2018-19,Lithuania,Serbia,0.0,1.0,finished,openfootball-internationals
+2018-09-08 00:00:00+00:00,NationsLeague,2018-19,Belarus,San Marino,5.0,0.0,finished,openfootball-internationals
+2018-09-08 00:00:00+00:00,NationsLeague,2018-19,Luxembourg,Moldova,4.0,0.0,finished,openfootball-internationals
+2018-09-08 00:00:00+00:00,NationsLeague,2018-19,Finland,Hungary,1.0,0.0,finished,openfootball-internationals
+2018-09-08 00:00:00+00:00,NationsLeague,2018-19,Estonia,Greece,0.0,1.0,finished,openfootball-internationals
+2018-09-08 00:00:00+00:00,NationsLeague,2018-19,England,Spain,1.0,2.0,finished,openfootball-internationals
+2018-09-08 00:00:00+00:00,NationsLeague,2018-19,Switzerland,Iceland,6.0,0.0,finished,openfootball-internationals
+2018-09-08 00:00:00+00:00,NationsLeague,2018-19,Northern Ireland,Bosnia and Herzegovina,1.0,2.0,finished,openfootball-internationals
+2018-09-09 00:00:00+00:00,NationsLeague,2018-19,Liechtenstein,Gibraltar,2.0,0.0,finished,openfootball-internationals
+2018-09-09 00:00:00+00:00,NationsLeague,2018-19,Georgia,Latvia,1.0,0.0,finished,openfootball-internationals
+2018-09-09 00:00:00+00:00,NationsLeague,2018-19,Cyprus,Slovenia,2.0,1.0,finished,openfootball-internationals
+2018-09-09 00:00:00+00:00,NationsLeague,2018-19,Macedonia,Armenia,2.0,0.0,finished,openfootball-internationals
+2018-09-09 00:00:00+00:00,NationsLeague,2018-19,Denmark,Wales,2.0,0.0,finished,openfootball-internationals
+2018-09-09 00:00:00+00:00,NationsLeague,2018-19,Ukraine,Slovakia,1.0,0.0,finished,openfootball-internationals
+2018-09-09 00:00:00+00:00,NationsLeague,2018-19,France,Netherlands,2.0,1.0,finished,openfootball-internationals
+2018-09-09 00:00:00+00:00,NationsLeague,2018-19,Bulgaria,Norway,1.0,0.0,finished,openfootball-internationals
+2018-09-10 00:00:00+00:00,NationsLeague,2018-19,Kosovo,Faroe Islands,2.0,0.0,finished,openfootball-internationals
+2018-09-10 00:00:00+00:00,NationsLeague,2018-19,Portugal,Italy,1.0,0.0,finished,openfootball-internationals
+2018-09-10 00:00:00+00:00,NationsLeague,2018-19,Sweden,Turkey,2.0,3.0,finished,openfootball-internationals
+2018-09-10 00:00:00+00:00,NationsLeague,2018-19,Scotland,Albania,2.0,0.0,finished,openfootball-internationals
+2018-09-10 00:00:00+00:00,NationsLeague,2018-19,Montenegro,Lithuania,2.0,0.0,finished,openfootball-internationals
+2018-09-10 00:00:00+00:00,NationsLeague,2018-19,Serbia,Romania,2.0,2.0,finished,openfootball-internationals
+2018-09-10 00:00:00+00:00,NationsLeague,2018-19,Andorra,Kazakhstan,1.0,1.0,finished,openfootball-internationals
+2018-09-10 00:00:00+00:00,NationsLeague,2018-19,Malta,Azerbaijan,1.0,1.0,finished,openfootball-internationals
+2018-09-11 00:00:00+00:00,NationsLeague,2018-19,San Marino,Luxembourg,0.0,3.0,finished,openfootball-internationals
+2018-09-11 00:00:00+00:00,NationsLeague,2018-19,Moldova,Belarus,0.0,0.0,finished,openfootball-internationals
+2018-09-11 00:00:00+00:00,NationsLeague,2018-19,Finland,Estonia,1.0,0.0,finished,openfootball-internationals
+2018-09-11 00:00:00+00:00,NationsLeague,2018-19,Iceland,Belgium,0.0,3.0,finished,openfootball-internationals
+2018-09-11 00:00:00+00:00,NationsLeague,2018-19,Bosnia and Herzegovina,Austria,1.0,0.0,finished,openfootball-internationals
+2018-09-11 00:00:00+00:00,NationsLeague,2018-19,Spain,Croatia,6.0,0.0,finished,openfootball-internationals
+2018-09-11 00:00:00+00:00,NationsLeague,2018-19,Hungary,Greece,2.0,1.0,finished,openfootball-internationals
+2018-10-11 00:00:00+00:00,NationsLeague,2018-19,Poland,Portugal,2.0,3.0,finished,openfootball-internationals
+2018-10-11 00:00:00+00:00,NationsLeague,2018-19,Russia,Sweden,0.0,0.0,finished,openfootball-internationals
+2018-10-11 00:00:00+00:00,NationsLeague,2018-19,Israel,Scotland,2.0,1.0,finished,openfootball-internationals
+2018-10-11 00:00:00+00:00,NationsLeague,2018-19,Montenegro,Serbia,0.0,2.0,finished,openfootball-internationals
+2018-10-11 00:00:00+00:00,NationsLeague,2018-19,Lithuania,Romania,1.0,2.0,finished,openfootball-internationals
+2018-10-11 00:00:00+00:00,NationsLeague,2018-19,Faroe Islands,Azerbaijan,0.0,3.0,finished,openfootball-internationals
+2018-10-11 00:00:00+00:00,NationsLeague,2018-19,Kosovo,Malta,3.0,1.0,finished,openfootball-internationals
+2018-10-12 00:00:00+00:00,NationsLeague,2018-19,Moldova,San Marino,2.0,0.0,finished,openfootball-internationals
+2018-10-12 00:00:00+00:00,NationsLeague,2018-19,Belarus,Luxembourg,1.0,0.0,finished,openfootball-internationals
+2018-10-12 00:00:00+00:00,NationsLeague,2018-19,Greece,Hungary,1.0,0.0,finished,openfootball-internationals
+2018-10-12 00:00:00+00:00,NationsLeague,2018-19,Belgium,Switzerland,2.0,1.0,finished,openfootball-internationals
+2018-10-12 00:00:00+00:00,NationsLeague,2018-19,Austria,Northern Ireland,1.0,0.0,finished,openfootball-internationals
+2018-10-12 00:00:00+00:00,NationsLeague,2018-19,Croatia,England,0.0,0.0,finished,openfootball-internationals
+2018-10-12 00:00:00+00:00,NationsLeague,2018-19,Estonia,Finland,0.0,1.0,finished,openfootball-internationals
+2018-10-13 00:00:00+00:00,NationsLeague,2018-19,Georgia,Andorra,3.0,0.0,finished,openfootball-internationals
+2018-10-13 00:00:00+00:00,NationsLeague,2018-19,Macedonia,Liechtenstein,4.0,1.0,finished,openfootball-internationals
+2018-10-13 00:00:00+00:00,NationsLeague,2018-19,Armenia,Gibraltar,0.0,1.0,finished,openfootball-internationals
+2018-10-13 00:00:00+00:00,NationsLeague,2018-19,Latvia,Kazakhstan,1.0,1.0,finished,openfootball-internationals
+2018-10-13 00:00:00+00:00,NationsLeague,2018-19,Netherlands,Germany,3.0,0.0,finished,openfootball-internationals
+2018-10-13 00:00:00+00:00,NationsLeague,2018-19,Norway,Slovenia,1.0,0.0,finished,openfootball-internationals
+2018-10-13 00:00:00+00:00,NationsLeague,2018-19,Republic of Ireland,Denmark,0.0,0.0,finished,openfootball-internationals
+2018-10-13 00:00:00+00:00,NationsLeague,2018-19,Slovakia,Czech Republic,1.0,2.0,finished,openfootball-internationals
+2018-10-13 00:00:00+00:00,NationsLeague,2018-19,Bulgaria,Cyprus,2.0,1.0,finished,openfootball-internationals
+2018-10-14 00:00:00+00:00,NationsLeague,2018-19,Poland,Italy,0.0,1.0,finished,openfootball-internationals
+2018-10-14 00:00:00+00:00,NationsLeague,2018-19,Russia,Turkey,2.0,0.0,finished,openfootball-internationals
+2018-10-14 00:00:00+00:00,NationsLeague,2018-19,Israel,Albania,2.0,0.0,finished,openfootball-internationals
+2018-10-14 00:00:00+00:00,NationsLeague,2018-19,Romania,Serbia,0.0,0.0,finished,openfootball-internationals
+2018-10-14 00:00:00+00:00,NationsLeague,2018-19,Lithuania,Montenegro,1.0,4.0,finished,openfootball-internationals
+2018-10-14 00:00:00+00:00,NationsLeague,2018-19,Faroe Islands,Kosovo,1.0,1.0,finished,openfootball-internationals
+2018-10-14 00:00:00+00:00,NationsLeague,2018-19,Azerbaijan,Malta,1.0,1.0,finished,openfootball-internationals
+2018-10-15 00:00:00+00:00,NationsLeague,2018-19,Finland,Greece,2.0,0.0,finished,openfootball-internationals
+2018-10-15 00:00:00+00:00,NationsLeague,2018-19,Belarus,Moldova,0.0,0.0,finished,openfootball-internationals
+2018-10-15 00:00:00+00:00,NationsLeague,2018-19,Estonia,Hungary,3.0,3.0,finished,openfootball-internationals
+2018-10-15 00:00:00+00:00,NationsLeague,2018-19,Luxembourg,San Marino,3.0,0.0,finished,openfootball-internationals
+2018-10-15 00:00:00+00:00,NationsLeague,2018-19,Spain,England,2.0,3.0,finished,openfootball-internationals
+2018-10-15 00:00:00+00:00,NationsLeague,2018-19,Bosnia and Herzegovina,Northern Ireland,2.0,0.0,finished,openfootball-internationals
+2018-10-15 00:00:00+00:00,NationsLeague,2018-19,Iceland,Switzerland,1.0,2.0,finished,openfootball-internationals
+2018-10-16 00:00:00+00:00,NationsLeague,2018-19,France,Germany,2.0,1.0,finished,openfootball-internationals
+2018-10-16 00:00:00+00:00,NationsLeague,2018-19,Ukraine,Czech Republic,1.0,0.0,finished,openfootball-internationals
+2018-10-16 00:00:00+00:00,NationsLeague,2018-19,Republic of Ireland,Wales,0.0,1.0,finished,openfootball-internationals
+2018-10-16 00:00:00+00:00,NationsLeague,2018-19,Norway,Bulgaria,1.0,0.0,finished,openfootball-internationals
+2018-10-16 00:00:00+00:00,NationsLeague,2018-19,Slovenia,Cyprus,1.0,1.0,finished,openfootball-internationals
+2018-10-16 00:00:00+00:00,NationsLeague,2018-19,Kazakhstan,Andorra,4.0,0.0,finished,openfootball-internationals
+2018-10-16 00:00:00+00:00,NationsLeague,2018-19,Latvia,Georgia,0.0,3.0,finished,openfootball-internationals
+2018-10-16 00:00:00+00:00,NationsLeague,2018-19,Armenia,Macedonia,4.0,0.0,finished,openfootball-internationals
+2018-10-16 00:00:00+00:00,NationsLeague,2018-19,Gibraltar,Liechtenstein,2.0,1.0,finished,openfootball-internationals
+2018-11-15 00:00:00+00:00,NationsLeague,2018-19,San Marino,Moldova,0.0,1.0,finished,openfootball-internationals
+2018-11-15 00:00:00+00:00,NationsLeague,2018-19,Luxembourg,Belarus,0.0,2.0,finished,openfootball-internationals
+2018-11-15 00:00:00+00:00,NationsLeague,2018-19,Andorra,Georgia,1.0,1.0,finished,openfootball-internationals
+2018-11-15 00:00:00+00:00,NationsLeague,2018-19,Greece,Finland,1.0,0.0,finished,openfootball-internationals
+2018-11-15 00:00:00+00:00,NationsLeague,2018-19,Kazakhstan,Latvia,1.0,1.0,finished,openfootball-internationals
+2018-11-15 00:00:00+00:00,NationsLeague,2018-19,Austria,Bosnia and Herzegovina,0.0,0.0,finished,openfootball-internationals
+2018-11-15 00:00:00+00:00,NationsLeague,2018-19,Hungary,Estonia,2.0,0.0,finished,openfootball-internationals
+2018-11-15 00:00:00+00:00,NationsLeague,2018-19,Croatia,Spain,3.0,2.0,finished,openfootball-internationals
+2018-11-15 00:00:00+00:00,NationsLeague,2018-19,Belgium,Iceland,2.0,0.0,finished,openfootball-internationals
+2018-11-16 00:00:00+00:00,NationsLeague,2018-19,Gibraltar,Armenia,2.0,6.0,finished,openfootball-internationals
+2018-11-16 00:00:00+00:00,NationsLeague,2018-19,Cyprus,Bulgaria,1.0,1.0,finished,openfootball-internationals
+2018-11-16 00:00:00+00:00,NationsLeague,2018-19,Slovenia,Norway,1.0,1.0,finished,openfootball-internationals
+2018-11-16 00:00:00+00:00,NationsLeague,2018-19,Liechtenstein,Macedonia,0.0,2.0,finished,openfootball-internationals
+2018-11-16 00:00:00+00:00,NationsLeague,2018-19,Slovakia,Ukraine,4.0,1.0,finished,openfootball-internationals
+2018-11-16 00:00:00+00:00,NationsLeague,2018-19,Netherlands,France,2.0,0.0,finished,openfootball-internationals
+2018-11-16 00:00:00+00:00,NationsLeague,2018-19,Wales,Denmark,1.0,2.0,finished,openfootball-internationals
+2018-11-17 00:00:00+00:00,NationsLeague,2018-19,Italy,Portugal,0.0,0.0,finished,openfootball-internationals
+2018-11-17 00:00:00+00:00,NationsLeague,2018-19,Turkey,Sweden,0.0,1.0,finished,openfootball-internationals
+2018-11-17 00:00:00+00:00,NationsLeague,2018-19,Albania,Scotland,0.0,4.0,finished,openfootball-internationals
+2018-11-17 00:00:00+00:00,NationsLeague,2018-19,Serbia,Montenegro,2.0,1.0,finished,openfootball-internationals
+2018-11-17 00:00:00+00:00,NationsLeague,2018-19,Romania,Lithuania,3.0,0.0,finished,openfootball-internationals
+2018-11-17 00:00:00+00:00,NationsLeague,2018-19,Malta,Kosovo,0.0,5.0,finished,openfootball-internationals
+2018-11-17 00:00:00+00:00,NationsLeague,2018-19,Azerbaijan,Faroe Islands,2.0,0.0,finished,openfootball-internationals
+2018-11-18 00:00:00+00:00,NationsLeague,2018-19,Hungary,Finland,2.0,0.0,finished,openfootball-internationals
+2018-11-18 00:00:00+00:00,NationsLeague,2018-19,San Marino,Belarus,0.0,2.0,finished,openfootball-internationals
+2018-11-18 00:00:00+00:00,NationsLeague,2018-19,Greece,Estonia,0.0,1.0,finished,openfootball-internationals
+2018-11-18 00:00:00+00:00,NationsLeague,2018-19,Moldova,Luxembourg,1.0,1.0,finished,openfootball-internationals
+2018-11-18 00:00:00+00:00,NationsLeague,2018-19,England,Croatia,2.0,1.0,finished,openfootball-internationals
+2018-11-18 00:00:00+00:00,NationsLeague,2018-19,Switzerland,Belgium,5.0,2.0,finished,openfootball-internationals
+2018-11-18 00:00:00+00:00,NationsLeague,2018-19,Northern Ireland,Austria,1.0,2.0,finished,openfootball-internationals
+2018-11-19 00:00:00+00:00,NationsLeague,2018-19,Liechtenstein,Armenia,2.0,2.0,finished,openfootball-internationals
+2018-11-19 00:00:00+00:00,NationsLeague,2018-19,Georgia,Kazakhstan,2.0,1.0,finished,openfootball-internationals
+2018-11-19 00:00:00+00:00,NationsLeague,2018-19,Andorra,Latvia,0.0,0.0,finished,openfootball-internationals
+2018-11-19 00:00:00+00:00,NationsLeague,2018-19,Cyprus,Norway,0.0,2.0,finished,openfootball-internationals
+2018-11-19 00:00:00+00:00,NationsLeague,2018-19,Macedonia,Gibraltar,4.0,0.0,finished,openfootball-internationals
+2018-11-19 00:00:00+00:00,NationsLeague,2018-19,Denmark,Republic of Ireland,0.0,0.0,finished,openfootball-internationals
+2018-11-19 00:00:00+00:00,NationsLeague,2018-19,Czech Republic,Slovakia,1.0,0.0,finished,openfootball-internationals
+2018-11-19 00:00:00+00:00,NationsLeague,2018-19,Germany,Netherlands,2.0,2.0,finished,openfootball-internationals
+2018-11-19 00:00:00+00:00,NationsLeague,2018-19,Bulgaria,Slovenia,1.0,1.0,finished,openfootball-internationals
+2018-11-20 00:00:00+00:00,NationsLeague,2018-19,Portugal,Poland,1.0,1.0,finished,openfootball-internationals
+2018-11-20 00:00:00+00:00,NationsLeague,2018-19,Sweden,Russia,2.0,0.0,finished,openfootball-internationals
+2018-11-20 00:00:00+00:00,NationsLeague,2018-19,Scotland,Israel,3.0,2.0,finished,openfootball-internationals
+2018-11-20 00:00:00+00:00,NationsLeague,2018-19,Montenegro,Romania,0.0,1.0,finished,openfootball-internationals
+2018-11-20 00:00:00+00:00,NationsLeague,2018-19,Serbia,Lithuania,4.0,1.0,finished,openfootball-internationals
+2018-11-20 00:00:00+00:00,NationsLeague,2018-19,Kosovo,Azerbaijan,4.0,0.0,finished,openfootball-internationals
+2018-11-20 00:00:00+00:00,NationsLeague,2018-19,Malta,Faroe Islands,1.0,1.0,finished,openfootball-internationals
+2019-06-05 00:00:00+00:00,NationsLeague,2018-19,Portugal,Switzerland,3.0,1.0,finished,openfootball-internationals
+2019-06-06 00:00:00+00:00,NationsLeague,2018-19,England,Netherlands,1.0,3.0,finished,openfootball-internationals
+2019-06-09 00:00:00+00:00,NationsLeague,2018-19,Portugal,Netherlands,1.0,0.0,finished,openfootball-internationals
+2019-06-09 00:00:00+00:00,NationsLeague,2018-19,Switzerland,England,0.0,0.0,finished,openfootball-internationals
+2020-09-03 00:00:00+00:00,NationsLeague,2020-21,Latvia,Andorra,0.0,0.0,finished,openfootball-internationals
+2020-09-03 00:00:00+00:00,NationsLeague,2020-21,Germany,Spain,1.0,1.0,finished,openfootball-internationals
+2020-09-03 00:00:00+00:00,NationsLeague,2020-21,Ukraine,Switzerland,2.0,1.0,finished,openfootball-internationals
+2020-09-03 00:00:00+00:00,NationsLeague,2020-21,Russia,Serbia,3.0,1.0,finished,openfootball-internationals
+2020-09-03 00:00:00+00:00,NationsLeague,2020-21,Turkey,Hungary,0.0,1.0,finished,openfootball-internationals
+2020-09-03 00:00:00+00:00,NationsLeague,2020-21,Bulgaria,Republic of Ireland,1.0,1.0,finished,openfootball-internationals
+2020-09-03 00:00:00+00:00,NationsLeague,2020-21,Finland,Wales,0.0,1.0,finished,openfootball-internationals
+2020-09-03 00:00:00+00:00,NationsLeague,2020-21,Moldova,Kosovo,1.0,1.0,finished,openfootball-internationals
+2020-09-03 00:00:00+00:00,NationsLeague,2020-21,Slovenia,Greece,0.0,0.0,finished,openfootball-internationals
+2020-09-03 00:00:00+00:00,NationsLeague,2020-21,Faroe Islands,Malta,3.0,2.0,finished,openfootball-internationals
+2020-09-04 00:00:00+00:00,NationsLeague,2020-21,Lithuania,Kazakhstan,0.0,2.0,finished,openfootball-internationals
+2020-09-04 00:00:00+00:00,NationsLeague,2020-21,Slovakia,Czech Republic,1.0,3.0,finished,openfootball-internationals
+2020-09-04 00:00:00+00:00,NationsLeague,2020-21,Scotland,Israel,1.0,1.0,finished,openfootball-internationals
+2020-09-04 00:00:00+00:00,NationsLeague,2020-21,Italy,Bosnia and Herzegovina,1.0,1.0,finished,openfootball-internationals
+2020-09-04 00:00:00+00:00,NationsLeague,2020-21,Norway,Austria,1.0,2.0,finished,openfootball-internationals
+2020-09-04 00:00:00+00:00,NationsLeague,2020-21,Netherlands,Poland,1.0,0.0,finished,openfootball-internationals
+2020-09-04 00:00:00+00:00,NationsLeague,2020-21,Belarus,Albania,0.0,2.0,finished,openfootball-internationals
+2020-09-04 00:00:00+00:00,NationsLeague,2020-21,Romania,Northern Ireland,1.0,1.0,finished,openfootball-internationals
+2020-09-05 00:00:00+00:00,NationsLeague,2020-21,Estonia,Georgia,0.0,1.0,finished,openfootball-internationals
+2020-09-05 00:00:00+00:00,NationsLeague,2020-21,North Macedonia,Armenia,2.0,1.0,finished,openfootball-internationals
+2020-09-05 00:00:00+00:00,NationsLeague,2020-21,Gibraltar,San Marino,1.0,0.0,finished,openfootball-internationals
+2020-09-05 00:00:00+00:00,NationsLeague,2020-21,Azerbaijan,Luxembourg,1.0,2.0,finished,openfootball-internationals
+2020-09-05 00:00:00+00:00,NationsLeague,2020-21,Portugal,Croatia,4.0,1.0,finished,openfootball-internationals
+2020-09-05 00:00:00+00:00,NationsLeague,2020-21,Sweden,France,0.0,1.0,finished,openfootball-internationals
+2020-09-05 00:00:00+00:00,NationsLeague,2020-21,Cyprus,Montenegro,0.0,2.0,finished,openfootball-internationals
+2020-09-05 00:00:00+00:00,NationsLeague,2020-21,Denmark,Belgium,0.0,2.0,finished,openfootball-internationals
+2020-09-05 00:00:00+00:00,NationsLeague,2020-21,Iceland,England,0.0,1.0,finished,openfootball-internationals
+2020-09-06 00:00:00+00:00,NationsLeague,2020-21,Malta,Latvia,1.0,1.0,finished,openfootball-internationals
+2020-09-06 00:00:00+00:00,NationsLeague,2020-21,Andorra,Faroe Islands,0.0,1.0,finished,openfootball-internationals
+2020-09-06 00:00:00+00:00,NationsLeague,2020-21,Kosovo,Greece,1.0,2.0,finished,openfootball-internationals
+2020-09-06 00:00:00+00:00,NationsLeague,2020-21,Slovenia,Moldova,1.0,0.0,finished,openfootball-internationals
+2020-09-06 00:00:00+00:00,NationsLeague,2020-21,Republic of Ireland,Finland,0.0,1.0,finished,openfootball-internationals
+2020-09-06 00:00:00+00:00,NationsLeague,2020-21,Wales,Bulgaria,1.0,0.0,finished,openfootball-internationals
+2020-09-06 00:00:00+00:00,NationsLeague,2020-21,Serbia,Turkey,0.0,0.0,finished,openfootball-internationals
+2020-09-06 00:00:00+00:00,NationsLeague,2020-21,Hungary,Russia,2.0,3.0,finished,openfootball-internationals
+2020-09-06 00:00:00+00:00,NationsLeague,2020-21,Switzerland,Germany,1.0,1.0,finished,openfootball-internationals
+2020-09-06 00:00:00+00:00,NationsLeague,2020-21,Spain,Ukraine,4.0,0.0,finished,openfootball-internationals
+2020-09-07 00:00:00+00:00,NationsLeague,2020-21,Albania,Lithuania,0.0,1.0,finished,openfootball-internationals
+2020-09-07 00:00:00+00:00,NationsLeague,2020-21,Kazakhstan,Belarus,1.0,2.0,finished,openfootball-internationals
+2020-09-07 00:00:00+00:00,NationsLeague,2020-21,Israel,Slovakia,1.0,1.0,finished,openfootball-internationals
+2020-09-07 00:00:00+00:00,NationsLeague,2020-21,Czech Republic,Scotland,1.0,2.0,finished,openfootball-internationals
+2020-09-07 00:00:00+00:00,NationsLeague,2020-21,Northern Ireland,Norway,1.0,5.0,finished,openfootball-internationals
+2020-09-07 00:00:00+00:00,NationsLeague,2020-21,Netherlands,Italy,0.0,1.0,finished,openfootball-internationals
+2020-09-07 00:00:00+00:00,NationsLeague,2020-21,Bosnia and Herzegovina,Poland,1.0,2.0,finished,openfootball-internationals
+2020-09-07 00:00:00+00:00,NationsLeague,2020-21,Austria,Romania,2.0,3.0,finished,openfootball-internationals
+2020-09-08 00:00:00+00:00,NationsLeague,2020-21,Belgium,Iceland,5.0,1.0,finished,openfootball-internationals
+2020-09-08 00:00:00+00:00,NationsLeague,2020-21,Denmark,England,0.0,0.0,finished,openfootball-internationals
+2020-09-08 00:00:00+00:00,NationsLeague,2020-21,France,Croatia,4.0,2.0,finished,openfootball-internationals
+2020-09-08 00:00:00+00:00,NationsLeague,2020-21,Sweden,Portugal,0.0,2.0,finished,openfootball-internationals
+2020-09-08 00:00:00+00:00,NationsLeague,2020-21,Luxembourg,Montenegro,0.0,1.0,finished,openfootball-internationals
+2020-09-08 00:00:00+00:00,NationsLeague,2020-21,Cyprus,Azerbaijan,0.0,1.0,finished,openfootball-internationals
+2020-09-08 00:00:00+00:00,NationsLeague,2020-21,Armenia,Estonia,2.0,0.0,finished,openfootball-internationals
+2020-09-08 00:00:00+00:00,NationsLeague,2020-21,Georgia,North Macedonia,1.0,1.0,finished,openfootball-internationals
+2020-09-08 00:00:00+00:00,NationsLeague,2020-21,San Marino,Liechtenstein,0.0,2.0,finished,openfootball-internationals
+2020-10-10 00:00:00+00:00,NationsLeague,2020-21,Faroe Islands,Latvia,1.0,1.0,finished,openfootball-internationals
+2020-10-10 00:00:00+00:00,NationsLeague,2020-21,Liechtenstein,Gibraltar,0.0,1.0,finished,openfootball-internationals
+2020-10-10 00:00:00+00:00,NationsLeague,2020-21,Montenegro,Azerbaijan,2.0,0.0,finished,openfootball-internationals
+2020-10-10 00:00:00+00:00,NationsLeague,2020-21,Andorra,Malta,0.0,0.0,finished,openfootball-internationals
+2020-10-10 00:00:00+00:00,NationsLeague,2020-21,Ukraine,Germany,1.0,2.0,finished,openfootball-internationals
+2020-10-10 00:00:00+00:00,NationsLeague,2020-21,Spain,Switzerland,1.0,0.0,finished,openfootball-internationals
+2020-10-10 00:00:00+00:00,NationsLeague,2020-21,Luxembourg,Cyprus,2.0,0.0,finished,openfootball-internationals
+2020-10-11 00:00:00+00:00,NationsLeague,2020-21,Lithuania,Belarus,2.0,2.0,finished,openfootball-internationals
+2020-10-11 00:00:00+00:00,NationsLeague,2020-21,Kazakhstan,Albania,0.0,0.0,finished,openfootball-internationals
+2020-10-11 00:00:00+00:00,NationsLeague,2020-21,Greece,Moldova,2.0,0.0,finished,openfootball-internationals
+2020-10-11 00:00:00+00:00,NationsLeague,2020-21,Estonia,North Macedonia,3.0,3.0,finished,openfootball-internationals
+2020-10-11 00:00:00+00:00,NationsLeague,2020-21,Armenia,Georgia,2.0,2.0,finished,openfootball-internationals
+2020-10-11 00:00:00+00:00,NationsLeague,2020-21,Finland,Bulgaria,2.0,0.0,finished,openfootball-internationals
+2020-10-11 00:00:00+00:00,NationsLeague,2020-21,Republic of Ireland,Wales,0.0,0.0,finished,openfootball-internationals
+2020-10-11 00:00:00+00:00,NationsLeague,2020-21,Russia,Turkey,1.0,1.0,finished,openfootball-internationals
+2020-10-11 00:00:00+00:00,NationsLeague,2020-21,Serbia,Hungary,0.0,1.0,finished,openfootball-internationals
+2020-10-11 00:00:00+00:00,NationsLeague,2020-21,Kosovo,Slovenia,0.0,1.0,finished,openfootball-internationals
+2020-10-11 00:00:00+00:00,NationsLeague,2020-21,Scotland,Slovakia,1.0,0.0,finished,openfootball-internationals
+2020-10-11 00:00:00+00:00,NationsLeague,2020-21,Northern Ireland,Austria,0.0,1.0,finished,openfootball-internationals
+2020-10-11 00:00:00+00:00,NationsLeague,2020-21,Norway,Romania,4.0,0.0,finished,openfootball-internationals
+2020-10-11 00:00:00+00:00,NationsLeague,2020-21,France,Portugal,0.0,0.0,finished,openfootball-internationals
+2020-10-11 00:00:00+00:00,NationsLeague,2020-21,Croatia,Sweden,2.0,1.0,finished,openfootball-internationals
+2020-10-11 00:00:00+00:00,NationsLeague,2020-21,Iceland,Denmark,0.0,3.0,finished,openfootball-internationals
+2020-10-11 00:00:00+00:00,NationsLeague,2020-21,England,Belgium,2.0,1.0,finished,openfootball-internationals
+2020-10-11 00:00:00+00:00,NationsLeague,2020-21,Poland,Italy,0.0,0.0,finished,openfootball-internationals
+2020-10-11 00:00:00+00:00,NationsLeague,2020-21,Bosnia and Herzegovina,Netherlands,0.0,0.0,finished,openfootball-internationals
+2020-10-11 00:00:00+00:00,NationsLeague,2020-21,Israel,Czech Republic,1.0,2.0,finished,openfootball-internationals
+2020-10-13 00:00:00+00:00,NationsLeague,2020-21,Liechtenstein,San Marino,0.0,0.0,finished,openfootball-internationals
+2020-10-13 00:00:00+00:00,NationsLeague,2020-21,Faroe Islands,Andorra,2.0,0.0,finished,openfootball-internationals
+2020-10-13 00:00:00+00:00,NationsLeague,2020-21,Latvia,Malta,0.0,1.0,finished,openfootball-internationals
+2020-10-13 00:00:00+00:00,NationsLeague,2020-21,Azerbaijan,Cyprus,0.0,0.0,finished,openfootball-internationals
+2020-10-13 00:00:00+00:00,NationsLeague,2020-21,Ukraine,Spain,1.0,0.0,finished,openfootball-internationals
+2020-10-13 00:00:00+00:00,NationsLeague,2020-21,Germany,Switzerland,3.0,3.0,finished,openfootball-internationals
+2020-10-13 00:00:00+00:00,NationsLeague,2020-21,Montenegro,Luxembourg,1.0,2.0,finished,openfootball-internationals
+2020-10-14 00:00:00+00:00,NationsLeague,2020-21,Turkey,Serbia,2.0,2.0,finished,openfootball-internationals
+2020-10-14 00:00:00+00:00,NationsLeague,2020-21,Lithuania,Albania,0.0,0.0,finished,openfootball-internationals
+2020-10-14 00:00:00+00:00,NationsLeague,2020-21,Moldova,Slovenia,0.0,4.0,finished,openfootball-internationals
+2020-10-14 00:00:00+00:00,NationsLeague,2020-21,Greece,Kosovo,0.0,0.0,finished,openfootball-internationals
+2020-10-14 00:00:00+00:00,NationsLeague,2020-21,Belarus,Kazakhstan,2.0,0.0,finished,openfootball-internationals
+2020-10-14 00:00:00+00:00,NationsLeague,2020-21,North Macedonia,Georgia,1.0,1.0,finished,openfootball-internationals
+2020-10-14 00:00:00+00:00,NationsLeague,2020-21,Bulgaria,Wales,0.0,1.0,finished,openfootball-internationals
+2020-10-14 00:00:00+00:00,NationsLeague,2020-21,Finland,Republic of Ireland,1.0,0.0,finished,openfootball-internationals
+2020-10-14 00:00:00+00:00,NationsLeague,2020-21,Russia,Hungary,0.0,0.0,finished,openfootball-internationals
+2020-10-14 00:00:00+00:00,NationsLeague,2020-21,Estonia,Armenia,1.0,1.0,finished,openfootball-internationals
+2020-10-14 00:00:00+00:00,NationsLeague,2020-21,Scotland,Czech Republic,1.0,0.0,finished,openfootball-internationals
+2020-10-14 00:00:00+00:00,NationsLeague,2020-21,Romania,Austria,0.0,1.0,finished,openfootball-internationals
+2020-10-14 00:00:00+00:00,NationsLeague,2020-21,Norway,Northern Ireland,1.0,0.0,finished,openfootball-internationals
+2020-10-14 00:00:00+00:00,NationsLeague,2020-21,Croatia,France,1.0,2.0,finished,openfootball-internationals
+2020-10-14 00:00:00+00:00,NationsLeague,2020-21,Portugal,Sweden,3.0,0.0,finished,openfootball-internationals
+2020-10-14 00:00:00+00:00,NationsLeague,2020-21,England,Denmark,0.0,1.0,finished,openfootball-internationals
+2020-10-14 00:00:00+00:00,NationsLeague,2020-21,Iceland,Belgium,1.0,2.0,finished,openfootball-internationals
+2020-10-14 00:00:00+00:00,NationsLeague,2020-21,Poland,Bosnia and Herzegovina,3.0,0.0,finished,openfootball-internationals
+2020-10-14 00:00:00+00:00,NationsLeague,2020-21,Italy,Netherlands,1.0,1.0,finished,openfootball-internationals
+2020-10-14 00:00:00+00:00,NationsLeague,2020-21,Slovakia,Israel,2.0,3.0,finished,openfootball-internationals
+2020-11-14 00:00:00+00:00,NationsLeague,2020-21,San Marino,Gibraltar,0.0,0.0,finished,openfootball-internationals
+2020-11-14 00:00:00+00:00,NationsLeague,2020-21,Latvia,Faroe Islands,1.0,1.0,finished,openfootball-internationals
+2020-11-14 00:00:00+00:00,NationsLeague,2020-21,Malta,Andorra,3.0,1.0,finished,openfootball-internationals
+2020-11-14 00:00:00+00:00,NationsLeague,2020-21,Cyprus,Luxembourg,2.0,1.0,finished,openfootball-internationals
+2020-11-14 00:00:00+00:00,NationsLeague,2020-21,Switzerland,Spain,1.0,1.0,finished,openfootball-internationals
+2020-11-14 00:00:00+00:00,NationsLeague,2020-21,Germany,Ukraine,3.0,1.0,finished,openfootball-internationals
+2020-11-14 00:00:00+00:00,NationsLeague,2020-21,Sweden,Croatia,2.0,1.0,finished,openfootball-internationals
+2020-11-14 00:00:00+00:00,NationsLeague,2020-21,Portugal,France,0.0,1.0,finished,openfootball-internationals
+2020-11-14 00:00:00+00:00,NationsLeague,2020-21,Azerbaijan,Montenegro,0.0,0.0,finished,openfootball-internationals
+2020-11-15 00:00:00+00:00,NationsLeague,2020-21,Wales,Republic of Ireland,1.0,0.0,finished,openfootball-internationals
+2020-11-15 00:00:00+00:00,NationsLeague,2020-21,Albania,Kazakhstan,3.0,1.0,finished,openfootball-internationals
+2020-11-15 00:00:00+00:00,NationsLeague,2020-21,Belarus,Lithuania,2.0,0.0,finished,openfootball-internationals
+2020-11-15 00:00:00+00:00,NationsLeague,2020-21,Moldova,Greece,0.0,2.0,finished,openfootball-internationals
+2020-11-15 00:00:00+00:00,NationsLeague,2020-21,Slovenia,Kosovo,2.0,1.0,finished,openfootball-internationals
+2020-11-15 00:00:00+00:00,NationsLeague,2020-21,Georgia,Armenia,1.0,2.0,finished,openfootball-internationals
+2020-11-15 00:00:00+00:00,NationsLeague,2020-21,North Macedonia,Estonia,2.0,1.0,finished,openfootball-internationals
+2020-11-15 00:00:00+00:00,NationsLeague,2020-21,Bulgaria,Finland,1.0,2.0,finished,openfootball-internationals
+2020-11-15 00:00:00+00:00,NationsLeague,2020-21,Hungary,Serbia,1.0,1.0,finished,openfootball-internationals
+2020-11-15 00:00:00+00:00,NationsLeague,2020-21,Italy,Poland,2.0,0.0,finished,openfootball-internationals
+2020-11-15 00:00:00+00:00,NationsLeague,2020-21,Czech Republic,Israel,1.0,0.0,finished,openfootball-internationals
+2020-11-15 00:00:00+00:00,NationsLeague,2020-21,Slovakia,Scotland,1.0,0.0,finished,openfootball-internationals
+2020-11-15 00:00:00+00:00,NationsLeague,2020-21,Romania,Norway,3.0,0.0,finished,openfootball-internationals
+2020-11-15 00:00:00+00:00,NationsLeague,2020-21,Austria,Northern Ireland,2.0,1.0,finished,openfootball-internationals
+2020-11-15 00:00:00+00:00,NationsLeague,2020-21,Denmark,Iceland,2.0,1.0,finished,openfootball-internationals
+2020-11-15 00:00:00+00:00,NationsLeague,2020-21,Belgium,England,2.0,0.0,finished,openfootball-internationals
+2020-11-15 00:00:00+00:00,NationsLeague,2020-21,Netherlands,Bosnia and Herzegovina,3.0,1.0,finished,openfootball-internationals
+2020-11-15 00:00:00+00:00,NationsLeague,2020-21,Turkey,Russia,3.0,2.0,finished,openfootball-internationals
+2020-11-17 00:00:00+00:00,NationsLeague,2020-21,Gibraltar,Liechtenstein,1.0,1.0,finished,openfootball-internationals
+2020-11-17 00:00:00+00:00,NationsLeague,2020-21,Malta,Faroe Islands,1.0,1.0,finished,openfootball-internationals
+2020-11-17 00:00:00+00:00,NationsLeague,2020-21,Andorra,Latvia,0.0,5.0,finished,openfootball-internationals
+2020-11-17 00:00:00+00:00,NationsLeague,2020-21,Luxembourg,Azerbaijan,0.0,0.0,finished,openfootball-internationals
+2020-11-17 00:00:00+00:00,NationsLeague,2020-21,Montenegro,Cyprus,4.0,0.0,finished,openfootball-internationals
+2020-11-17 00:00:00+00:00,NationsLeague,2020-21,Spain,Germany,6.0,0.0,finished,openfootball-internationals
+2020-11-17 00:00:00+00:00,NationsLeague,2020-21,France,Sweden,4.0,2.0,finished,openfootball-internationals
+2020-11-17 00:00:00+00:00,NationsLeague,2020-21,Croatia,Portugal,2.0,3.0,finished,openfootball-internationals
+2020-11-17 00:00:00+00:00,NationsLeague,2020-21,Switzerland,Ukraine,3.0,0.0,finished,openfootball-internationals
+2020-11-18 00:00:00+00:00,NationsLeague,2020-21,Albania,Belarus,3.0,2.0,finished,openfootball-internationals
+2020-11-18 00:00:00+00:00,NationsLeague,2020-21,Greece,Slovenia,0.0,0.0,finished,openfootball-internationals
+2020-11-18 00:00:00+00:00,NationsLeague,2020-21,Kosovo,Moldova,1.0,0.0,finished,openfootball-internationals
+2020-11-18 00:00:00+00:00,NationsLeague,2020-21,Georgia,Estonia,0.0,0.0,finished,openfootball-internationals
+2020-11-18 00:00:00+00:00,NationsLeague,2020-21,Armenia,North Macedonia,1.0,0.0,finished,openfootball-internationals
+2020-11-18 00:00:00+00:00,NationsLeague,2020-21,Wales,Finland,3.0,1.0,finished,openfootball-internationals
+2020-11-18 00:00:00+00:00,NationsLeague,2020-21,Republic of Ireland,Bulgaria,0.0,0.0,finished,openfootball-internationals
+2020-11-18 00:00:00+00:00,NationsLeague,2020-21,Serbia,Russia,5.0,0.0,finished,openfootball-internationals
+2020-11-18 00:00:00+00:00,NationsLeague,2020-21,Kazakhstan,Lithuania,1.0,2.0,finished,openfootball-internationals
+2020-11-18 00:00:00+00:00,NationsLeague,2020-21,Israel,Scotland,1.0,0.0,finished,openfootball-internationals
+2020-11-18 00:00:00+00:00,NationsLeague,2020-21,Czech Republic,Slovakia,2.0,0.0,finished,openfootball-internationals
+2020-11-18 00:00:00+00:00,NationsLeague,2020-21,Austria,Norway,1.0,1.0,finished,openfootball-internationals
+2020-11-18 00:00:00+00:00,NationsLeague,2020-21,Northern Ireland,Romania,1.0,1.0,finished,openfootball-internationals
+2020-11-18 00:00:00+00:00,NationsLeague,2020-21,Belgium,Denmark,4.0,2.0,finished,openfootball-internationals
+2020-11-18 00:00:00+00:00,NationsLeague,2020-21,England,Iceland,4.0,0.0,finished,openfootball-internationals
+2020-11-18 00:00:00+00:00,NationsLeague,2020-21,Poland,Netherlands,1.0,2.0,finished,openfootball-internationals
+2020-11-18 00:00:00+00:00,NationsLeague,2020-21,Bosnia and Herzegovina,Italy,0.0,2.0,finished,openfootball-internationals
+2020-11-18 00:00:00+00:00,NationsLeague,2020-21,Hungary,Turkey,2.0,0.0,finished,openfootball-internationals
+2021-10-06 00:00:00+00:00,NationsLeague,2020-21,Italy,Spain,1.0,2.0,finished,openfootball-internationals
+2021-10-07 00:00:00+00:00,NationsLeague,2020-21,Belgium,France,2.0,3.0,finished,openfootball-internationals
+2021-10-10 00:00:00+00:00,NationsLeague,2020-21,Italy,Belgium,2.0,1.0,finished,openfootball-internationals
+2021-10-10 00:00:00+00:00,NationsLeague,2020-21,Spain,France,1.0,2.0,finished,openfootball-internationals
+2022-03-24 00:00:00+00:00,NationsLeague,2022-23,Estonia,Cyprus,0.0,0.0,finished,openfootball-internationals
+2022-03-24 00:00:00+00:00,NationsLeague,2022-23,Moldova,Kazakhstan,1.0,2.0,finished,openfootball-internationals
+2022-03-29 00:00:00+00:00,NationsLeague,2022-23,Kazakhstan,Moldova,0.0,1.0,finished,openfootball-internationals
+2022-03-29 00:00:00+00:00,NationsLeague,2022-23,Cyprus,Estonia,2.0,0.0,finished,openfootball-internationals
+2022-06-01 00:00:00+00:00,NationsLeague,2022-23,Poland,Wales,2.0,1.0,finished,openfootball-internationals
+2022-06-02 00:00:00+00:00,NationsLeague,2022-23,Czech Republic,Switzerland,2.0,1.0,finished,openfootball-internationals
+2022-06-02 00:00:00+00:00,NationsLeague,2022-23,Spain,Portugal,1.0,1.0,finished,openfootball-internationals
+2022-06-02 00:00:00+00:00,NationsLeague,2022-23,Israel,Iceland,2.0,2.0,finished,openfootball-internationals
+2022-06-02 00:00:00+00:00,NationsLeague,2022-23,Serbia,Norway,0.0,1.0,finished,openfootball-internationals
+2022-06-02 00:00:00+00:00,NationsLeague,2022-23,Slovenia,Sweden,0.0,2.0,finished,openfootball-internationals
+2022-06-02 00:00:00+00:00,NationsLeague,2022-23,Northern Ireland,Greece,0.0,1.0,finished,openfootball-internationals
+2022-06-02 00:00:00+00:00,NationsLeague,2022-23,Cyprus,Kosovo,0.0,2.0,finished,openfootball-internationals
+2022-06-02 00:00:00+00:00,NationsLeague,2022-23,Georgia,Gibraltar,4.0,0.0,finished,openfootball-internationals
+2022-06-02 00:00:00+00:00,NationsLeague,2022-23,Bulgaria,North Macedonia,1.0,1.0,finished,openfootball-internationals
+2022-06-02 00:00:00+00:00,NationsLeague,2022-23,Estonia,San Marino,2.0,0.0,finished,openfootball-internationals
+2022-06-03 00:00:00+00:00,NationsLeague,2022-23,Latvia,Andorra,3.0,0.0,finished,openfootball-internationals
+2022-06-03 00:00:00+00:00,NationsLeague,2022-23,Belarus,Slovakia,0.0,1.0,finished,openfootball-internationals
+2022-06-03 00:00:00+00:00,NationsLeague,2022-23,Kazakhstan,Azerbaijan,2.0,0.0,finished,openfootball-internationals
+2022-06-03 00:00:00+00:00,NationsLeague,2022-23,Liechtenstein,Moldova,0.0,2.0,finished,openfootball-internationals
+2022-06-03 00:00:00+00:00,NationsLeague,2022-23,France,Denmark,1.0,2.0,finished,openfootball-internationals
+2022-06-03 00:00:00+00:00,NationsLeague,2022-23,Belgium,Netherlands,1.0,4.0,finished,openfootball-internationals
+2022-06-03 00:00:00+00:00,NationsLeague,2022-23,Croatia,Austria,0.0,3.0,finished,openfootball-internationals
+2022-06-04 00:00:00+00:00,NationsLeague,2022-23,Hungary,England,1.0,0.0,finished,openfootball-internationals
+2022-06-04 00:00:00+00:00,NationsLeague,2022-23,Italy,Germany,1.0,1.0,finished,openfootball-internationals
+2022-06-04 00:00:00+00:00,NationsLeague,2022-23,Armenia,Republic of Ireland,1.0,0.0,finished,openfootball-internationals
+2022-06-04 00:00:00+00:00,NationsLeague,2022-23,Finland,Bosnia and Herzegovina,1.0,1.0,finished,openfootball-internationals
+2022-06-04 00:00:00+00:00,NationsLeague,2022-23,Montenegro,Romania,2.0,0.0,finished,openfootball-internationals
+2022-06-04 00:00:00+00:00,NationsLeague,2022-23,Lithuania,Luxembourg,0.0,2.0,finished,openfootball-internationals
+2022-06-04 00:00:00+00:00,NationsLeague,2022-23,Turkey,Faroe Islands,4.0,0.0,finished,openfootball-internationals
+2022-06-05 00:00:00+00:00,NationsLeague,2022-23,San Marino,Malta,0.0,2.0,finished,openfootball-internationals
+2022-06-05 00:00:00+00:00,NationsLeague,2022-23,Bulgaria,Georgia,2.0,5.0,finished,openfootball-internationals
+2022-06-05 00:00:00+00:00,NationsLeague,2022-23,Gibraltar,North Macedonia,0.0,2.0,finished,openfootball-internationals
+2022-06-05 00:00:00+00:00,NationsLeague,2022-23,Kosovo,Greece,0.0,1.0,finished,openfootball-internationals
+2022-06-05 00:00:00+00:00,NationsLeague,2022-23,Portugal,Switzerland,4.0,0.0,finished,openfootball-internationals
+2022-06-05 00:00:00+00:00,NationsLeague,2022-23,Sweden,Norway,1.0,2.0,finished,openfootball-internationals
+2022-06-05 00:00:00+00:00,NationsLeague,2022-23,Serbia,Slovenia,4.0,1.0,finished,openfootball-internationals
+2022-06-05 00:00:00+00:00,NationsLeague,2022-23,Czech Republic,Spain,2.0,2.0,finished,openfootball-internationals
+2022-06-05 00:00:00+00:00,NationsLeague,2022-23,Cyprus,Northern Ireland,0.0,0.0,finished,openfootball-internationals
+2022-06-06 00:00:00+00:00,NationsLeague,2022-23,Latvia,Liechtenstein,1.0,0.0,finished,openfootball-internationals
+2022-06-06 00:00:00+00:00,NationsLeague,2022-23,Andorra,Moldova,0.0,0.0,finished,openfootball-internationals
+2022-06-06 00:00:00+00:00,NationsLeague,2022-23,Slovakia,Kazakhstan,0.0,1.0,finished,openfootball-internationals
+2022-06-06 00:00:00+00:00,NationsLeague,2022-23,Austria,Denmark,1.0,2.0,finished,openfootball-internationals
+2022-06-06 00:00:00+00:00,NationsLeague,2022-23,Iceland,Albania,1.0,1.0,finished,openfootball-internationals
+2022-06-06 00:00:00+00:00,NationsLeague,2022-23,Croatia,France,1.0,1.0,finished,openfootball-internationals
+2022-06-06 00:00:00+00:00,NationsLeague,2022-23,Belarus,Azerbaijan,0.0,0.0,finished,openfootball-internationals
+2022-06-07 00:00:00+00:00,NationsLeague,2022-23,Faroe Islands,Luxembourg,0.0,1.0,finished,openfootball-internationals
+2022-06-07 00:00:00+00:00,NationsLeague,2022-23,Bosnia and Herzegovina,Romania,1.0,0.0,finished,openfootball-internationals
+2022-06-07 00:00:00+00:00,NationsLeague,2022-23,Lithuania,Turkey,0.0,6.0,finished,openfootball-internationals
+2022-06-07 00:00:00+00:00,NationsLeague,2022-23,Italy,Hungary,2.0,1.0,finished,openfootball-internationals
+2022-06-07 00:00:00+00:00,NationsLeague,2022-23,Germany,England,1.0,1.0,finished,openfootball-internationals
+2022-06-07 00:00:00+00:00,NationsLeague,2022-23,Finland,Montenegro,2.0,0.0,finished,openfootball-internationals
+2022-06-08 00:00:00+00:00,NationsLeague,2022-23,Wales,Netherlands,1.0,2.0,finished,openfootball-internationals
+2022-06-08 00:00:00+00:00,NationsLeague,2022-23,Belgium,Poland,6.0,1.0,finished,openfootball-internationals
+2022-06-08 00:00:00+00:00,NationsLeague,2022-23,Republic of Ireland,Ukraine,0.0,1.0,finished,openfootball-internationals
+2022-06-08 00:00:00+00:00,NationsLeague,2022-23,Scotland,Armenia,2.0,0.0,finished,openfootball-internationals
+2022-06-09 00:00:00+00:00,NationsLeague,2022-23,Gibraltar,Bulgaria,1.0,1.0,finished,openfootball-internationals
+2022-06-09 00:00:00+00:00,NationsLeague,2022-23,Malta,Estonia,1.0,2.0,finished,openfootball-internationals
+2022-06-09 00:00:00+00:00,NationsLeague,2022-23,North Macedonia,Georgia,0.0,3.0,finished,openfootball-internationals
+2022-06-09 00:00:00+00:00,NationsLeague,2022-23,Greece,Cyprus,3.0,0.0,finished,openfootball-internationals
+2022-06-09 00:00:00+00:00,NationsLeague,2022-23,Kosovo,Northern Ireland,3.0,2.0,finished,openfootball-internationals
+2022-06-09 00:00:00+00:00,NationsLeague,2022-23,Sweden,Serbia,0.0,1.0,finished,openfootball-internationals
+2022-06-09 00:00:00+00:00,NationsLeague,2022-23,Norway,Slovenia,0.0,0.0,finished,openfootball-internationals
+2022-06-09 00:00:00+00:00,NationsLeague,2022-23,Switzerland,Spain,0.0,1.0,finished,openfootball-internationals
+2022-06-09 00:00:00+00:00,NationsLeague,2022-23,Portugal,Czech Republic,2.0,0.0,finished,openfootball-internationals
+2022-06-10 00:00:00+00:00,NationsLeague,2022-23,Austria,France,1.0,1.0,finished,openfootball-internationals
+2022-06-10 00:00:00+00:00,NationsLeague,2022-23,Denmark,Croatia,0.0,1.0,finished,openfootball-internationals
+2022-06-10 00:00:00+00:00,NationsLeague,2022-23,Albania,Israel,1.0,2.0,finished,openfootball-internationals
+2022-06-10 00:00:00+00:00,NationsLeague,2022-23,Azerbaijan,Slovakia,0.0,1.0,finished,openfootball-internationals
+2022-06-10 00:00:00+00:00,NationsLeague,2022-23,Belarus,Kazakhstan,1.0,1.0,finished,openfootball-internationals
+2022-06-10 00:00:00+00:00,NationsLeague,2022-23,Moldova,Latvia,2.0,4.0,finished,openfootball-internationals
+2022-06-10 00:00:00+00:00,NationsLeague,2022-23,Andorra,Liechtenstein,2.0,1.0,finished,openfootball-internationals
+2022-06-11 00:00:00+00:00,NationsLeague,2022-23,Luxembourg,Turkey,0.0,2.0,finished,openfootball-internationals
+2022-06-11 00:00:00+00:00,NationsLeague,2022-23,Romania,Finland,1.0,0.0,finished,openfootball-internationals
+2022-06-11 00:00:00+00:00,NationsLeague,2022-23,Montenegro,Bosnia and Herzegovina,1.0,1.0,finished,openfootball-internationals
+2022-06-11 00:00:00+00:00,NationsLeague,2022-23,Republic of Ireland,Scotland,3.0,0.0,finished,openfootball-internationals
+2022-06-11 00:00:00+00:00,NationsLeague,2022-23,Faroe Islands,Lithuania,2.0,1.0,finished,openfootball-internationals
+2022-06-11 00:00:00+00:00,NationsLeague,2022-23,Netherlands,Poland,2.0,2.0,finished,openfootball-internationals
+2022-06-11 00:00:00+00:00,NationsLeague,2022-23,Wales,Belgium,1.0,1.0,finished,openfootball-internationals
+2022-06-11 00:00:00+00:00,NationsLeague,2022-23,Hungary,Germany,1.0,1.0,finished,openfootball-internationals
+2022-06-11 00:00:00+00:00,NationsLeague,2022-23,England,Italy,0.0,0.0,finished,openfootball-internationals
+2022-06-11 00:00:00+00:00,NationsLeague,2022-23,Ukraine,Armenia,3.0,0.0,finished,openfootball-internationals
+2022-06-12 00:00:00+00:00,NationsLeague,2022-23,Malta,San Marino,1.0,0.0,finished,openfootball-internationals
+2022-06-12 00:00:00+00:00,NationsLeague,2022-23,Georgia,Bulgaria,0.0,0.0,finished,openfootball-internationals
+2022-06-12 00:00:00+00:00,NationsLeague,2022-23,Greece,Kosovo,2.0,0.0,finished,openfootball-internationals
+2022-06-12 00:00:00+00:00,NationsLeague,2022-23,Northern Ireland,Cyprus,2.0,2.0,finished,openfootball-internationals
+2022-06-12 00:00:00+00:00,NationsLeague,2022-23,North Macedonia,Gibraltar,4.0,0.0,finished,openfootball-internationals
+2022-06-12 00:00:00+00:00,NationsLeague,2022-23,Norway,Sweden,3.0,2.0,finished,openfootball-internationals
+2022-06-12 00:00:00+00:00,NationsLeague,2022-23,Switzerland,Portugal,1.0,0.0,finished,openfootball-internationals
+2022-06-12 00:00:00+00:00,NationsLeague,2022-23,Spain,Czech Republic,2.0,0.0,finished,openfootball-internationals
+2022-06-12 00:00:00+00:00,NationsLeague,2022-23,Slovenia,Serbia,2.0,2.0,finished,openfootball-internationals
+2022-06-13 00:00:00+00:00,NationsLeague,2022-23,Denmark,Austria,2.0,0.0,finished,openfootball-internationals
+2022-06-13 00:00:00+00:00,NationsLeague,2022-23,France,Croatia,0.0,1.0,finished,openfootball-internationals
+2022-06-13 00:00:00+00:00,NationsLeague,2022-23,Iceland,Israel,2.0,2.0,finished,openfootball-internationals
+2022-06-13 00:00:00+00:00,NationsLeague,2022-23,Azerbaijan,Belarus,2.0,0.0,finished,openfootball-internationals
+2022-06-13 00:00:00+00:00,NationsLeague,2022-23,Kazakhstan,Slovakia,2.0,1.0,finished,openfootball-internationals
+2022-06-14 00:00:00+00:00,NationsLeague,2022-23,Luxembourg,Faroe Islands,2.0,2.0,finished,openfootball-internationals
+2022-06-14 00:00:00+00:00,NationsLeague,2022-23,Liechtenstein,Latvia,0.0,2.0,finished,openfootball-internationals
+2022-06-14 00:00:00+00:00,NationsLeague,2022-23,Moldova,Andorra,2.0,1.0,finished,openfootball-internationals
+2022-06-14 00:00:00+00:00,NationsLeague,2022-23,Turkey,Lithuania,2.0,0.0,finished,openfootball-internationals
+2022-06-14 00:00:00+00:00,NationsLeague,2022-23,Bosnia and Herzegovina,Finland,3.0,2.0,finished,openfootball-internationals
+2022-06-14 00:00:00+00:00,NationsLeague,2022-23,Romania,Montenegro,0.0,3.0,finished,openfootball-internationals
+2022-06-14 00:00:00+00:00,NationsLeague,2022-23,Armenia,Scotland,1.0,4.0,finished,openfootball-internationals
+2022-06-14 00:00:00+00:00,NationsLeague,2022-23,Ukraine,Republic of Ireland,1.0,1.0,finished,openfootball-internationals
+2022-06-14 00:00:00+00:00,NationsLeague,2022-23,Poland,Belgium,0.0,1.0,finished,openfootball-internationals
+2022-06-14 00:00:00+00:00,NationsLeague,2022-23,Netherlands,Wales,3.0,2.0,finished,openfootball-internationals
+2022-06-14 00:00:00+00:00,NationsLeague,2022-23,Germany,Italy,5.0,2.0,finished,openfootball-internationals
+2022-06-14 00:00:00+00:00,NationsLeague,2022-23,England,Hungary,0.0,4.0,finished,openfootball-internationals
+2022-09-21 00:00:00+00:00,NationsLeague,2022-23,Scotland,Ukraine,3.0,0.0,finished,openfootball-internationals
+2022-09-22 00:00:00+00:00,NationsLeague,2022-23,Liechtenstein,Andorra,0.0,2.0,finished,openfootball-internationals
+2022-09-22 00:00:00+00:00,NationsLeague,2022-23,Latvia,Moldova,1.0,2.0,finished,openfootball-internationals
+2022-09-22 00:00:00+00:00,NationsLeague,2022-23,Slovakia,Azerbaijan,1.0,2.0,finished,openfootball-internationals
+2022-09-22 00:00:00+00:00,NationsLeague,2022-23,Kazakhstan,Belarus,2.0,1.0,finished,openfootball-internationals
+2022-09-22 00:00:00+00:00,NationsLeague,2022-23,Turkey,Luxembourg,3.0,3.0,finished,openfootball-internationals
+2022-09-22 00:00:00+00:00,NationsLeague,2022-23,Belgium,Wales,2.0,1.0,finished,openfootball-internationals
+2022-09-22 00:00:00+00:00,NationsLeague,2022-23,Poland,Netherlands,0.0,2.0,finished,openfootball-internationals
+2022-09-22 00:00:00+00:00,NationsLeague,2022-23,France,Austria,2.0,0.0,finished,openfootball-internationals
+2022-09-22 00:00:00+00:00,NationsLeague,2022-23,Croatia,Denmark,2.0,1.0,finished,openfootball-internationals
+2022-09-22 00:00:00+00:00,NationsLeague,2022-23,Lithuania,Faroe Islands,1.0,1.0,finished,openfootball-internationals
+2022-09-23 00:00:00+00:00,NationsLeague,2022-23,Bulgaria,Gibraltar,5.0,1.0,finished,openfootball-internationals
+2022-09-23 00:00:00+00:00,NationsLeague,2022-23,Estonia,Malta,2.0,1.0,finished,openfootball-internationals
+2022-09-23 00:00:00+00:00,NationsLeague,2022-23,Georgia,North Macedonia,2.0,0.0,finished,openfootball-internationals
+2022-09-23 00:00:00+00:00,NationsLeague,2022-23,Italy,England,1.0,0.0,finished,openfootball-internationals
+2022-09-23 00:00:00+00:00,NationsLeague,2022-23,Bosnia and Herzegovina,Montenegro,1.0,0.0,finished,openfootball-internationals
+2022-09-23 00:00:00+00:00,NationsLeague,2022-23,Germany,Hungary,0.0,1.0,finished,openfootball-internationals
+2022-09-23 00:00:00+00:00,NationsLeague,2022-23,Finland,Romania,1.0,1.0,finished,openfootball-internationals
+2022-09-24 00:00:00+00:00,NationsLeague,2022-23,Czech Republic,Portugal,0.0,4.0,finished,openfootball-internationals
+2022-09-24 00:00:00+00:00,NationsLeague,2022-23,Spain,Switzerland,1.0,2.0,finished,openfootball-internationals
+2022-09-24 00:00:00+00:00,NationsLeague,2022-23,Armenia,Ukraine,0.0,5.0,finished,openfootball-internationals
+2022-09-24 00:00:00+00:00,NationsLeague,2022-23,Scotland,Republic of Ireland,2.0,1.0,finished,openfootball-internationals
+2022-09-24 00:00:00+00:00,NationsLeague,2022-23,Israel,Albania,2.0,1.0,finished,openfootball-internationals
+2022-09-24 00:00:00+00:00,NationsLeague,2022-23,Slovenia,Norway,2.0,1.0,finished,openfootball-internationals
+2022-09-24 00:00:00+00:00,NationsLeague,2022-23,Serbia,Sweden,4.0,1.0,finished,openfootball-internationals
+2022-09-24 00:00:00+00:00,NationsLeague,2022-23,Northern Ireland,Kosovo,2.0,1.0,finished,openfootball-internationals
+2022-09-24 00:00:00+00:00,NationsLeague,2022-23,Cyprus,Greece,1.0,0.0,finished,openfootball-internationals
+2022-09-25 00:00:00+00:00,NationsLeague,2022-23,Slovakia,Belarus,1.0,1.0,finished,openfootball-internationals
+2022-09-25 00:00:00+00:00,NationsLeague,2022-23,Andorra,Latvia,1.0,1.0,finished,openfootball-internationals
+2022-09-25 00:00:00+00:00,NationsLeague,2022-23,Azerbaijan,Kazakhstan,3.0,0.0,finished,openfootball-internationals
+2022-09-25 00:00:00+00:00,NationsLeague,2022-23,Luxembourg,Lithuania,1.0,0.0,finished,openfootball-internationals
+2022-09-25 00:00:00+00:00,NationsLeague,2022-23,Moldova,Liechtenstein,2.0,0.0,finished,openfootball-internationals
+2022-09-25 00:00:00+00:00,NationsLeague,2022-23,Netherlands,Belgium,1.0,0.0,finished,openfootball-internationals
+2022-09-25 00:00:00+00:00,NationsLeague,2022-23,Austria,Croatia,1.0,3.0,finished,openfootball-internationals
+2022-09-25 00:00:00+00:00,NationsLeague,2022-23,Faroe Islands,Turkey,2.0,1.0,finished,openfootball-internationals
+2022-09-25 00:00:00+00:00,NationsLeague,2022-23,Wales,Poland,0.0,1.0,finished,openfootball-internationals
+2022-09-25 00:00:00+00:00,NationsLeague,2022-23,Denmark,France,2.0,0.0,finished,openfootball-internationals
+2022-09-26 00:00:00+00:00,NationsLeague,2022-23,North Macedonia,Bulgaria,0.0,1.0,finished,openfootball-internationals
+2022-09-26 00:00:00+00:00,NationsLeague,2022-23,Gibraltar,Georgia,1.0,2.0,finished,openfootball-internationals
+2022-09-26 00:00:00+00:00,NationsLeague,2022-23,Romania,Bosnia and Herzegovina,4.0,1.0,finished,openfootball-internationals
+2022-09-26 00:00:00+00:00,NationsLeague,2022-23,San Marino,Estonia,0.0,4.0,finished,openfootball-internationals
+2022-09-26 00:00:00+00:00,NationsLeague,2022-23,Hungary,Italy,0.0,2.0,finished,openfootball-internationals
+2022-09-26 00:00:00+00:00,NationsLeague,2022-23,England,Germany,3.0,3.0,finished,openfootball-internationals
+2022-09-26 00:00:00+00:00,NationsLeague,2022-23,Montenegro,Finland,0.0,2.0,finished,openfootball-internationals
+2022-09-27 00:00:00+00:00,NationsLeague,2022-23,Portugal,Spain,0.0,1.0,finished,openfootball-internationals
+2022-09-27 00:00:00+00:00,NationsLeague,2022-23,Republic of Ireland,Armenia,3.0,2.0,finished,openfootball-internationals
+2022-09-27 00:00:00+00:00,NationsLeague,2022-23,Ukraine,Scotland,0.0,0.0,finished,openfootball-internationals
+2022-09-27 00:00:00+00:00,NationsLeague,2022-23,Albania,Iceland,1.0,1.0,finished,openfootball-internationals
+2022-09-27 00:00:00+00:00,NationsLeague,2022-23,Norway,Serbia,0.0,2.0,finished,openfootball-internationals
+2022-09-27 00:00:00+00:00,NationsLeague,2022-23,Sweden,Slovenia,1.0,1.0,finished,openfootball-internationals
+2022-09-27 00:00:00+00:00,NationsLeague,2022-23,Kosovo,Cyprus,5.0,1.0,finished,openfootball-internationals
+2022-09-27 00:00:00+00:00,NationsLeague,2022-23,Greece,Northern Ireland,3.0,1.0,finished,openfootball-internationals
+2022-09-27 00:00:00+00:00,NationsLeague,2022-23,Switzerland,Czech Republic,2.0,1.0,finished,openfootball-internationals
+2023-06-14 00:00:00+00:00,NationsLeague,2022-23,Netherlands,Croatia,2.0,4.0,finished,openfootball-internationals
+2023-06-15 00:00:00+00:00,NationsLeague,2022-23,Spain,Italy,2.0,1.0,finished,openfootball-internationals
+2023-06-18 00:00:00+00:00,NationsLeague,2022-23,Croatia,Spain,0.0,0.0,finished,openfootball-internationals
+2023-06-18 00:00:00+00:00,NationsLeague,2022-23,Netherlands,Italy,2.0,3.0,finished,openfootball-internationals
+2024-03-21 00:00:00+00:00,NationsLeague,2024-25,Gibraltar,Lithuania,0.0,1.0,finished,openfootball-internationals
+2024-03-26 00:00:00+00:00,NationsLeague,2024-25,Lithuania,Gibraltar,1.0,0.0,finished,openfootball-internationals
+2024-09-05 00:00:00+00:00,NationsLeague,2024-25,Portugal,Croatia,2.0,1.0,finished,openfootball-internationals
+2024-09-05 00:00:00+00:00,NationsLeague,2024-25,Scotland,Poland,2.0,3.0,finished,openfootball-internationals
+2024-09-05 00:00:00+00:00,NationsLeague,2024-25,Denmark,Switzerland,2.0,0.0,finished,openfootball-internationals
+2024-09-05 00:00:00+00:00,NationsLeague,2024-25,Serbia,Spain,0.0,0.0,finished,openfootball-internationals
+2024-09-05 00:00:00+00:00,NationsLeague,2024-25,Azerbaijan,Sweden,1.0,3.0,finished,openfootball-internationals
+2024-09-05 00:00:00+00:00,NationsLeague,2024-25,Estonia,Slovakia,0.0,1.0,finished,openfootball-internationals
+2024-09-05 00:00:00+00:00,NationsLeague,2024-25,Northern Ireland,Luxembourg,2.0,0.0,finished,openfootball-internationals
+2024-09-05 00:00:00+00:00,NationsLeague,2024-25,Belarus,Bulgaria,0.0,0.0,finished,openfootball-internationals
+2024-09-05 00:00:00+00:00,NationsLeague,2024-25,San Marino,Liechtenstein,1.0,0.0,finished,openfootball-internationals
+2024-09-06 00:00:00+00:00,NationsLeague,2024-25,Lithuania,Cyprus,0.0,1.0,finished,openfootball-internationals
+2024-09-06 00:00:00+00:00,NationsLeague,2024-25,Kosovo,Romania,0.0,3.0,finished,openfootball-internationals
+2024-09-06 00:00:00+00:00,NationsLeague,2024-25,Wales,Turkey,0.0,0.0,finished,openfootball-internationals
+2024-09-06 00:00:00+00:00,NationsLeague,2024-25,Iceland,Montenegro,2.0,0.0,finished,openfootball-internationals
+2024-09-06 00:00:00+00:00,NationsLeague,2024-25,Belgium,Israel,3.0,1.0,finished,openfootball-internationals
+2024-09-06 00:00:00+00:00,NationsLeague,2024-25,Kazakhstan,Norway,0.0,0.0,finished,openfootball-internationals
+2024-09-06 00:00:00+00:00,NationsLeague,2024-25,France,Italy,1.0,3.0,finished,openfootball-internationals
+2024-09-06 00:00:00+00:00,NationsLeague,2024-25,Slovenia,Austria,1.0,1.0,finished,openfootball-internationals
+2024-09-07 00:00:00+00:00,NationsLeague,2024-25,Faroe Islands,North Macedonia,1.0,1.0,finished,openfootball-internationals
+2024-09-07 00:00:00+00:00,NationsLeague,2024-25,Armenia,Latvia,4.0,1.0,finished,openfootball-internationals
+2024-09-07 00:00:00+00:00,NationsLeague,2024-25,Moldova,Malta,2.0,0.0,finished,openfootball-internationals
+2024-09-07 00:00:00+00:00,NationsLeague,2024-25,Greece,Finland,3.0,0.0,finished,openfootball-internationals
+2024-09-07 00:00:00+00:00,NationsLeague,2024-25,Netherlands,Bosnia and Herzegovina,5.0,2.0,finished,openfootball-internationals
+2024-09-07 00:00:00+00:00,NationsLeague,2024-25,Ukraine,Albania,1.0,2.0,finished,openfootball-internationals
+2024-09-07 00:00:00+00:00,NationsLeague,2024-25,Georgia,Czech Republic,4.0,1.0,finished,openfootball-internationals
+2024-09-07 00:00:00+00:00,NationsLeague,2024-25,Germany,Hungary,5.0,0.0,finished,openfootball-internationals
+2024-09-07 00:00:00+00:00,NationsLeague,2024-25,Republic of Ireland,England,0.0,2.0,finished,openfootball-internationals
+2024-09-08 00:00:00+00:00,NationsLeague,2024-25,Gibraltar,Liechtenstein,2.0,2.0,finished,openfootball-internationals
+2024-09-08 00:00:00+00:00,NationsLeague,2024-25,Bulgaria,Northern Ireland,1.0,0.0,finished,openfootball-internationals
+2024-09-08 00:00:00+00:00,NationsLeague,2024-25,Luxembourg,Belarus,0.0,1.0,finished,openfootball-internationals
+2024-09-08 00:00:00+00:00,NationsLeague,2024-25,Sweden,Estonia,3.0,0.0,finished,openfootball-internationals
+2024-09-08 00:00:00+00:00,NationsLeague,2024-25,Slovakia,Azerbaijan,2.0,0.0,finished,openfootball-internationals
+2024-09-08 00:00:00+00:00,NationsLeague,2024-25,Switzerland,Spain,1.0,4.0,finished,openfootball-internationals
+2024-09-08 00:00:00+00:00,NationsLeague,2024-25,Denmark,Serbia,2.0,0.0,finished,openfootball-internationals
+2024-09-08 00:00:00+00:00,NationsLeague,2024-25,Croatia,Poland,1.0,0.0,finished,openfootball-internationals
+2024-09-08 00:00:00+00:00,NationsLeague,2024-25,Portugal,Scotland,2.0,1.0,finished,openfootball-internationals
+2024-09-09 00:00:00+00:00,NationsLeague,2024-25,Romania,Lithuania,3.0,1.0,finished,openfootball-internationals
+2024-09-09 00:00:00+00:00,NationsLeague,2024-25,Cyprus,Kosovo,0.0,4.0,finished,openfootball-internationals
+2024-09-09 00:00:00+00:00,NationsLeague,2024-25,Turkey,Iceland,3.0,1.0,finished,openfootball-internationals
+2024-09-09 00:00:00+00:00,NationsLeague,2024-25,Montenegro,Wales,1.0,2.0,finished,openfootball-internationals
+2024-09-09 00:00:00+00:00,NationsLeague,2024-25,Slovenia,Kazakhstan,3.0,0.0,finished,openfootball-internationals
+2024-09-09 00:00:00+00:00,NationsLeague,2024-25,Norway,Austria,2.0,1.0,finished,openfootball-internationals
+2024-09-09 00:00:00+00:00,NationsLeague,2024-25,Israel,Italy,1.0,2.0,finished,openfootball-internationals
+2024-09-09 00:00:00+00:00,NationsLeague,2024-25,France,Belgium,2.0,0.0,finished,openfootball-internationals
+2024-09-10 00:00:00+00:00,NationsLeague,2024-25,Hungary,Bosnia and Herzegovina,0.0,0.0,finished,openfootball-internationals
+2024-09-10 00:00:00+00:00,NationsLeague,2024-25,Netherlands,Germany,2.0,2.0,finished,openfootball-internationals
+2024-09-10 00:00:00+00:00,NationsLeague,2024-25,Albania,Georgia,0.0,1.0,finished,openfootball-internationals
+2024-09-10 00:00:00+00:00,NationsLeague,2024-25,Czech Republic,Ukraine,3.0,2.0,finished,openfootball-internationals
+2024-09-10 00:00:00+00:00,NationsLeague,2024-25,England,Finland,2.0,0.0,finished,openfootball-internationals
+2024-09-10 00:00:00+00:00,NationsLeague,2024-25,Republic of Ireland,Greece,0.0,2.0,finished,openfootball-internationals
+2024-09-10 00:00:00+00:00,NationsLeague,2024-25,Latvia,Faroe Islands,1.0,0.0,finished,openfootball-internationals
+2024-09-10 00:00:00+00:00,NationsLeague,2024-25,North Macedonia,Armenia,2.0,0.0,finished,openfootball-internationals
+2024-09-10 00:00:00+00:00,NationsLeague,2024-25,Andorra,Malta,0.0,1.0,finished,openfootball-internationals
+2024-10-10 00:00:00+00:00,NationsLeague,2024-25,Moldova,Andorra,2.0,0.0,finished,openfootball-internationals
+2024-10-10 00:00:00+00:00,NationsLeague,2024-25,Faroe Islands,Armenia,2.0,2.0,finished,openfootball-internationals
+2024-10-10 00:00:00+00:00,NationsLeague,2024-25,Latvia,North Macedonia,0.0,3.0,finished,openfootball-internationals
+2024-10-10 00:00:00+00:00,NationsLeague,2024-25,Norway,Slovenia,3.0,0.0,finished,openfootball-internationals
+2024-10-10 00:00:00+00:00,NationsLeague,2024-25,Gibraltar,San Marino,1.0,0.0,finished,openfootball-internationals
+2024-10-10 00:00:00+00:00,NationsLeague,2024-25,Finland,Republic of Ireland,1.0,2.0,finished,openfootball-internationals
+2024-10-10 00:00:00+00:00,NationsLeague,2024-25,England,Greece,1.0,2.0,finished,openfootball-internationals
+2024-10-10 00:00:00+00:00,NationsLeague,2024-25,Italy,Belgium,2.0,2.0,finished,openfootball-internationals
+2024-10-10 00:00:00+00:00,NationsLeague,2024-25,Austria,Kazakhstan,4.0,0.0,finished,openfootball-internationals
+2024-10-10 00:00:00+00:00,NationsLeague,2024-25,Israel,France,1.0,4.0,finished,openfootball-internationals
+2024-10-11 00:00:00+00:00,NationsLeague,2024-25,Bosnia and Herzegovina,Germany,1.0,2.0,finished,openfootball-internationals
+2024-10-11 00:00:00+00:00,NationsLeague,2024-25,Hungary,Netherlands,1.0,1.0,finished,openfootball-internationals
+2024-10-11 00:00:00+00:00,NationsLeague,2024-25,Czech Republic,Albania,2.0,0.0,finished,openfootball-internationals
+2024-10-11 00:00:00+00:00,NationsLeague,2024-25,Ukraine,Georgia,1.0,0.0,finished,openfootball-internationals
+2024-10-11 00:00:00+00:00,NationsLeague,2024-25,Iceland,Wales,2.0,2.0,finished,openfootball-internationals
+2024-10-11 00:00:00+00:00,NationsLeague,2024-25,Turkey,Montenegro,1.0,0.0,finished,openfootball-internationals
+2024-10-11 00:00:00+00:00,NationsLeague,2024-25,Estonia,Azerbaijan,3.0,1.0,finished,openfootball-internationals
+2024-10-11 00:00:00+00:00,NationsLeague,2024-25,Slovakia,Sweden,2.0,2.0,finished,openfootball-internationals
+2024-10-12 00:00:00+00:00,NationsLeague,2024-25,Bulgaria,Luxembourg,0.0,0.0,finished,openfootball-internationals
+2024-10-12 00:00:00+00:00,NationsLeague,2024-25,Cyprus,Romania,0.0,3.0,finished,openfootball-internationals
+2024-10-12 00:00:00+00:00,NationsLeague,2024-25,Lithuania,Kosovo,1.0,2.0,finished,openfootball-internationals
+2024-10-12 00:00:00+00:00,NationsLeague,2024-25,Belarus,Northern Ireland,0.0,0.0,finished,openfootball-internationals
+2024-10-12 00:00:00+00:00,NationsLeague,2024-25,Serbia,Switzerland,2.0,0.0,finished,openfootball-internationals
+2024-10-12 00:00:00+00:00,NationsLeague,2024-25,Poland,Portugal,1.0,3.0,finished,openfootball-internationals
+2024-10-12 00:00:00+00:00,NationsLeague,2024-25,Croatia,Scotland,2.0,1.0,finished,openfootball-internationals
+2024-10-12 00:00:00+00:00,NationsLeague,2024-25,Spain,Denmark,1.0,0.0,finished,openfootball-internationals
+2024-10-13 00:00:00+00:00,NationsLeague,2024-25,Malta,Moldova,1.0,0.0,finished,openfootball-internationals
+2024-10-13 00:00:00+00:00,NationsLeague,2024-25,Liechtenstein,Gibraltar,0.0,0.0,finished,openfootball-internationals
+2024-10-13 00:00:00+00:00,NationsLeague,2024-25,Armenia,North Macedonia,0.0,2.0,finished,openfootball-internationals
+2024-10-13 00:00:00+00:00,NationsLeague,2024-25,Faroe Islands,Latvia,1.0,1.0,finished,openfootball-internationals
+2024-10-13 00:00:00+00:00,NationsLeague,2024-25,Kazakhstan,Slovenia,0.0,1.0,finished,openfootball-internationals
+2024-10-13 00:00:00+00:00,NationsLeague,2024-25,Greece,Republic of Ireland,2.0,0.0,finished,openfootball-internationals
+2024-10-13 00:00:00+00:00,NationsLeague,2024-25,Finland,England,1.0,3.0,finished,openfootball-internationals
+2024-10-13 00:00:00+00:00,NationsLeague,2024-25,Austria,Norway,5.0,1.0,finished,openfootball-internationals
+2024-10-14 00:00:00+00:00,NationsLeague,2024-25,Iceland,Turkey,2.0,4.0,finished,openfootball-internationals
+2024-10-14 00:00:00+00:00,NationsLeague,2024-25,Estonia,Sweden,0.0,3.0,finished,openfootball-internationals
+2024-10-14 00:00:00+00:00,NationsLeague,2024-25,Azerbaijan,Slovakia,1.0,3.0,finished,openfootball-internationals
+2024-10-14 00:00:00+00:00,NationsLeague,2024-25,Wales,Montenegro,1.0,0.0,finished,openfootball-internationals
+2024-10-14 00:00:00+00:00,NationsLeague,2024-25,Ukraine,Czech Republic,1.0,1.0,finished,openfootball-internationals
+2024-10-14 00:00:00+00:00,NationsLeague,2024-25,Belgium,France,1.0,2.0,finished,openfootball-internationals
+2024-10-14 00:00:00+00:00,NationsLeague,2024-25,Germany,Netherlands,1.0,0.0,finished,openfootball-internationals
+2024-10-14 00:00:00+00:00,NationsLeague,2024-25,Bosnia and Herzegovina,Hungary,0.0,2.0,finished,openfootball-internationals
+2024-10-14 00:00:00+00:00,NationsLeague,2024-25,Italy,Israel,4.0,1.0,finished,openfootball-internationals
+2024-10-14 00:00:00+00:00,NationsLeague,2024-25,Georgia,Albania,0.0,1.0,finished,openfootball-internationals
+2024-10-15 00:00:00+00:00,NationsLeague,2024-25,Lithuania,Romania,1.0,2.0,finished,openfootball-internationals
+2024-10-15 00:00:00+00:00,NationsLeague,2024-25,Belarus,Luxembourg,1.0,1.0,finished,openfootball-internationals
+2024-10-15 00:00:00+00:00,NationsLeague,2024-25,Kosovo,Cyprus,3.0,0.0,finished,openfootball-internationals
+2024-10-15 00:00:00+00:00,NationsLeague,2024-25,Northern Ireland,Bulgaria,5.0,0.0,finished,openfootball-internationals
+2024-10-15 00:00:00+00:00,NationsLeague,2024-25,Spain,Serbia,3.0,0.0,finished,openfootball-internationals
+2024-10-15 00:00:00+00:00,NationsLeague,2024-25,Scotland,Portugal,0.0,0.0,finished,openfootball-internationals
+2024-10-15 00:00:00+00:00,NationsLeague,2024-25,Switzerland,Denmark,2.0,2.0,finished,openfootball-internationals
+2024-10-15 00:00:00+00:00,NationsLeague,2024-25,Poland,Croatia,3.0,3.0,finished,openfootball-internationals
+2024-11-14 00:00:00+00:00,NationsLeague,2024-25,Belgium,Italy,0.0,1.0,finished,openfootball-internationals
+2024-11-14 00:00:00+00:00,NationsLeague,2024-25,France,Israel,0.0,0.0,finished,openfootball-internationals
+2024-11-14 00:00:00+00:00,NationsLeague,2024-25,Republic of Ireland,Finland,1.0,0.0,finished,openfootball-internationals
+2024-11-14 00:00:00+00:00,NationsLeague,2024-25,Greece,England,0.0,3.0,finished,openfootball-internationals
+2024-11-14 00:00:00+00:00,NationsLeague,2024-25,Kazakhstan,Austria,0.0,2.0,finished,openfootball-internationals
+2024-11-14 00:00:00+00:00,NationsLeague,2024-25,Slovenia,Norway,1.0,4.0,finished,openfootball-internationals
+2024-11-14 00:00:00+00:00,NationsLeague,2024-25,North Macedonia,Latvia,1.0,0.0,finished,openfootball-internationals
+2024-11-14 00:00:00+00:00,NationsLeague,2024-25,Armenia,Faroe Islands,0.0,1.0,finished,openfootball-internationals
+2024-11-15 00:00:00+00:00,NationsLeague,2024-25,San Marino,Gibraltar,1.0,1.0,finished,openfootball-internationals
+2024-11-15 00:00:00+00:00,NationsLeague,2024-25,Luxembourg,Bulgaria,0.0,1.0,finished,openfootball-internationals
+2024-11-15 00:00:00+00:00,NationsLeague,2024-25,Northern Ireland,Belarus,2.0,0.0,finished,openfootball-internationals
+2024-11-15 00:00:00+00:00,NationsLeague,2024-25,Romania,Kosovo,0.0,0.0,finished,openfootball-internationals
+2024-11-15 00:00:00+00:00,NationsLeague,2024-25,Scotland,Croatia,1.0,0.0,finished,openfootball-internationals
+2024-11-15 00:00:00+00:00,NationsLeague,2024-25,Switzerland,Serbia,1.0,1.0,finished,openfootball-internationals
+2024-11-15 00:00:00+00:00,NationsLeague,2024-25,Denmark,Spain,1.0,2.0,finished,openfootball-internationals
+2024-11-15 00:00:00+00:00,NationsLeague,2024-25,Portugal,Poland,5.0,1.0,finished,openfootball-internationals
+2024-11-15 00:00:00+00:00,NationsLeague,2024-25,Cyprus,Lithuania,2.0,1.0,finished,openfootball-internationals
+2024-11-16 00:00:00+00:00,NationsLeague,2024-25,Azerbaijan,Estonia,0.0,0.0,finished,openfootball-internationals
+2024-11-16 00:00:00+00:00,NationsLeague,2024-25,Andorra,Moldova,0.0,1.0,finished,openfootball-internationals
+2024-11-16 00:00:00+00:00,NationsLeague,2024-25,Sweden,Slovakia,2.0,1.0,finished,openfootball-internationals
+2024-11-16 00:00:00+00:00,NationsLeague,2024-25,Turkey,Wales,0.0,0.0,finished,openfootball-internationals
+2024-11-16 00:00:00+00:00,NationsLeague,2024-25,Netherlands,Hungary,4.0,0.0,finished,openfootball-internationals
+2024-11-16 00:00:00+00:00,NationsLeague,2024-25,Georgia,Ukraine,1.0,1.0,finished,openfootball-internationals
+2024-11-16 00:00:00+00:00,NationsLeague,2024-25,Albania,Czech Republic,0.0,0.0,finished,openfootball-internationals
+2024-11-16 00:00:00+00:00,NationsLeague,2024-25,Germany,Bosnia and Herzegovina,7.0,0.0,finished,openfootball-internationals
+2024-11-16 00:00:00+00:00,NationsLeague,2024-25,Montenegro,Iceland,0.0,2.0,finished,openfootball-internationals
+2024-11-17 00:00:00+00:00,NationsLeague,2024-25,Israel,Belgium,1.0,0.0,finished,openfootball-internationals
+2024-11-17 00:00:00+00:00,NationsLeague,2024-25,Italy,France,1.0,3.0,finished,openfootball-internationals
+2024-11-17 00:00:00+00:00,NationsLeague,2024-25,England,Republic of Ireland,5.0,0.0,finished,openfootball-internationals
+2024-11-17 00:00:00+00:00,NationsLeague,2024-25,Finland,Greece,0.0,2.0,finished,openfootball-internationals
+2024-11-17 00:00:00+00:00,NationsLeague,2024-25,Norway,Kazakhstan,5.0,0.0,finished,openfootball-internationals
+2024-11-17 00:00:00+00:00,NationsLeague,2024-25,Austria,Slovenia,1.0,1.0,finished,openfootball-internationals
+2024-11-17 00:00:00+00:00,NationsLeague,2024-25,North Macedonia,Faroe Islands,1.0,0.0,finished,openfootball-internationals
+2024-11-17 00:00:00+00:00,NationsLeague,2024-25,Latvia,Armenia,1.0,2.0,finished,openfootball-internationals
+2024-11-18 00:00:00+00:00,NationsLeague,2024-25,Romania,Cyprus,4.0,1.0,finished,openfootball-internationals
+2024-11-18 00:00:00+00:00,NationsLeague,2024-25,Bulgaria,Belarus,1.0,1.0,finished,openfootball-internationals
+2024-11-18 00:00:00+00:00,NationsLeague,2024-25,Luxembourg,Northern Ireland,2.0,2.0,finished,openfootball-internationals
+2024-11-18 00:00:00+00:00,NationsLeague,2024-25,Liechtenstein,San Marino,1.0,3.0,finished,openfootball-internationals
+2024-11-18 00:00:00+00:00,NationsLeague,2024-25,Spain,Switzerland,3.0,2.0,finished,openfootball-internationals
+2024-11-18 00:00:00+00:00,NationsLeague,2024-25,Serbia,Denmark,0.0,0.0,finished,openfootball-internationals
+2024-11-18 00:00:00+00:00,NationsLeague,2024-25,Poland,Scotland,1.0,2.0,finished,openfootball-internationals
+2024-11-18 00:00:00+00:00,NationsLeague,2024-25,Croatia,Portugal,1.0,1.0,finished,openfootball-internationals
+2024-11-18 00:00:00+00:00,NationsLeague,2024-25,Kosovo,Lithuania,1.0,0.0,finished,openfootball-internationals
+2024-11-19 00:00:00+00:00,NationsLeague,2024-25,Malta,Andorra,0.0,0.0,finished,openfootball-internationals
+2024-11-19 00:00:00+00:00,NationsLeague,2024-25,Sweden,Azerbaijan,6.0,0.0,finished,openfootball-internationals
+2024-11-19 00:00:00+00:00,NationsLeague,2024-25,Slovakia,Estonia,1.0,0.0,finished,openfootball-internationals
+2024-11-19 00:00:00+00:00,NationsLeague,2024-25,Montenegro,Turkey,3.0,1.0,finished,openfootball-internationals
+2024-11-19 00:00:00+00:00,NationsLeague,2024-25,Wales,Iceland,4.0,1.0,finished,openfootball-internationals
+2024-11-19 00:00:00+00:00,NationsLeague,2024-25,Albania,Ukraine,1.0,2.0,finished,openfootball-internationals
+2024-11-19 00:00:00+00:00,NationsLeague,2024-25,Hungary,Germany,1.0,1.0,finished,openfootball-internationals
+2024-11-19 00:00:00+00:00,NationsLeague,2024-25,Bosnia and Herzegovina,Netherlands,1.0,1.0,finished,openfootball-internationals
+2024-11-19 00:00:00+00:00,NationsLeague,2024-25,Czech Republic,Georgia,2.0,1.0,finished,openfootball-internationals
+2025-03-20 00:00:00+00:00,NationsLeague,2024-25,Slovakia,Slovenia,0.0,0.0,finished,openfootball-internationals
+2025-03-20 00:00:00+00:00,NationsLeague,2024-25,Kosovo,Iceland,2.0,1.0,finished,openfootball-internationals
+2025-03-20 00:00:00+00:00,NationsLeague,2024-25,Bulgaria,Republic of Ireland,1.0,2.0,finished,openfootball-internationals
+2025-03-20 00:00:00+00:00,NationsLeague,2024-25,Armenia,Georgia,0.0,3.0,finished,openfootball-internationals
+2025-03-20 00:00:00+00:00,NationsLeague,2024-25,Turkey,Hungary,3.0,1.0,finished,openfootball-internationals
+2025-03-20 00:00:00+00:00,NationsLeague,2024-25,Ukraine,Belgium,3.0,1.0,finished,openfootball-internationals
+2025-03-20 00:00:00+00:00,NationsLeague,2024-25,Austria,Serbia,1.0,1.0,finished,openfootball-internationals
+2025-03-20 00:00:00+00:00,NationsLeague,2024-25,Netherlands,Spain,2.0,2.0,finished,openfootball-internationals
+2025-03-20 00:00:00+00:00,NationsLeague,2024-25,Italy,Germany,1.0,2.0,finished,openfootball-internationals
+2025-03-20 00:00:00+00:00,NationsLeague,2024-25,Denmark,Portugal,1.0,0.0,finished,openfootball-internationals
+2025-03-20 00:00:00+00:00,NationsLeague,2024-25,Croatia,France,2.0,0.0,finished,openfootball-internationals
+2025-03-20 00:00:00+00:00,NationsLeague,2024-25,Greece,Scotland,0.0,1.0,finished,openfootball-internationals
+2025-03-23 00:00:00+00:00,NationsLeague,2024-25,Slovenia,Slovakia,1.0,0.0,finished,openfootball-internationals
+2025-03-23 00:00:00+00:00,NationsLeague,2024-25,Republic of Ireland,Bulgaria,2.0,1.0,finished,openfootball-internationals
+2025-03-23 00:00:00+00:00,NationsLeague,2024-25,Iceland,Kosovo,1.0,3.0,finished,openfootball-internationals
+2025-03-23 00:00:00+00:00,NationsLeague,2024-25,Georgia,Armenia,6.0,1.0,finished,openfootball-internationals
+2025-03-23 00:00:00+00:00,NationsLeague,2024-25,Serbia,Austria,2.0,0.0,finished,openfootball-internationals
+2025-03-23 00:00:00+00:00,NationsLeague,2024-25,Scotland,Greece,0.0,3.0,finished,openfootball-internationals
+2025-03-23 00:00:00+00:00,NationsLeague,2024-25,Belgium,Ukraine,3.0,0.0,finished,openfootball-internationals
+2025-03-23 00:00:00+00:00,NationsLeague,2024-25,Spain,Netherlands,3.0,3.0,finished,openfootball-internationals
+2025-03-23 00:00:00+00:00,NationsLeague,2024-25,Portugal,Denmark,5.0,2.0,finished,openfootball-internationals
+2025-03-23 00:00:00+00:00,NationsLeague,2024-25,Germany,Italy,3.0,3.0,finished,openfootball-internationals
+2025-03-23 00:00:00+00:00,NationsLeague,2024-25,France,Croatia,2.0,0.0,finished,openfootball-internationals
+2025-03-23 00:00:00+00:00,NationsLeague,2024-25,Hungary,Turkey,0.0,3.0,finished,openfootball-internationals
+2025-06-04 00:00:00+00:00,NationsLeague,2024-25,Germany,Portugal,1.0,2.0,finished,openfootball-internationals
+2025-06-05 00:00:00+00:00,NationsLeague,2024-25,Spain,France,5.0,4.0,finished,openfootball-internationals
+2025-06-08 00:00:00+00:00,NationsLeague,2024-25,Germany,France,0.0,2.0,finished,openfootball-internationals
+2025-06-08 00:00:00+00:00,NationsLeague,2024-25,Portugal,Spain,2.0,2.0,finished,openfootball-internationals
 2021-08-21 00:00:00+00:00,SerieA,2021-22,FC Internazionale Milano,Genoa CFC,4.0,0.0,finished,openfootball
 2021-08-21 00:00:00+00:00,SerieA,2021-22,Hellas Verona FC,US Sassuolo Calcio,2.0,3.0,finished,openfootball
 2021-08-21 00:00:00+00:00,SerieA,2021-22,Torino FC,Atalanta BC,1.0,2.0,finished,openfootball
@@ -10329,66 +10987,66 @@ date,league,season,home_team,away_team,home_goals,away_goals,status,source
 2026-09-20 00:00:00+00:00,SerieA,2026-27,Parma Calcio 1913,Genoa CFC,2.0,1.0,finished,openfootball
 2026-09-20 00:00:00+00:00,SerieA,2026-27,Juventus FC,Atalanta BC,2.0,0.0,finished,openfootball
 2026-09-20 00:00:00+00:00,SerieA,2026-27,AC Milan,US Lecce,3.0,0.0,finished,openfootball
-2026-10-10 00:00:00+00:00,SerieA,2026-27,Genoa CFC,ACF Fiorentina,,,scheduled,openfootball
-2026-10-10 00:00:00+00:00,SerieA,2026-27,FC Internazionale Milano,Parma Calcio 1913,,,scheduled,openfootball
-2026-10-10 00:00:00+00:00,SerieA,2026-27,SSC Napoli,Frosinone Calcio,,,scheduled,openfootball
-2026-10-11 00:00:00+00:00,SerieA,2026-27,Como 1907,AS Roma,,,scheduled,openfootball
-2026-10-11 00:00:00+00:00,SerieA,2026-27,US Lecce,Bologna FC 1909,,,scheduled,openfootball
-2026-10-11 00:00:00+00:00,SerieA,2026-27,SS Lazio,AC Monza,,,scheduled,openfootball
-2026-10-11 00:00:00+00:00,SerieA,2026-27,US Sassuolo Calcio,AC Milan,,,scheduled,openfootball
-2026-10-11 00:00:00+00:00,SerieA,2026-27,Cagliari Calcio,Juventus FC,,,scheduled,openfootball
-2026-10-12 00:00:00+00:00,SerieA,2026-27,Atalanta BC,Venezia FC,,,scheduled,openfootball
-2026-10-12 00:00:00+00:00,SerieA,2026-27,Torino FC,Udinese Calcio,,,scheduled,openfootball
-2026-10-16 00:00:00+00:00,SerieA,2026-27,Frosinone Calcio,US Sassuolo Calcio,,,scheduled,openfootball
-2026-10-17 00:00:00+00:00,SerieA,2026-27,Venezia FC,SSC Napoli,,,scheduled,openfootball
-2026-10-17 00:00:00+00:00,SerieA,2026-27,Bologna FC 1909,FC Internazionale Milano,,,scheduled,openfootball
-2026-10-17 00:00:00+00:00,SerieA,2026-27,AS Roma,Genoa CFC,,,scheduled,openfootball
-2026-10-18 00:00:00+00:00,SerieA,2026-27,Udinese Calcio,US Lecce,,,scheduled,openfootball
-2026-10-18 00:00:00+00:00,SerieA,2026-27,ACF Fiorentina,Como 1907,,,scheduled,openfootball
-2026-10-18 00:00:00+00:00,SerieA,2026-27,AC Milan,Atalanta BC,,,scheduled,openfootball
-2026-10-18 00:00:00+00:00,SerieA,2026-27,Juventus FC,SS Lazio,,,scheduled,openfootball
-2026-10-19 00:00:00+00:00,SerieA,2026-27,AC Monza,Cagliari Calcio,,,scheduled,openfootball
-2026-10-19 00:00:00+00:00,SerieA,2026-27,Parma Calcio 1913,Torino FC,,,scheduled,openfootball
-2026-10-23 00:00:00+00:00,SerieA,2026-27,Torino FC,AC Monza,,,scheduled,openfootball
-2026-10-24 00:00:00+00:00,SerieA,2026-27,Cagliari Calcio,Bologna FC 1909,,,scheduled,openfootball
-2026-10-24 00:00:00+00:00,SerieA,2026-27,Como 1907,US Sassuolo Calcio,,,scheduled,openfootball
-2026-10-24 00:00:00+00:00,SerieA,2026-27,SSC Napoli,AS Roma,,,scheduled,openfootball
-2026-10-24 00:00:00+00:00,SerieA,2026-27,SS Lazio,Parma Calcio 1913,,,scheduled,openfootball
-2026-10-25 00:00:00+00:00,SerieA,2026-27,FC Internazionale Milano,ACF Fiorentina,,,scheduled,openfootball
-2026-10-25 00:00:00+00:00,SerieA,2026-27,Atalanta BC,Frosinone Calcio,,,scheduled,openfootball
-2026-10-25 00:00:00+00:00,SerieA,2026-27,Genoa CFC,Venezia FC,,,scheduled,openfootball
-2026-10-25 00:00:00+00:00,SerieA,2026-27,US Lecce,Juventus FC,,,scheduled,openfootball
-2026-10-25 00:00:00+00:00,SerieA,2026-27,Udinese Calcio,AC Milan,,,scheduled,openfootball
-2026-10-27 00:00:00+00:00,SerieA,2026-27,US Sassuolo Calcio,SS Lazio,,,scheduled,openfootball
-2026-10-27 00:00:00+00:00,SerieA,2026-27,AS Roma,Cagliari Calcio,,,scheduled,openfootball
-2026-10-27 00:00:00+00:00,SerieA,2026-27,Torino FC,Como 1907,,,scheduled,openfootball
-2026-10-28 00:00:00+00:00,SerieA,2026-27,AC Milan,Bologna FC 1909,,,scheduled,openfootball
-2026-10-28 00:00:00+00:00,SerieA,2026-27,Venezia FC,FC Internazionale Milano,,,scheduled,openfootball
-2026-10-28 00:00:00+00:00,SerieA,2026-27,Parma Calcio 1913,Udinese Calcio,,,scheduled,openfootball
-2026-10-28 00:00:00+00:00,SerieA,2026-27,Genoa CFC,Juventus FC,,,scheduled,openfootball
-2026-10-28 00:00:00+00:00,SerieA,2026-27,AC Monza,SSC Napoli,,,scheduled,openfootball
-2026-10-29 00:00:00+00:00,SerieA,2026-27,Frosinone Calcio,US Lecce,,,scheduled,openfootball
-2026-10-29 00:00:00+00:00,SerieA,2026-27,ACF Fiorentina,Atalanta BC,,,scheduled,openfootball
-2026-10-31 00:00:00+00:00,SerieA,2026-27,Bologna FC 1909,AC Monza,,,scheduled,openfootball
-2026-10-31 00:00:00+00:00,SerieA,2026-27,Udinese Calcio,AS Roma,,,scheduled,openfootball
-2026-10-31 00:00:00+00:00,SerieA,2026-27,AC Milan,FC Internazionale Milano,,,scheduled,openfootball
-2026-11-01 00:00:00+00:00,SerieA,2026-27,Como 1907,Venezia FC,,,scheduled,openfootball
-2026-11-01 00:00:00+00:00,SerieA,2026-27,Frosinone Calcio,Torino FC,,,scheduled,openfootball
-2026-11-01 00:00:00+00:00,SerieA,2026-27,SS Lazio,Cagliari Calcio,,,scheduled,openfootball
-2026-11-01 00:00:00+00:00,SerieA,2026-27,US Lecce,Genoa CFC,,,scheduled,openfootball
-2026-11-01 00:00:00+00:00,SerieA,2026-27,Juventus FC,SSC Napoli,,,scheduled,openfootball
-2026-11-02 00:00:00+00:00,SerieA,2026-27,US Sassuolo Calcio,ACF Fiorentina,,,scheduled,openfootball
-2026-11-02 00:00:00+00:00,SerieA,2026-27,Atalanta BC,Parma Calcio 1913,,,scheduled,openfootball
-2026-11-06 00:00:00+00:00,SerieA,2026-27,Venezia FC,Udinese Calcio,,,scheduled,openfootball
-2026-11-07 00:00:00+00:00,SerieA,2026-27,Torino FC,US Lecce,,,scheduled,openfootball
-2026-11-07 00:00:00+00:00,SerieA,2026-27,Cagliari Calcio,Frosinone Calcio,,,scheduled,openfootball
-2026-11-07 00:00:00+00:00,SerieA,2026-27,Parma Calcio 1913,Bologna FC 1909,,,scheduled,openfootball
-2026-11-07 00:00:00+00:00,SerieA,2026-27,AS Roma,US Sassuolo Calcio,,,scheduled,openfootball
-2026-11-08 00:00:00+00:00,SerieA,2026-27,SSC Napoli,SS Lazio,,,scheduled,openfootball
-2026-11-08 00:00:00+00:00,SerieA,2026-27,Genoa CFC,AC Milan,,,scheduled,openfootball
-2026-11-08 00:00:00+00:00,SerieA,2026-27,AC Monza,Atalanta BC,,,scheduled,openfootball
-2026-11-08 00:00:00+00:00,SerieA,2026-27,FC Internazionale Milano,Como 1907,,,scheduled,openfootball
-2026-11-08 00:00:00+00:00,SerieA,2026-27,ACF Fiorentina,Juventus FC,,,scheduled,openfootball
+2026-10-10 00:00:00+00:00,SerieA,2026-27,Genoa CFC,ACF Fiorentina,2.0,1.0,finished,open-matchday:fixturedl
+2026-10-10 00:00:00+00:00,SerieA,2026-27,FC Internazionale Milano,Parma Calcio 1913,3.0,0.0,finished,open-matchday:fixturedl
+2026-10-10 00:00:00+00:00,SerieA,2026-27,SSC Napoli,Frosinone Calcio,3.0,0.0,finished,open-matchday:fixturedl
+2026-10-11 00:00:00+00:00,SerieA,2026-27,Como 1907,AS Roma,0.0,0.0,finished,open-matchday:fixturedl
+2026-10-11 00:00:00+00:00,SerieA,2026-27,US Lecce,Bologna FC 1909,1.0,2.0,finished,open-matchday:fixturedl
+2026-10-11 00:00:00+00:00,SerieA,2026-27,SS Lazio,AC Monza,3.0,1.0,finished,open-matchday:fixturedl
+2026-10-11 00:00:00+00:00,SerieA,2026-27,US Sassuolo Calcio,AC Milan,1.0,1.0,finished,open-matchday:fixturedl
+2026-10-11 00:00:00+00:00,SerieA,2026-27,Cagliari Calcio,Juventus FC,1.0,1.0,finished,open-matchday:fixturedl
+2026-10-12 00:00:00+00:00,SerieA,2026-27,Atalanta BC,Venezia FC,3.0,1.0,finished,open-matchday:fixturedl
+2026-10-12 00:00:00+00:00,SerieA,2026-27,Torino FC,Udinese Calcio,2.0,1.0,finished,open-matchday:fixturedl
+2026-10-16 00:00:00+00:00,SerieA,2026-27,Frosinone Calcio,US Sassuolo Calcio,4.0,2.0,finished,open-matchday:fixturedl
+2026-10-17 00:00:00+00:00,SerieA,2026-27,Venezia FC,SSC Napoli,1.0,0.0,finished,open-matchday:fixturedl
+2026-10-17 00:00:00+00:00,SerieA,2026-27,Bologna FC 1909,FC Internazionale Milano,1.0,3.0,finished,open-matchday:fixturedl
+2026-10-17 00:00:00+00:00,SerieA,2026-27,AS Roma,Genoa CFC,2.0,0.0,finished,open-matchday:fixturedl
+2026-10-18 00:00:00+00:00,SerieA,2026-27,Udinese Calcio,US Lecce,0.0,3.0,finished,open-matchday:fixturedl
+2026-10-18 00:00:00+00:00,SerieA,2026-27,ACF Fiorentina,Como 1907,1.0,3.0,finished,open-matchday:fixturedl
+2026-10-18 00:00:00+00:00,SerieA,2026-27,AC Milan,Atalanta BC,3.0,2.0,finished,open-matchday:fixturedl
+2026-10-18 00:00:00+00:00,SerieA,2026-27,Juventus FC,SS Lazio,0.0,3.0,finished,open-matchday:fixturedl
+2026-10-19 00:00:00+00:00,SerieA,2026-27,AC Monza,Cagliari Calcio,4.0,0.0,finished,open-matchday:fixturedl
+2026-10-19 00:00:00+00:00,SerieA,2026-27,Parma Calcio 1913,Torino FC,0.0,3.0,finished,open-matchday:fixturedl
+2026-10-23 00:00:00+00:00,SerieA,2026-27,Torino FC,AC Monza,3.0,2.0,finished,open-matchday:fixturedl
+2026-10-24 00:00:00+00:00,SerieA,2026-27,Cagliari Calcio,Bologna FC 1909,0.0,2.0,finished,open-matchday:fixturedl
+2026-10-24 00:00:00+00:00,SerieA,2026-27,Como 1907,US Sassuolo Calcio,2.0,0.0,finished,open-matchday:fixturedl
+2026-10-24 00:00:00+00:00,SerieA,2026-27,SSC Napoli,AS Roma,3.0,3.0,finished,open-matchday:fixturedl
+2026-10-24 00:00:00+00:00,SerieA,2026-27,SS Lazio,Parma Calcio 1913,2.0,1.0,finished,open-matchday:fixturedl
+2026-10-25 00:00:00+00:00,SerieA,2026-27,FC Internazionale Milano,ACF Fiorentina,2.0,1.0,finished,open-matchday:fixturedl
+2026-10-25 00:00:00+00:00,SerieA,2026-27,Atalanta BC,Frosinone Calcio,4.0,4.0,finished,open-matchday:fixturedl
+2026-10-25 00:00:00+00:00,SerieA,2026-27,Genoa CFC,Venezia FC,1.0,0.0,finished,open-matchday:fixturedl
+2026-10-25 00:00:00+00:00,SerieA,2026-27,US Lecce,Juventus FC,0.0,2.0,finished,open-matchday:fixturedl
+2026-10-25 00:00:00+00:00,SerieA,2026-27,Udinese Calcio,AC Milan,0.0,2.0,finished,open-matchday:fixturedl
+2026-10-27 00:00:00+00:00,SerieA,2026-27,US Sassuolo Calcio,SS Lazio,2.0,6.0,finished,open-matchday:fixturedl
+2026-10-27 00:00:00+00:00,SerieA,2026-27,AS Roma,Cagliari Calcio,4.0,2.0,finished,open-matchday:fixturedl
+2026-10-27 00:00:00+00:00,SerieA,2026-27,Torino FC,Como 1907,1.0,3.0,finished,open-matchday:fixturedl
+2026-10-28 00:00:00+00:00,SerieA,2026-27,AC Milan,Bologna FC 1909,2.0,4.0,finished,open-matchday:fixturedl
+2026-10-28 00:00:00+00:00,SerieA,2026-27,Venezia FC,FC Internazionale Milano,0.0,2.0,finished,open-matchday:fixturedl
+2026-10-28 00:00:00+00:00,SerieA,2026-27,Parma Calcio 1913,Udinese Calcio,0.0,0.0,finished,open-matchday:fixturedl
+2026-10-28 00:00:00+00:00,SerieA,2026-27,Genoa CFC,Juventus FC,2.0,0.0,finished,open-matchday:fixturedl
+2026-10-28 00:00:00+00:00,SerieA,2026-27,AC Monza,SSC Napoli,1.0,4.0,finished,open-matchday:fixturedl
+2026-10-29 00:00:00+00:00,SerieA,2026-27,Frosinone Calcio,US Lecce,5.0,1.0,finished,open-matchday:fixturedl
+2026-10-29 00:00:00+00:00,SerieA,2026-27,ACF Fiorentina,Atalanta BC,2.0,2.0,finished,open-matchday:fixturedl
+2026-10-31 00:00:00+00:00,SerieA,2026-27,Bologna FC 1909,AC Monza,2.0,1.0,finished,open-matchday:fixturedl
+2026-10-31 00:00:00+00:00,SerieA,2026-27,Udinese Calcio,AS Roma,2.0,5.0,finished,open-matchday:fixturedl
+2026-10-31 00:00:00+00:00,SerieA,2026-27,AC Milan,FC Internazionale Milano,3.0,1.0,finished,open-matchday:fixturedl
+2026-11-01 00:00:00+00:00,SerieA,2026-27,Como 1907,Venezia FC,1.0,0.0,finished,open-matchday:fixturedl
+2026-11-01 00:00:00+00:00,SerieA,2026-27,Frosinone Calcio,Torino FC,2.0,0.0,finished,open-matchday:fixturedl
+2026-11-01 00:00:00+00:00,SerieA,2026-27,SS Lazio,Cagliari Calcio,2.0,1.0,finished,open-matchday:fixturedl
+2026-11-01 00:00:00+00:00,SerieA,2026-27,US Lecce,Genoa CFC,1.0,2.0,finished,open-matchday:fixturedl
+2026-11-01 00:00:00+00:00,SerieA,2026-27,Juventus FC,SSC Napoli,2.0,0.0,finished,open-matchday:fixturedl
+2026-11-02 00:00:00+00:00,SerieA,2026-27,US Sassuolo Calcio,ACF Fiorentina,2.0,4.0,finished,open-matchday:fixturedl
+2026-11-02 00:00:00+00:00,SerieA,2026-27,Atalanta BC,Parma Calcio 1913,0.0,3.0,finished,open-matchday:fixturedl
+2026-11-06 00:00:00+00:00,SerieA,2026-27,Venezia FC,Udinese Calcio,2.0,1.0,finished,open-matchday:fixturedl
+2026-11-07 00:00:00+00:00,SerieA,2026-27,Torino FC,US Lecce,1.0,1.0,finished,open-matchday:fixturedl
+2026-11-07 00:00:00+00:00,SerieA,2026-27,Cagliari Calcio,Frosinone Calcio,1.0,0.0,finished,open-matchday:fixturedl
+2026-11-07 00:00:00+00:00,SerieA,2026-27,Parma Calcio 1913,Bologna FC 1909,1.0,2.0,finished,open-matchday:fixturedl
+2026-11-07 00:00:00+00:00,SerieA,2026-27,AS Roma,US Sassuolo Calcio,3.0,0.0,finished,open-matchday:fixturedl
+2026-11-08 00:00:00+00:00,SerieA,2026-27,SSC Napoli,SS Lazio,1.0,1.0,finished,open-matchday:fixturedl
+2026-11-08 00:00:00+00:00,SerieA,2026-27,Genoa CFC,AC Milan,1.0,2.0,finished,open-matchday:fixturedl
+2026-11-08 00:00:00+00:00,SerieA,2026-27,AC Monza,Atalanta BC,0.0,1.0,finished,open-matchday:fixturedl
+2026-11-08 00:00:00+00:00,SerieA,2026-27,FC Internazionale Milano,Como 1907,2.0,0.0,finished,open-matchday:fixturedl
+2026-11-08 00:00:00+00:00,SerieA,2026-27,ACF Fiorentina,Juventus FC,2.0,2.0,finished,open-matchday:fixturedl
 2026-11-21 00:00:00+00:00,SerieA,2026-27,Como 1907,Cagliari Calcio,,,scheduled,openfootball
 2026-11-21 00:00:00+00:00,SerieA,2026-27,SS Lazio,US Lecce,,,scheduled,openfootball
 2026-11-21 00:00:00+00:00,SerieA,2026-27,Parma Calcio 1913,AS Roma,,,scheduled,openfootball
@@ -10659,3 +11317,159 @@ date,league,season,home_team,away_team,home_goals,away_goals,status,source
 2027-05-30 00:00:00+00:00,SerieA,2026-27,SSC Napoli,Atalanta BC,,,scheduled,openfootball
 2027-05-30 00:00:00+00:00,SerieA,2026-27,US Lecce,Venezia FC,,,scheduled,openfootball
 2027-05-30 00:00:00+00:00,SerieA,2026-27,Bologna FC 1909,Parma Calcio 1913,,,scheduled,openfootball
+2026-09-24 16:00:00+00:00,NationsLeague,2026-27,Andorra,Malta,1.0,2.0,finished,fixturedownload
+2026-09-24 18:45:00+00:00,NationsLeague,2026-27,Portugal,Wales,1.0,0.0,finished,fixturedownload
+2026-09-24 18:45:00+00:00,NationsLeague,2026-27,Netherlands,Germany,1.0,1.0,finished,fixturedownload
+2026-09-24 18:45:00+00:00,NationsLeague,2026-27,Serbia,Greece,1.0,2.0,finished,fixturedownload
+2026-09-24 18:45:00+00:00,NationsLeague,2026-27,Norway,Denmark,3.0,2.0,finished,fixturedownload
+2026-09-24 18:45:00+00:00,NationsLeague,2026-27,Austria,Israel,3.0,1.0,finished,fixturedownload
+2026-09-24 18:45:00+00:00,NationsLeague,2026-27,Kosovo,Republic of Ireland,1.0,0.0,finished,fixturedownload
+2026-09-24 18:45:00+00:00,NationsLeague,2026-27,Liechtenstein,Lithuania,0.0,2.0,finished,fixturedownload
+2026-09-25 16:00:00+00:00,NationsLeague,2026-27,Georgia,Northern Ireland,0.0,1.0,finished,fixturedownload
+2026-09-25 16:00:00+00:00,NationsLeague,2026-27,Armenia,Latvia,2.0,0.0,finished,fixturedownload
+2026-09-25 18:45:00+00:00,NationsLeague,2026-27,Italy,Belgium,0.0,2.0,finished,fixturedownload
+2026-09-25 18:45:00+00:00,NationsLeague,2026-27,Turkey,France,0.0,1.0,finished,fixturedownload
+2026-09-25 18:45:00+00:00,NationsLeague,2026-27,Hungary,Ukraine,0.0,1.0,finished,fixturedownload
+2026-09-25 18:45:00+00:00,NationsLeague,2026-27,Poland,Bosnia and Herzegovina,0.0,0.0,finished,fixturedownload
+2026-09-25 18:45:00+00:00,NationsLeague,2026-27,Sweden,Romania,2.0,1.0,finished,fixturedownload
+2026-09-25 18:45:00+00:00,NationsLeague,2026-27,Montenegro,Cyprus,2.0,1.0,finished,fixturedownload
+2026-09-26 13:00:00+00:00,NationsLeague,2026-27,Slovenia,Scotland,0.0,0.0,finished,fixturedownload
+2026-09-26 16:00:00+00:00,NationsLeague,2026-27,Iceland,Estonia,1.0,1.0,finished,fixturedownload
+2026-09-26 16:00:00+00:00,NationsLeague,2026-27,Faroe Islands,Kazakhstan,1.0,1.0,finished,fixturedownload
+2026-09-26 16:00:00+00:00,NationsLeague,2026-27,San Marino,Finland,0.0,7.0,finished,fixturedownload
+2026-09-26 16:00:00+00:00,NationsLeague,2026-27,Bulgaria,Luxembourg,1.0,2.0,finished,fixturedownload
+2026-09-26 18:45:00+00:00,NationsLeague,2026-27,England,Spain,2.0,3.0,finished,fixturedownload
+2026-09-26 18:45:00+00:00,NationsLeague,2026-27,Albania,Belarus,2.0,0.0,finished,fixturedownload
+2026-09-26 18:45:00+00:00,NationsLeague,2026-27,Slovakia,Moldova,2.0,0.0,finished,fixturedownload
+2026-09-26 18:45:00+00:00,NationsLeague,2026-27,North Macedonia,Switzerland,0.0,3.0,finished,fixturedownload
+2026-09-26 18:45:00+00:00,NationsLeague,2026-27,Czech Republic,Croatia,1.0,2.0,finished,fixturedownload
+2026-09-27 13:00:00+00:00,NationsLeague,2026-27,Lithuania,Azerbaijan,1.0,1.0,finished,fixturedownload
+2026-09-27 16:00:00+00:00,NationsLeague,2026-27,Denmark,Wales,2.0,0.0,finished,fixturedownload
+2026-09-27 16:00:00+00:00,NationsLeague,2026-27,Austria,Kosovo,3.0,1.0,finished,fixturedownload
+2026-09-27 16:00:00+00:00,NationsLeague,2026-27,Gibraltar,Andorra,0.0,0.0,finished,fixturedownload
+2026-09-27 16:00:00+00:00,NationsLeague,2026-27,Serbia,Netherlands,1.0,2.0,finished,fixturedownload
+2026-09-27 18:45:00+00:00,NationsLeague,2026-27,Germany,Greece,0.0,1.0,finished,fixturedownload
+2026-09-27 18:45:00+00:00,NationsLeague,2026-27,Norway,Portugal,1.0,2.0,finished,fixturedownload
+2026-09-27 18:45:00+00:00,NationsLeague,2026-27,Israel,Republic of Ireland,0.0,3.0,finished,fixturedownload
+2026-09-28 16:00:00+00:00,NationsLeague,2026-27,Armenia,Montenegro,2.0,3.0,finished,fixturedownload
+2026-09-28 16:00:00+00:00,NationsLeague,2026-27,Latvia,Cyprus,0.0,0.0,finished,fixturedownload
+2026-09-28 16:00:00+00:00,NationsLeague,2026-27,Georgia,Ukraine,0.0,0.0,finished,fixturedownload
+2026-09-28 18:45:00+00:00,NationsLeague,2026-27,Romania,Bosnia and Herzegovina,2.0,4.0,finished,fixturedownload
+2026-09-28 18:45:00+00:00,NationsLeague,2026-27,Sweden,Poland,3.0,1.0,finished,fixturedownload
+2026-09-28 18:45:00+00:00,NationsLeague,2026-27,Northern Ireland,Hungary,0.0,0.0,finished,fixturedownload
+2026-09-28 18:45:00+00:00,NationsLeague,2026-27,Belgium,France,0.0,1.0,finished,fixturedownload
+2026-09-28 18:45:00+00:00,NationsLeague,2026-27,Turkey,Italy,1.0,4.0,finished,fixturedownload
+2026-09-29 16:00:00+00:00,NationsLeague,2026-27,Finland,Belarus,0.0,0.0,finished,fixturedownload
+2026-09-29 16:00:00+00:00,NationsLeague,2026-27,Moldova,Faroe Islands,1.0,1.0,finished,fixturedownload
+2026-09-29 18:45:00+00:00,NationsLeague,2026-27,Slovenia,North Macedonia,2.0,0.0,finished,fixturedownload
+2026-09-29 18:45:00+00:00,NationsLeague,2026-27,San Marino,Albania,0.0,3.0,finished,fixturedownload
+2026-09-29 18:45:00+00:00,NationsLeague,2026-27,Slovakia,Kazakhstan,2.0,1.0,finished,fixturedownload
+2026-09-29 18:45:00+00:00,NationsLeague,2026-27,Bulgaria,Estonia,0.0,0.0,finished,fixturedownload
+2026-09-29 18:45:00+00:00,NationsLeague,2026-27,Luxembourg,Iceland,0.0,3.0,finished,fixturedownload
+2026-09-29 18:45:00+00:00,NationsLeague,2026-27,Spain,Croatia,4.0,1.0,finished,fixturedownload
+2026-09-29 18:45:00+00:00,NationsLeague,2026-27,Czech Republic,England,0.0,2.0,finished,fixturedownload
+2026-09-29 18:45:00+00:00,NationsLeague,2026-27,Scotland,Switzerland,0.0,3.0,finished,fixturedownload
+2026-10-01 16:00:00+00:00,NationsLeague,2026-27,Azerbaijan,Liechtenstein,0.0,0.0,finished,fixturedownload
+2026-10-01 18:45:00+00:00,NationsLeague,2026-27,Wales,Norway,2.0,1.0,finished,fixturedownload
+2026-10-01 18:45:00+00:00,NationsLeague,2026-27,Greece,Netherlands,2.0,2.0,finished,fixturedownload
+2026-10-01 18:45:00+00:00,NationsLeague,2026-27,Israel,Kosovo,0.0,0.0,finished,fixturedownload
+2026-10-01 18:45:00+00:00,NationsLeague,2026-27,Republic of Ireland,Austria,2.0,2.0,finished,fixturedownload
+2026-10-01 18:45:00+00:00,NationsLeague,2026-27,Germany,Serbia,2.0,0.0,finished,fixturedownload
+2026-10-01 18:45:00+00:00,NationsLeague,2026-27,Malta,Gibraltar,1.0,1.0,finished,fixturedownload
+2026-10-01 18:45:00+00:00,NationsLeague,2026-27,Denmark,Portugal,2.0,4.0,finished,fixturedownload
+2026-10-02 14:00:00+00:00,NationsLeague,2026-27,Kazakhstan,Moldova,1.0,2.0,finished,fixturedownload
+2026-10-02 16:00:00+00:00,NationsLeague,2026-27,Latvia,Montenegro,1.0,2.0,finished,fixturedownload
+2026-10-02 16:00:00+00:00,NationsLeague,2026-27,Cyprus,Armenia,2.0,0.0,finished,fixturedownload
+2026-10-02 18:45:00+00:00,NationsLeague,2026-27,Ukraine,Northern Ireland,0.0,3.0,finished,fixturedownload
+2026-10-02 18:45:00+00:00,NationsLeague,2026-27,France,Italy,1.0,1.0,finished,fixturedownload
+2026-10-02 18:45:00+00:00,NationsLeague,2026-27,Belgium,Turkey,3.0,0.0,finished,fixturedownload
+2026-10-02 18:45:00+00:00,NationsLeague,2026-27,Hungary,Georgia,1.0,0.0,finished,fixturedownload
+2026-10-02 18:45:00+00:00,NationsLeague,2026-27,Poland,Romania,6.0,0.0,finished,fixturedownload
+2026-10-02 18:45:00+00:00,NationsLeague,2026-27,Bosnia and Herzegovina,Sweden,1.0,1.0,finished,fixturedownload
+2026-10-02 18:45:00+00:00,NationsLeague,2026-27,Faroe Islands,Slovakia,1.0,1.0,finished,fixturedownload
+2026-10-03 13:00:00+00:00,NationsLeague,2026-27,Finland,Albania,2.0,1.0,finished,fixturedownload
+2026-10-03 16:00:00+00:00,NationsLeague,2026-27,Croatia,England,0.0,7.0,finished,fixturedownload
+2026-10-03 16:00:00+00:00,NationsLeague,2026-27,Iceland,Bulgaria,3.0,0.0,finished,fixturedownload
+2026-10-03 16:00:00+00:00,NationsLeague,2026-27,Belarus,San Marino,4.0,0.0,finished,fixturedownload
+2026-10-03 16:00:00+00:00,NationsLeague,2026-27,Estonia,Luxembourg,1.0,0.0,finished,fixturedownload
+2026-10-03 18:45:00+00:00,NationsLeague,2026-27,Spain,Czech Republic,3.0,1.0,finished,fixturedownload
+2026-10-03 18:45:00+00:00,NationsLeague,2026-27,Switzerland,Slovenia,2.0,1.0,finished,fixturedownload
+2026-10-03 18:45:00+00:00,NationsLeague,2026-27,North Macedonia,Scotland,0.0,2.0,finished,fixturedownload
+2026-10-04 13:00:00+00:00,NationsLeague,2026-27,Azerbaijan,Lithuania,1.0,0.0,finished,fixturedownload
+2026-10-04 16:00:00+00:00,NationsLeague,2026-27,Kosovo,Austria,1.0,1.0,finished,fixturedownload
+2026-10-04 16:00:00+00:00,NationsLeague,2026-27,Malta,Andorra,1.0,0.0,finished,fixturedownload
+2026-10-04 18:45:00+00:00,NationsLeague,2026-27,Portugal,Norway,2.0,1.0,finished,fixturedownload
+2026-10-04 18:45:00+00:00,NationsLeague,2026-27,Netherlands,Serbia,2.0,1.0,finished,fixturedownload
+2026-10-04 18:45:00+00:00,NationsLeague,2026-27,Greece,Germany,0.0,0.0,finished,fixturedownload
+2026-10-04 18:45:00+00:00,NationsLeague,2026-27,Republic of Ireland,Israel,1.0,1.0,finished,fixturedownload
+2026-10-04 18:45:00+00:00,NationsLeague,2026-27,Wales,Denmark,0.0,1.0,finished,fixturedownload
+2026-10-05 16:00:00+00:00,NationsLeague,2026-27,Cyprus,Latvia,2.0,1.0,finished,fixturedownload
+2026-10-05 18:45:00+00:00,NationsLeague,2026-27,Ukraine,Hungary,1.0,2.0,finished,fixturedownload
+2026-10-05 18:45:00+00:00,NationsLeague,2026-27,Romania,Sweden,0.0,1.0,finished,fixturedownload
+2026-10-05 18:45:00+00:00,NationsLeague,2026-27,Northern Ireland,Georgia,0.0,0.0,finished,fixturedownload
+2026-10-05 18:45:00+00:00,NationsLeague,2026-27,Montenegro,Armenia,0.0,0.0,finished,fixturedownload
+2026-10-05 18:45:00+00:00,NationsLeague,2026-27,France,Belgium,4.0,1.0,finished,fixturedownload
+2026-10-05 18:45:00+00:00,NationsLeague,2026-27,Italy,Turkey,3.0,1.0,finished,fixturedownload
+2026-10-05 18:45:00+00:00,NationsLeague,2026-27,Bosnia and Herzegovina,Poland,1.0,0.0,finished,fixturedownload
+2026-10-06 14:00:00+00:00,NationsLeague,2026-27,Kazakhstan,Faroe Islands,2.0,2.0,finished,fixturedownload
+2026-10-06 18:45:00+00:00,NationsLeague,2026-27,Switzerland,North Macedonia,3.0,0.0,finished,fixturedownload
+2026-10-06 18:45:00+00:00,NationsLeague,2026-27,Albania,San Marino,2.0,1.0,finished,fixturedownload
+2026-10-06 18:45:00+00:00,NationsLeague,2026-27,Belarus,Finland,1.0,0.0,finished,fixturedownload
+2026-10-06 18:45:00+00:00,NationsLeague,2026-27,Luxembourg,Bulgaria,0.0,2.0,finished,fixturedownload
+2026-10-06 18:45:00+00:00,NationsLeague,2026-27,Moldova,Slovakia,0.0,4.0,finished,fixturedownload
+2026-10-06 18:45:00+00:00,NationsLeague,2026-27,Estonia,Iceland,0.0,0.0,finished,fixturedownload
+2026-10-06 18:45:00+00:00,NationsLeague,2026-27,Croatia,Spain,1.0,2.0,finished,fixturedownload
+2026-10-06 18:45:00+00:00,NationsLeague,2026-27,England,Czech Republic,3.0,0.0,finished,fixturedownload
+2026-10-06 18:45:00+00:00,NationsLeague,2026-27,Scotland,Slovenia,1.0,2.0,finished,fixturedownload
+2026-11-12 17:00:00+00:00,NationsLeague,2026-27,Turkey,Belgium,,,scheduled,fixturedownload
+2026-11-12 17:00:00+00:00,NationsLeague,2026-27,Armenia,Cyprus,,,scheduled,fixturedownload
+2026-11-12 19:45:00+00:00,NationsLeague,2026-27,Czech Republic,Spain,,,scheduled,fixturedownload
+2026-11-12 19:45:00+00:00,NationsLeague,2026-27,Albania,Finland,,,scheduled,fixturedownload
+2026-11-12 19:45:00+00:00,NationsLeague,2026-27,Montenegro,Latvia,,,scheduled,fixturedownload
+2026-11-12 19:45:00+00:00,NationsLeague,2026-27,San Marino,Belarus,,,scheduled,fixturedownload
+2026-11-12 19:45:00+00:00,NationsLeague,2026-27,Italy,France,,,scheduled,fixturedownload
+2026-11-12 19:45:00+00:00,NationsLeague,2026-27,England,Croatia,,,scheduled,fixturedownload
+2026-11-13 17:00:00+00:00,NationsLeague,2026-27,Moldova,Kazakhstan,,,scheduled,fixturedownload
+2026-11-13 19:45:00+00:00,NationsLeague,2026-27,Slovakia,Faroe Islands,,,scheduled,fixturedownload
+2026-11-13 19:45:00+00:00,NationsLeague,2026-27,Luxembourg,Estonia,,,scheduled,fixturedownload
+2026-11-13 19:45:00+00:00,NationsLeague,2026-27,Bulgaria,Iceland,,,scheduled,fixturedownload
+2026-11-13 19:45:00+00:00,NationsLeague,2026-27,Andorra,Gibraltar,,,scheduled,fixturedownload
+2026-11-13 19:45:00+00:00,NationsLeague,2026-27,Liechtenstein,Azerbaijan,,,scheduled,fixturedownload
+2026-11-13 19:45:00+00:00,NationsLeague,2026-27,Netherlands,Greece,,,scheduled,fixturedownload
+2026-11-13 19:45:00+00:00,NationsLeague,2026-27,Serbia,Germany,,,scheduled,fixturedownload
+2026-11-13 19:45:00+00:00,NationsLeague,2026-27,Scotland,North Macedonia,,,scheduled,fixturedownload
+2026-11-13 19:45:00+00:00,NationsLeague,2026-27,Slovenia,Switzerland,,,scheduled,fixturedownload
+2026-11-14 14:00:00+00:00,NationsLeague,2026-27,Kosovo,Israel,,,scheduled,fixturedownload
+2026-11-14 17:00:00+00:00,NationsLeague,2026-27,Norway,Wales,,,scheduled,fixturedownload
+2026-11-14 17:00:00+00:00,NationsLeague,2026-27,Georgia,Hungary,,,scheduled,fixturedownload
+2026-11-14 19:45:00+00:00,NationsLeague,2026-27,Sweden,Bosnia and Herzegovina,,,scheduled,fixturedownload
+2026-11-14 19:45:00+00:00,NationsLeague,2026-27,Romania,Poland,,,scheduled,fixturedownload
+2026-11-14 19:45:00+00:00,NationsLeague,2026-27,Portugal,Denmark,,,scheduled,fixturedownload
+2026-11-14 19:45:00+00:00,NationsLeague,2026-27,Austria,Republic of Ireland,,,scheduled,fixturedownload
+2026-11-14 19:45:00+00:00,NationsLeague,2026-27,Northern Ireland,Ukraine,,,scheduled,fixturedownload
+2026-11-15 14:00:00+00:00,NationsLeague,2026-27,Latvia,Armenia,,,scheduled,fixturedownload
+2026-11-15 14:00:00+00:00,NationsLeague,2026-27,Cyprus,Montenegro,,,scheduled,fixturedownload
+2026-11-15 17:00:00+00:00,NationsLeague,2026-27,Finland,San Marino,,,scheduled,fixturedownload
+2026-11-15 17:00:00+00:00,NationsLeague,2026-27,Belarus,Albania,,,scheduled,fixturedownload
+2026-11-15 19:45:00+00:00,NationsLeague,2026-27,France,Turkey,,,scheduled,fixturedownload
+2026-11-15 19:45:00+00:00,NationsLeague,2026-27,Belgium,Italy,,,scheduled,fixturedownload
+2026-11-15 19:45:00+00:00,NationsLeague,2026-27,Croatia,Czech Republic,,,scheduled,fixturedownload
+2026-11-15 19:45:00+00:00,NationsLeague,2026-27,Spain,England,,,scheduled,fixturedownload
+2026-11-16 15:00:00+00:00,NationsLeague,2026-27,Faroe Islands,Moldova,,,scheduled,fixturedownload
+2026-11-16 15:00:00+00:00,NationsLeague,2026-27,Kazakhstan,Slovakia,,,scheduled,fixturedownload
+2026-11-16 17:00:00+00:00,NationsLeague,2026-27,Iceland,Luxembourg,,,scheduled,fixturedownload
+2026-11-16 17:00:00+00:00,NationsLeague,2026-27,Estonia,Bulgaria,,,scheduled,fixturedownload
+2026-11-16 17:00:00+00:00,NationsLeague,2026-27,Lithuania,Liechtenstein,,,scheduled,fixturedownload
+2026-11-16 19:45:00+00:00,NationsLeague,2026-27,Gibraltar,Malta,,,scheduled,fixturedownload
+2026-11-16 19:45:00+00:00,NationsLeague,2026-27,Germany,Netherlands,,,scheduled,fixturedownload
+2026-11-16 19:45:00+00:00,NationsLeague,2026-27,Greece,Serbia,,,scheduled,fixturedownload
+2026-11-16 19:45:00+00:00,NationsLeague,2026-27,Switzerland,Scotland,,,scheduled,fixturedownload
+2026-11-16 19:45:00+00:00,NationsLeague,2026-27,North Macedonia,Slovenia,,,scheduled,fixturedownload
+2026-11-17 19:45:00+00:00,NationsLeague,2026-27,Israel,Austria,,,scheduled,fixturedownload
+2026-11-17 19:45:00+00:00,NationsLeague,2026-27,Bosnia and Herzegovina,Romania,,,scheduled,fixturedownload
+2026-11-17 19:45:00+00:00,NationsLeague,2026-27,Ukraine,Georgia,,,scheduled,fixturedownload
+2026-11-17 19:45:00+00:00,NationsLeague,2026-27,Denmark,Norway,,,scheduled,fixturedownload
+2026-11-17 19:45:00+00:00,NationsLeague,2026-27,Wales,Portugal,,,scheduled,fixturedownload
+2026-11-17 19:45:00+00:00,NationsLeague,2026-27,Hungary,Northern Ireland,,,scheduled,fixturedownload
+2026-11-17 19:45:00+00:00,NationsLeague,2026-27,Poland,Sweden,,,scheduled,fixturedownload
+2026-11-17 19:45:00+00:00,NationsLeague,2026-27,Republic of Ireland,Kosovo,,,scheduled,fixturedownload
