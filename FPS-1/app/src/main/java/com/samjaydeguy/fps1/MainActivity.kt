@@ -24,14 +24,29 @@ import com.chaquo.python.Python
 import org.json.JSONArray
 import org.json.JSONObject
 
-private val Navy = Color(0xFF171923)
-private val Panel = Color(0xFF252B38).copy(alpha = 0.60f)
-private val Blue = Color(0xFF3987F6)
-private val Muted = Color(0xFF9EADC4)
-private val Green = Color(0xFF36C994)
-private val Orange = Color(0xFFFFA34D)
-private val Red = Color(0xFFFF6B72)
-private val Purple = Color(0xFF9B7CF6)
+private val Navy: Color
+    @Composable get() = LocalFps1Palette.current.background
+
+private val Panel: Color
+    @Composable get() = LocalFps1Palette.current.panel
+
+private val Blue: Color
+    @Composable get() = LocalFps1Palette.current.accent
+
+private val Muted: Color
+    @Composable get() = LocalFps1Palette.current.muted
+
+private val Green: Color
+    @Composable get() = LocalFps1Palette.current.success
+
+private val Orange: Color
+    @Composable get() = LocalFps1Palette.current.warning
+
+private val Red: Color
+    @Composable get() = LocalFps1Palette.current.error
+
+private val Purple: Color
+    @Composable get() = LocalFps1Palette.current.purple
 
 @Composable
 private fun ClubBadge(team: String) {
@@ -54,18 +69,19 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            MaterialTheme(
-                colorScheme = darkColorScheme(
-                    primary = Blue,
-                    secondary = Green,
-                    background = Navy,
-                    surface = Panel,
-                    onPrimary = Color.White,
-                    onBackground = Color.White,
-                    onSurface = Color.White
+            var themeMode by remember {
+                mutableStateOf(loadFps1ThemeMode(this))
+            }
+
+            Fps1Theme(mode = themeMode) {
+                FPS1Screen(
+                    activity = this,
+                    themeMode = themeMode,
+                    onThemeModeChange = { selectedMode ->
+                        themeMode = selectedMode
+                        saveFps1ThemeMode(this, selectedMode)
+                    }
                 )
-            ) {
-                FPS1Screen(this)
             }
         }
     }
@@ -223,7 +239,11 @@ private fun normalizedOutcome(value: String): String {
 }
 
 @Composable
-fun FPS1Screen(activity: ComponentActivity) {
+fun FPS1Screen(
+    activity: ComponentActivity,
+    themeMode: Fps1ThemeMode,
+    onThemeModeChange: (Fps1ThemeMode) -> Unit
+) {
     val leagues = listOf("EPL", "LaLiga", "SerieA", "Bundesliga", "Ligue1", "NationsLeague")
 
     var league by remember { mutableStateOf("EPL") }
@@ -298,25 +318,19 @@ fun FPS1Screen(activity: ComponentActivity) {
         it.date.contains(search, ignoreCase = true)
     }
 
-    Box(modifier = Modifier.fillMaxSize()) {
-        Image(
-            painter = painterResource(id = R.drawable.fps1_stadium_background),
-            contentDescription = null,
-            modifier = Modifier.fillMaxSize(),
-            contentScale = ContentScale.Crop
-        )
-        Box(
-            modifier = Modifier
-                .fillMaxSize()
-                .background(Navy.copy(alpha = 0.68f))
-        )
-        Column(
-            modifier = Modifier
-                .fillMaxSize()
-                .verticalScroll(rememberScrollState())
-                .padding(horizontal = 18.dp, vertical = 22.dp),
-            verticalArrangement = Arrangement.spacedBy(20.dp)
-        ) {
+    Box(
+        modifier = Modifier
+            .fillMaxSize()
+            .background(Navy)
+    ) {
+        Column(modifier = Modifier.fillMaxSize()) {
+            Column(
+                modifier = Modifier
+                    .weight(1f)
+                    .verticalScroll(rememberScrollState())
+                    .padding(horizontal = 18.dp, vertical = 22.dp),
+                verticalArrangement = Arrangement.spacedBy(20.dp)
+            ) {
         // Brand header
         Row(
             modifier = Modifier.fillMaxWidth(),
@@ -356,7 +370,7 @@ fun FPS1Screen(activity: ComponentActivity) {
                     expanded = menuExpanded,
                     onDismissRequest = { menuExpanded = false }
                 ) {
-                    listOf("Dashboard", "Match Centre", "About").forEach { page ->
+                    listOf("Dashboard", "Fixtures", "Analysis", "History", "Settings", "About").forEach { page ->
                         DropdownMenuItem(
                             text = { Text(page) },
                             onClick = {
@@ -369,6 +383,7 @@ fun FPS1Screen(activity: ComponentActivity) {
             }
         }
 
+        if (activePage == "Dashboard") {
         // Welcome banner
         Card(
             modifier = Modifier.fillMaxWidth(),
@@ -393,7 +408,6 @@ fun FPS1Screen(activity: ComponentActivity) {
             }
         }
 
-        if (activePage == "Dashboard") {
         // Dashboard
         SectionTitle("Dashboard", "Your current prediction environment")
 
@@ -508,15 +522,12 @@ fun FPS1Screen(activity: ComponentActivity) {
             }
         }
 
-        // Individual saved prediction history
+        if (activePage == "History") {
+        SectionTitle("Prediction History", "Your saved forecasts, newest first")
         val historyRecords = (0 until savedPredictions.length())
             .map { savedPredictions.getJSONObject(it) }
             .sortedByDescending { it.optLong("predicted_at") }
 
-        SectionTitle(
-            "MY PREDICTIONS",
-            "Your saved forecasts, newest first"
-        )
 
         if (historyRecords.isEmpty()) {
             Text(
@@ -668,7 +679,7 @@ fun FPS1Screen(activity: ComponentActivity) {
                             Text(
                                 "FINAL SCORE: ${record.optInt("home_goals")} - " +
                                     "${record.optInt("away_goals")}",
-                                color = Color.White,
+                                color = MaterialTheme.colorScheme.onSurface,
                                 fontWeight = FontWeight.Bold
                             )
                         }
@@ -679,7 +690,9 @@ fun FPS1Screen(activity: ComponentActivity) {
 
         }
 
-        if (activePage == "Match Centre") {
+        }
+
+        if (activePage == "Fixtures") {
         // Match centre
         Row(
             modifier = Modifier.fillMaxWidth(),
@@ -769,10 +782,11 @@ fun FPS1Screen(activity: ComponentActivity) {
                                 selectedFixture = fixture
                                 result = ""
                                 error = ""
+                                activePage = "Analysis"
                             },
                         shape = RoundedCornerShape(14.dp),
                         colors = CardDefaults.cardColors(
-                            containerColor = if (selected) Color(0xFF343D50).copy(alpha = 0.60f) else Panel
+                            containerColor = if (selected) LocalFps1Palette.current.elevated else Panel
                         )
                     ) {
                         Row(
@@ -823,6 +837,9 @@ fun FPS1Screen(activity: ComponentActivity) {
             }
         }
 
+        }
+
+        if (activePage == "Analysis") {
         // Prediction panel
         SectionTitle("Prediction Centre", "Select a fixture to analyse")
 
@@ -1035,6 +1052,80 @@ fun FPS1Screen(activity: ComponentActivity) {
 
         }
 
+        if (activePage == "Settings") {
+            SectionTitle(
+                "Settings",
+                "Personalise your FPS-1 experience"
+            )
+
+            Card(
+                modifier = Modifier.fillMaxWidth(),
+                shape = RoundedCornerShape(18.dp),
+                colors = CardDefaults.cardColors(
+                    containerColor = Panel
+                )
+            ) {
+                Column(
+                    modifier = Modifier.padding(18.dp),
+                    verticalArrangement = Arrangement.spacedBy(12.dp)
+                ) {
+                    Text(
+                        "APPEARANCE",
+                        color = Blue,
+                        fontWeight = FontWeight.Bold,
+                        style = MaterialTheme.typography.labelLarge
+                    )
+
+                    Text(
+                        "Choose how FPS-1 should appear.",
+                        color = Muted,
+                        style = MaterialTheme.typography.bodySmall
+                    )
+
+                    Fps1ThemeMode.values().forEach { mode ->
+                        Row(
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .clickable {
+                                    onThemeModeChange(mode)
+                                }
+                                .padding(vertical = 5.dp),
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
+                            RadioButton(
+                                selected = themeMode == mode,
+                                onClick = {
+                                    onThemeModeChange(mode)
+                                }
+                            )
+
+                            Column(
+                                modifier = Modifier.padding(start = 8.dp)
+                            ) {
+                                Text(
+                                    mode.label,
+                                    fontWeight = FontWeight.SemiBold
+                                )
+
+                                Text(
+                                    when (mode) {
+                                        Fps1ThemeMode.SYSTEM ->
+                                            "Follow your device appearance"
+                                        Fps1ThemeMode.DARK ->
+                                            "Dark charcoal interface"
+                                        Fps1ThemeMode.LIGHT ->
+                                            "Light interface"
+                                    },
+                                    color = Muted,
+                                    style = MaterialTheme.typography.bodySmall
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
         if (activePage == "About") {
             SectionTitle("About FPS-1", "Football Prediction System")
             Card(
@@ -1074,6 +1165,40 @@ fun FPS1Screen(activity: ComponentActivity) {
             color = Muted,
             style = MaterialTheme.typography.labelSmall
         )
+            }
+
+            NavigationBar(
+                containerColor = Panel,
+                contentColor = Blue
+            ) {
+                val destinations = listOf(
+                    Triple("Dashboard", "⌂", "Dashboard"),
+                    Triple("Fixtures", "▦", "Fixtures"),
+                    Triple("Analysis", "◈", "Analysis"),
+                    Triple("History", "◷", "History"),
+                    Triple("Settings", "⚙", "Settings")
+                )
+
+                destinations.forEach { (page, symbol, label) ->
+                    NavigationBarItem(
+                        selected = activePage == page,
+                        onClick = { activePage = page },
+                        icon = {
+                            Text(
+                                symbol,
+                                style = MaterialTheme.typography.titleMedium
+                            )
+                        },
+                        label = {
+                            Text(
+                                label,
+                                style = MaterialTheme.typography.labelSmall
+                            )
+                        },
+                        alwaysShowLabel = true
+                    )
+                }
+            }
         }
     }
 }
