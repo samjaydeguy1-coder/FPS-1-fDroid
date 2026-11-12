@@ -65,6 +65,13 @@ data class Fixture(
     val away: String
 )
 
+data class SelectedMatch(
+    val league: String,
+    val date: String,
+    val home: String,
+    val away: String
+)
+
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -123,6 +130,61 @@ private fun SectionTitle(title: String, subtitle: String = "") {
 
 private const val HISTORY_PREFS = "fps1_prediction_history"
 private const val HISTORY_KEY = "predictions"
+
+private const val SELECTED_MATCHES_PREFS = "fps1_selected_matches"
+private const val SELECTED_MATCHES_KEY = "selected_matches"
+
+private fun sameSelectedMatch(a: SelectedMatch, b: SelectedMatch): Boolean =
+    a.league == b.league &&
+    a.date == b.date &&
+    a.home == b.home &&
+    a.away == b.away
+
+private fun loadSelectedMatches(activity: ComponentActivity): List<SelectedMatch> {
+    val stored = activity.getSharedPreferences(
+        SELECTED_MATCHES_PREFS, Context.MODE_PRIVATE
+    ).getString(SELECTED_MATCHES_KEY, "[]") ?: "[]"
+
+    return try {
+        val array = JSONArray(stored)
+        buildList {
+            for (i in 0 until array.length()) {
+                val item = array.getJSONObject(i)
+                add(
+                    SelectedMatch(
+                        league = item.getString("league"),
+                        date = item.getString("date"),
+                        home = item.getString("home"),
+                        away = item.getString("away")
+                    )
+                )
+            }
+        }
+    } catch (_: Exception) {
+        emptyList()
+    }
+}
+
+private fun saveSelectedMatches(
+    activity: ComponentActivity,
+    matches: List<SelectedMatch>
+) {
+    val array = JSONArray()
+    matches.forEach { match ->
+        array.put(
+            JSONObject().apply {
+                put("league", match.league)
+                put("date", match.date)
+                put("home", match.home)
+                put("away", match.away)
+            }
+        )
+    }
+
+    activity.getSharedPreferences(
+        SELECTED_MATCHES_PREFS, Context.MODE_PRIVATE
+    ).edit().putString(SELECTED_MATCHES_KEY, array.toString()).apply()
+}
 
 private fun loadPredictionHistory(activity: ComponentActivity): JSONArray {
     val stored = activity.getSharedPreferences(
@@ -250,6 +312,10 @@ fun FPS1Screen(
     var expanded by remember { mutableStateOf(false) }
     var fixtures by remember { mutableStateOf(listOf<Fixture>()) }
     var selectedFixture by remember { mutableStateOf<Fixture?>(null) }
+    var selectedFixtureLeague by remember { mutableStateOf("EPL") }
+    var selectedMatches by remember {
+        mutableStateOf(loadSelectedMatches(activity))
+    }
     var search by remember { mutableStateOf("") }
     var loadingFixtures by remember { mutableStateOf(false) }
     var loadingPrediction by remember { mutableStateOf(false) }
@@ -263,14 +329,25 @@ fun FPS1Screen(
     var activePage by remember { mutableStateOf("Dashboard") }
     var menuExpanded by remember { mutableStateOf(false) }
 
+    var standingsLeague by remember { mutableStateOf("EPL") }
+    var standingsSeason by remember { mutableStateOf("") }
+    var standingsSeasons by remember { mutableStateOf(listOf<String>()) }
+    var standingsData by remember { mutableStateOf<JSONObject?>(null) }
+    var standingsLoading by remember { mutableStateOf(false) }
+    var standingsError by remember { mutableStateOf("") }
+    var standingsLeagueExpanded by remember { mutableStateOf(false) }
+    var standingsSeasonExpanded by remember { mutableStateOf(false) }
+
     LaunchedEffect(league, refreshKey) {
         val leagueChanged = loadedLeague != league
 
         if (leagueChanged) {
             fixtures = emptyList()
-            selectedFixture = null
+            if (selectedFixtureLeague != league) {
+                selectedFixture = null
+                result = ""
+            }
             search = ""
-            result = ""
         }
 
         loadedLeague = league
@@ -343,12 +420,12 @@ fun FPS1Screen(
                     .background(Blue, RoundedCornerShape(15.dp)),
                 contentAlignment = Alignment.Center
             ) {
-                Text("F1", fontWeight = FontWeight.Black, style = MaterialTheme.typography.headlineMedium)
+                Text("SJ", fontWeight = FontWeight.Black, style = MaterialTheme.typography.headlineMedium)
             }
 
             Column(modifier = Modifier.weight(1f)) {
-                Text("FPS-1", fontWeight = FontWeight.ExtraBold, style = MaterialTheme.typography.titleLarge)
-                Text("FOOTBALL PREDICTION SYSTEM", color = Muted, style = MaterialTheme.typography.labelSmall)
+                Text("SAMJAY1", fontWeight = FontWeight.ExtraBold, style = MaterialTheme.typography.titleLarge)
+                Text("FPS-1  •  FOOTBALL PREDICTION SYSTEM", color = Muted, style = MaterialTheme.typography.labelSmall)
             }
 
             Text(
@@ -370,7 +447,7 @@ fun FPS1Screen(
                     expanded = menuExpanded,
                     onDismissRequest = { menuExpanded = false }
                 ) {
-                    listOf("Dashboard", "Fixtures", "Analysis", "History", "Settings", "About").forEach { page ->
+                    listOf("Dashboard", "Fixtures", "Analysis", "Selected Matches", "History", "Settings", "About").forEach { page ->
                         DropdownMenuItem(
                             text = { Text(page) },
                             onClick = {
@@ -394,7 +471,7 @@ fun FPS1Screen(
                 modifier = Modifier.padding(20.dp),
                 verticalArrangement = Arrangement.spacedBy(9.dp)
             ) {
-                Text("WELCOME TO FPS-1", color = Blue, style = MaterialTheme.typography.labelLarge, fontWeight = FontWeight.Bold)
+                Text("WELCOME, SAMJAY1", color = Blue, style = MaterialTheme.typography.labelLarge, fontWeight = FontWeight.Bold)
                 Text(
                     "Understand the game.\nAnalyse the possibilities.",
                     style = MaterialTheme.typography.headlineSmall,
@@ -517,6 +594,252 @@ fun FPS1Screen(
                             color = Muted,
                             style = MaterialTheme.typography.labelSmall
                         )
+                    }
+                }
+            }
+        }
+
+        if (activePage == "Dashboard") {
+            SectionTitle(
+                "League Standings",
+                "Competition tables calculated from the match dataset"
+            )
+
+            Card(
+                modifier = Modifier.fillMaxWidth(),
+                shape = RoundedCornerShape(18.dp),
+                colors = CardDefaults.cardColors(containerColor = Panel)
+            ) {
+                Column(
+                    modifier = Modifier.padding(14.dp),
+                    verticalArrangement = Arrangement.spacedBy(12.dp)
+                ) {
+                    Box {
+                        OutlinedButton(
+                            onClick = { standingsLeagueExpanded = true },
+                            modifier = Modifier.fillMaxWidth()
+                        ) {
+                            Text("LEAGUE  •  $standingsLeague")
+                        }
+
+                        DropdownMenu(
+                            expanded = standingsLeagueExpanded,
+                            onDismissRequest = { standingsLeagueExpanded = false }
+                        ) {
+                            leagues.forEach { item ->
+                                DropdownMenuItem(
+                                    text = { Text(item) },
+                                    onClick = {
+                                        standingsLeague = item
+                                        standingsSeason = ""
+                                        standingsSeasons = emptyList()
+                                        standingsData = null
+                                        standingsError = ""
+                                        standingsLeagueExpanded = false
+                                    }
+                                )
+                            }
+                        }
+                    }
+
+                    Box {
+                        OutlinedButton(
+                            onClick = { standingsSeasonExpanded = true },
+                            enabled = standingsSeasons.isNotEmpty(),
+                            modifier = Modifier.fillMaxWidth()
+                        ) {
+                            Text(
+                                if (standingsSeason.isBlank()) {
+                                    "SELECT SEASON"
+                                } else {
+                                    "SEASON  •  $standingsSeason"
+                                }
+                            )
+                        }
+
+                        DropdownMenu(
+                            expanded = standingsSeasonExpanded,
+                            onDismissRequest = { standingsSeasonExpanded = false }
+                        ) {
+                            standingsSeasons.forEach { item ->
+                                DropdownMenuItem(
+                                    text = { Text(item) },
+                                    onClick = {
+                                        standingsSeason = item
+                                        standingsSeasonExpanded = false
+                                    }
+                                )
+                            }
+                        }
+                    }
+
+                    Button(
+                        modifier = Modifier.fillMaxWidth(),
+                        enabled = !standingsLoading,
+                        onClick = {
+                            standingsLoading = true
+                            standingsError = ""
+
+                            val requestedLeague = standingsLeague
+                            val requestedSeason = standingsSeason
+
+                            Thread {
+                                try {
+                                    val module = Python.getInstance().getModule("bridge")
+
+                                    val seasonsJson = module.callAttr(
+                                        "get_standings_seasons",
+                                        requestedLeague
+                                    ).toString()
+
+                                    val seasonsArray = JSONArray(seasonsJson)
+                                    val availableSeasons = buildList {
+                                        for (i in 0 until seasonsArray.length()) {
+                                            add(seasonsArray.getString(i))
+                                        }
+                                    }
+
+                                    if (availableSeasons.isEmpty()) {
+                                        throw IllegalStateException(
+                                            "No seasons found for $requestedLeague."
+                                        )
+                                    }
+
+                                    val chosenSeason =
+                                        if (requestedSeason in availableSeasons) {
+                                            requestedSeason
+                                        } else {
+                                            availableSeasons.last()
+                                        }
+
+                                    val tableJson = module.callAttr(
+                                        "get_standings",
+                                        requestedLeague,
+                                        chosenSeason
+                                    ).toString()
+
+                                    val parsedTable = JSONObject(tableJson)
+
+                                    activity.runOnUiThread {
+                                        standingsSeasons = availableSeasons
+                                        standingsSeason = chosenSeason
+                                        standingsData = parsedTable
+                                        standingsLoading = false
+                                    }
+                                } catch (e: Exception) {
+                                    activity.runOnUiThread {
+                                        standingsError = e.message
+                                            ?: "Could not load standings."
+                                        standingsLoading = false
+                                    }
+                                }
+                            }.start()
+                        }
+                    ) {
+                        Text(
+                            if (standingsLoading) "LOADING STANDINGS..."
+                            else "LOAD / UPDATE TABLE"
+                        )
+                    }
+
+                    if (standingsError.isNotBlank()) {
+                        Text(
+                            standingsError,
+                            color = Red,
+                            style = MaterialTheme.typography.bodySmall
+                        )
+                    }
+
+                    standingsData?.let { data ->
+                        Text(
+                            "${data.optString("league")}  •  ${data.optString("season")}",
+                            fontWeight = FontWeight.Bold,
+                            color = Blue
+                        )
+
+                        Text(
+                            "As of ${data.optString("as_of")}",
+                            color = Muted,
+                            style = MaterialTheme.typography.labelSmall
+                        )
+
+                        Row(
+                            modifier = Modifier.fillMaxWidth(),
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
+                            Text("POS", modifier = Modifier.width(30.dp), color = Muted,
+                                style = MaterialTheme.typography.labelSmall)
+                            Text("TEAM", modifier = Modifier.weight(1f), color = Muted,
+                                style = MaterialTheme.typography.labelSmall)
+                            Text("P W D L", modifier = Modifier.width(66.dp), color = Muted,
+                                style = MaterialTheme.typography.labelSmall)
+                            Text("GD", modifier = Modifier.width(32.dp), color = Muted,
+                                style = MaterialTheme.typography.labelSmall)
+                            Text("PTS", modifier = Modifier.width(32.dp), color = Muted,
+                                style = MaterialTheme.typography.labelSmall)
+                        }
+
+                        HorizontalDivider(color = Muted.copy(alpha = 0.35f))
+
+                        val tableRows = data.optJSONArray("table")
+                        if (tableRows != null) {
+                            for (index in 0 until tableRows.length()) {
+                                val item = tableRows.getJSONObject(index)
+                                val team = item.optString("team")
+
+                                Row(
+                                    modifier = Modifier
+                                        .fillMaxWidth()
+                                        .padding(vertical = 5.dp),
+                                    verticalAlignment = Alignment.CenterVertically
+                                ) {
+                                    Text(
+                                        item.optString("position"),
+                                        modifier = Modifier.width(30.dp),
+                                        fontWeight = FontWeight.Bold,
+                                        style = MaterialTheme.typography.labelSmall
+                                    )
+
+                                    Row(
+                                        modifier = Modifier.weight(1f),
+                                        verticalAlignment = Alignment.CenterVertically,
+                                        horizontalArrangement = Arrangement.spacedBy(4.dp)
+                                    ) {
+                                        ClubBadge(team)
+                                        Text(
+                                            team,
+                                            maxLines = 1,
+                                            style = MaterialTheme.typography.labelSmall
+                                        )
+                                    }
+
+                                    Text(
+                                        "${item.optInt("played")} ${item.optInt("won")} ${item.optInt("drawn")} ${item.optInt("lost")}",
+                                        modifier = Modifier.width(66.dp),
+                                        style = MaterialTheme.typography.labelSmall
+                                    )
+
+                                    Text(
+                                        item.optString("goal_difference"),
+                                        modifier = Modifier.width(32.dp),
+                                        style = MaterialTheme.typography.labelSmall
+                                    )
+
+                                    Text(
+                                        item.optString("points"),
+                                        modifier = Modifier.width(32.dp),
+                                        fontWeight = FontWeight.Bold,
+                                        style = MaterialTheme.typography.labelSmall
+                                    )
+                                }
+
+                                if (index < tableRows.length() - 1) {
+                                    HorizontalDivider(
+                                        color = Muted.copy(alpha = 0.12f)
+                                    )
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -773,20 +1096,25 @@ fun FPS1Screen(
                 verticalArrangement = Arrangement.spacedBy(9.dp)
             ) {
                 filteredFixtures.forEach { fixture ->
-                    val selected = selectedFixture == fixture
+                    val candidate = SelectedMatch(
+                        league, fixture.date, fixture.home, fixture.away
+                    )
+                    val isAdded = selectedMatches.any {
+                        sameSelectedMatch(it, candidate)
+                    }
 
                     Card(
                         modifier = Modifier
                             .fillMaxWidth()
                             .clickable {
-                                selectedFixture = fixture
-                                result = ""
-                                error = ""
-                                activePage = "Analysis"
+                                if (!isAdded) {
+                                    selectedMatches = selectedMatches + candidate
+                                    saveSelectedMatches(activity, selectedMatches)
+                                }
                             },
                         shape = RoundedCornerShape(14.dp),
                         colors = CardDefaults.cardColors(
-                            containerColor = if (selected) LocalFps1Palette.current.elevated else Panel
+                            containerColor = if (isAdded) LocalFps1Palette.current.elevated else Panel
                         )
                     ) {
                         Row(
@@ -821,22 +1149,156 @@ fun FPS1Screen(
                         }
                             }
 
-                            if (selected) {
-                                Text(
-                                    "SELECTED",
-                                    color = Green,
-                                    style = MaterialTheme.typography.labelSmall,
-                                    fontWeight = FontWeight.Bold
-                                )
-                            } else {
-                                Text("›", color = Blue, style = MaterialTheme.typography.headlineMedium)
-                            }
+                            Text(
+                                if (isAdded) "ADDED" else "ADD +",
+                                color = if (isAdded) Green else Blue,
+                                style = MaterialTheme.typography.labelSmall,
+                                fontWeight = FontWeight.Bold
+                            )
                         }
                     }
                 }
             }
         }
 
+        }
+
+        if (activePage == "Selected Matches") {
+            SectionTitle(
+                "Selected Matches",
+                "Your saved fixtures, available for analysis"
+            )
+
+            if (selectedMatches.isEmpty()) {
+                Card(
+                    modifier = Modifier.fillMaxWidth(),
+                    shape = RoundedCornerShape(16.dp),
+                    colors = CardDefaults.cardColors(containerColor = Panel)
+                ) {
+                    Column(
+                        modifier = Modifier.padding(20.dp),
+                        verticalArrangement = Arrangement.spacedBy(8.dp)
+                    ) {
+                        Text(
+                            "No selected matches yet",
+                            fontWeight = FontWeight.Bold
+                        )
+                        Text(
+                            "Open Fixtures and tap a match to add it here.",
+                            color = Muted
+                        )
+                        OutlinedButton(
+                            onClick = { activePage = "Fixtures" }
+                        ) {
+                            Text("BROWSE FIXTURES")
+                        }
+                    }
+                }
+            } else {
+                Text(
+                    "${selectedMatches.size} saved matches",
+                    color = Blue,
+                    style = MaterialTheme.typography.labelMedium
+                )
+
+                selectedMatches.forEach { match ->
+                    Card(
+                        modifier = Modifier.fillMaxWidth(),
+                        shape = RoundedCornerShape(16.dp),
+                        colors = CardDefaults.cardColors(containerColor = Panel)
+                    ) {
+                        Column(
+                            modifier = Modifier.padding(14.dp),
+                            verticalArrangement = Arrangement.spacedBy(10.dp)
+                        ) {
+                            Text(
+                                "${match.league}  •  ${match.date}",
+                                color = Muted,
+                                style = MaterialTheme.typography.labelSmall
+                            )
+
+                            Row(
+                                modifier = Modifier.fillMaxWidth(),
+                                verticalAlignment = Alignment.CenterVertically
+                            ) {
+                                Column(
+                                    modifier = Modifier.weight(1f),
+                                    verticalArrangement = Arrangement.spacedBy(5.dp)
+                                ) {
+                                    Row(
+                                        verticalAlignment = Alignment.CenterVertically,
+                                        horizontalArrangement = Arrangement.spacedBy(6.dp)
+                                    ) {
+                                        CountryFlag(match.home, match.league)
+                                        ClubBadge(match.home)
+                                        Text(
+                                            match.home,
+                                            fontWeight = FontWeight.SemiBold,
+                                            style = MaterialTheme.typography.bodySmall
+                                        )
+                                    }
+
+                                    Row(
+                                        verticalAlignment = Alignment.CenterVertically,
+                                        horizontalArrangement = Arrangement.spacedBy(6.dp)
+                                    ) {
+                                        CountryFlag(match.away, match.league)
+                                        ClubBadge(match.away)
+                                        Text(
+                                            match.away,
+                                            fontWeight = FontWeight.SemiBold,
+                                            style = MaterialTheme.typography.bodySmall
+                                        )
+                                    }
+                                }
+
+                                Text(
+                                    "VS",
+                                    color = Blue,
+                                    fontWeight = FontWeight.Bold
+                                )
+                            }
+
+                            HorizontalDivider(color = Muted.copy(alpha = 0.25f))
+
+                            Row(
+                                modifier = Modifier.fillMaxWidth(),
+                                horizontalArrangement = Arrangement.spacedBy(8.dp)
+                            ) {
+                                Button(
+                                    modifier = Modifier.weight(1f),
+                                    onClick = {
+                                        selectedFixtureLeague = match.league
+                                        selectedFixture = Fixture(
+                                            match.date,
+                                            match.home,
+                                            match.away
+                                        )
+                                        league = match.league
+                                        result = ""
+                                        error = ""
+                                        activePage = "Analysis"
+                                    }
+                                ) {
+                                    Text("ANALYSE")
+                                }
+
+                                OutlinedButton(
+                                    modifier = Modifier.weight(1f),
+                                    onClick = {
+                                        selectedMatches = selectedMatches.filterNot {
+                                            sameSelectedMatch(it, match)
+                                        }
+                                        saveSelectedMatches(activity, selectedMatches)
+                                    }
+                                ) {
+                                    Text("REMOVE")
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         if (activePage == "Analysis") {
@@ -867,7 +1329,7 @@ fun FPS1Screen(
                             horizontalAlignment = Alignment.CenterHorizontally,
                             verticalArrangement = Arrangement.spacedBy(6.dp)
                         ) {
-                            CountryFlag(selectedFixture!!.home, league)
+                            CountryFlag(selectedFixture!!.home, selectedFixtureLeague)
                             ClubBadge(selectedFixture!!.home)
                             Text(
                                 selectedFixture!!.home,
@@ -883,7 +1345,7 @@ fun FPS1Screen(
                             horizontalAlignment = Alignment.CenterHorizontally,
                             verticalArrangement = Arrangement.spacedBy(6.dp)
                         ) {
-                            CountryFlag(selectedFixture!!.away, league)
+                            CountryFlag(selectedFixture!!.away, selectedFixtureLeague)
                             ClubBadge(selectedFixture!!.away)
                             Text(
                                 selectedFixture!!.away,
@@ -892,7 +1354,7 @@ fun FPS1Screen(
                             )
                         }
                     }
-                    Text("${selectedFixture!!.date}  •  $league", color = Muted, style = MaterialTheme.typography.bodySmall)
+                    Text("${selectedFixture!!.date}  •  $selectedFixtureLeague", color = Muted, style = MaterialTheme.typography.bodySmall)
                 }
 
                 Button(
@@ -902,7 +1364,7 @@ fun FPS1Screen(
                         result = ""
                         error = ""
 
-                        val selectedLeague = league
+                        val selectedLeague = selectedFixtureLeague
                         val homeTeam = fixture.home
                         val awayTeam = fixture.away
 
@@ -1160,7 +1622,7 @@ fun FPS1Screen(
         }
 
         Text(
-            "FPS-1  •  FOOTBALL ANALYTICS",
+            "SAMJAY1  •  FPS-1 FOOTBALL ANALYTICS",
             modifier = Modifier.fillMaxWidth(),
             color = Muted,
             style = MaterialTheme.typography.labelSmall
@@ -1172,9 +1634,10 @@ fun FPS1Screen(
                 contentColor = Blue
             ) {
                 val destinations = listOf(
-                    Triple("Dashboard", "⌂", "Dashboard"),
+                    Triple("Dashboard", "⌂", "Home"),
                     Triple("Fixtures", "▦", "Fixtures"),
                     Triple("Analysis", "◈", "Analysis"),
+                    Triple("Selected Matches", "☑", "Selected"),
                     Triple("History", "◷", "History"),
                     Triple("Settings", "⚙", "Settings")
                 )

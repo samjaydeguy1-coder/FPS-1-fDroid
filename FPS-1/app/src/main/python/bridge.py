@@ -7,6 +7,7 @@ from pathlib import Path
 import pandas as pd
 
 from fps1.data import load_data
+from fps1.standings import calculate_standings
 from fps1.model import (
     predict_components,
     blend_components,
@@ -272,3 +273,25 @@ def get_match_result(league, date, home, away):
         "away_goals": away_goals,
         "outcome": outcome
     })
+
+
+def get_standings_seasons(league):
+    """Return seasons available for a competition in the Android dataset."""
+    league = league.strip()
+    df = load_data(ROOT / "data" / "matches.csv")
+    seasons = sorted(
+        df.loc[df["league"].astype(str).str.strip() == league, "season"]
+        .dropna()
+        .astype(str)
+        .unique()
+    )
+    return json.dumps(seasons, ensure_ascii=False)
+
+
+def get_standings(league, season):
+    """Calculate a competition table using the Android app's match dataset."""
+    league = league.strip()
+    season = season.strip()
+    df = load_data(ROOT / "data" / "matches.csv")
+    result = calculate_standings(df, league, season)
+    return json.dumps(result, ensure_ascii=False)
